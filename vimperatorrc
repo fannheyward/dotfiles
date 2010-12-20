@@ -1,0 +1,21 @@
+"2.3.1 (created: 2010/04/07 18:56:53)
+
+set runtimepath=/Users/fannheyward/.vimperator
+source! /Users/fannheyward/.vimperatorrc.local
+
+map <S-Up> :set go=m
+map <S-Down> :set go=
+map <S-Left> :set go=T
+map <S-Right> :set go=B
+map <S-Home> :set go=mTB
+
+noremap h gT
+
+autocmd LocationChange .* :js modes.passAllKeys = /mail\.google\.com/.test(buffer.URL) || /google\.com\/reader\//.test(buffer.URL) || /docs.google.com/.test(buffer.URL) || /google\.com\/calendar\//.test(buffer.URL) || /wave.google.com/.test(buffer.URL) || /twitter.com/.test(buffer.URL)
+
+set editor=vim
+set guioptions=nTBb
+set nextpattern+=^下一页$,^下一章$,^翻下页$,^下页$,^>>$,^next$,^older$,^>$
+set previouspattern+=^上一页$,^上一章$,^翻上页$,^上页$,^<<$,^previous$,^newer$,^<$
+
+" vim: set ft=vimperator:
