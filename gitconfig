@@ -3,6 +3,8 @@
 	email = fannheyward@gmail.com
 [color]
 	ui = auto
+[core]
+    excludesfile = ~/.gitignore
 [alias]
 	ci = commit
 	st = status
