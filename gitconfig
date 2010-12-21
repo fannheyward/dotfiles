@@ -1,0 +1,11 @@
+[user]
+	name = Heyward Fann
+	email = fannheyward@gmail.com
+[color]
+	ui = auto
+[alias]
+	ci = commit
+	st = status
+    ll = log --pretty=oneline --abbrev-commit --max-count=15
+    review = log -p --max-count=1
+    graph = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
