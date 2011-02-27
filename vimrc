@@ -15,6 +15,10 @@ runtime macros/matchit.vim
 set guifont=Monaco:h15
 set guifontwide=Monaco:h15
 colorscheme slate
+
+set undofile
+set undodir=~/.undodir
+set undolevels=1000
 " MRU
 let MRU_Max_Entries = 50
 map <F1> :MRU <CR>
@@ -75,6 +79,9 @@ let g:Tlist_Show_One_File=1
 
 " Tasklist
 let g:tlTokenList = ['TODO' , 'WTF']
+
+" acp.vim
+let g:acp_behaviorPythonOmniLength = -1
 
 """"""""""""""""""""""""""""""
 " NERDTree
