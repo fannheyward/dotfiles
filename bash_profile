@@ -1,4 +1,4 @@
-set EDITOR="/usr/local/bin/vim"
+export EDITOR="/usr/local/bin/vim"
 # source bashmarks=>https://github.com/huyng/bashmarks
 source ~/.local/bin/bashmarks.sh
 
