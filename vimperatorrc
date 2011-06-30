@@ -5,9 +5,8 @@ source! /Users/fannheyward/.vimperatorrc.local
 
 noremap h gT
 
-autocmd LocationChange .* :js modes.passAllKeys = /mail\.google\.com/.test(buffer.URL) || /google\.com\/reader\//.test(buffer.URL) || /docs.google.com/.test(buffer.URL) || /google\.com\/calendar\//.test(buffer.URL) || /wave.google.com/.test(buffer.URL) || /twitter.com/.test(buffer.URL) || /github.com/.test(buffer.URL) || /i.doit.im/.test(buffer.URL) || /wunderlist.com/.test(buffer.URL) || /groups.google.com/.test(buffer.URL) || /duckduckgo.com/.test(buffer.URL)
+autocmd LocationChange .* :js modes.passAllKeys = /mail\.google\.com/.test(buffer.URL) || /google\.com\/reader\//.test(buffer.URL) || /docs.google.com/.test(buffer.URL) || /google\.com\/calendar\//.test(buffer.URL) || /wave.google.com/.test(buffer.URL) || /twitter.com/.test(buffer.URL) || /github.com/.test(buffer.URL) || /i.doit.im/.test(buffer.URL) || /wunderlist.com/.test(buffer.URL) || /groups.google.com/.test(buffer.URL) || /duckduckgo.com/.test(buffer.URL) || /plus\.google\.com/.test(buffer.URL)
 
-set editor=vim
 set gui=noaddons,bookmarks,menu,navigation,tabs
 set nextpattern+=^下一页$,^下一章$,^翻下页$,^下页$,^>>$,^next$,^older$,^>$
 set previouspattern+=^上一页$,^上一章$,^翻上页$,^上页$,^<<$,^previous$,^newer$,^<$
