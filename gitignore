@@ -7,3 +7,7 @@ tags
 *.pyc
 *.sqlite
 *.sqlite3
+*.pbxuser
+*.perspectivev3
+*.xcworkspace
+xcuserdata
