@@ -1,0 +1,13 @@
+"1.0b7.2 "(created 2011/08/05 11:03:59)"
+
+loadplugins '\.(js|penta)$'
+group user
+set guioptions=bBmTsN
+set hintkeys=asdfgjikew
+
+autocmd LocationChange '(dropbox.com|duckduckgo.com|github.com|mail.google.com|plus.google.com|google.com/(reader|calendar)|twitter.com)' -js modes.set(modes.PASS_THROUGH)
+
+set nextpattern+=^下一页$,^下一章$,^翻下页$,^下页$,^>>$,^next$,^older$,^>$
+set previouspattern+=^上一页$,^上一章$,^翻上页$,^上页$,^<<$,^previous$,^newer$,^<$
+
+" vim: set ft=pentadactyl:
