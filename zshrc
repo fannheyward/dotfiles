@@ -32,10 +32,6 @@ source $ZSH/oh-my-zsh.sh
 export NODE_PATH="/usr/local/bin/node"
 export EDITOR="/usr/local/bin/vim"
 
-if [ -f `brew --prefix`/etc/autojump ]; then
-    . `brew --prefix`/etc/autojump
-fi
-
 # aliases
 if [ -e "$HOME/.aliases" ]; then
     source "$HOME/.aliases"
