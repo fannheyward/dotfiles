@@ -11,7 +11,7 @@ ZSH_THEME="robbyrussell"
 # CASE_SENSITIVE="true"
 
 # Comment this out to disable weekly auto-update checks
-DISABLE_AUTO_UPDATE="true"
+#DISABLE_AUTO_UPDATE="true"
 
 # Uncomment following line if you want to disable colors in ls
 # DISABLE_LS_COLORS="true"
@@ -24,16 +24,20 @@ DISABLE_COMPLETION_WAITING_DOTS="true"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(svn osx brew pip npm gem)
+plugins=(autojump pow bundle rvm svn osx brew pip npm gem redis-cli)
 
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 export NODE_PATH="/usr/local/bin/node"
 export EDITOR="/usr/local/bin/vim"
-source ~/.local/bin/bashmarks.sh
+
+if [ -f `brew --prefix`/etc/autojump ]; then
+    . `brew --prefix`/etc/autojump
+fi
 
 # aliases
 if [ -e "$HOME/.aliases" ]; then
     source "$HOME/.aliases"
 fi
+[[ -s $HOME/.rvm/scripts/rvm ]] && source $HOME/.rvm/scripts/rvm
