@@ -8,10 +8,24 @@ alias ql="qlmanage -p 2>/dev/null"
 alias -- .="pwd|pbcopy"
 alias -- ..="cd .."
 alias rm="rm -i"
-alias find="find . -iname"
 alias py="python"
-alias vim="/usr/local/bin/vim"
-alias vimdiff="/usr/local/bin/vimdiff"
-alias svnst="svn st"
 alias dns="dscacheutil -flushcache"
 alias sharing="python -m SimpleHTTPServer"
+alias dirs="dirs -v"
+alias redis="redis-server /usr/local/etc/redis.conf"
+alias rake="noglob rake"
+alias js="jumpstat"
+
+# replac /usr/bin
+alias vi="/usr/local/bin/vim"
+alias vim="/usr/local/bin/vim"
+alias vimdiff="/usr/local/bin/vimdiff"
+alias svn="/usr/local/bin/svn"
+alias svnst="/usr/local/bin/svn st"
+alias ctags="/usr/local/bin/ctags"
+alias git="/usr/local/bin/git"
+
+#haddit
+alias postgresql_start="pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start"
+alias postgresql_stop="pg_ctl -D /usr/local/var/postgres stop -s -m fast"
+
