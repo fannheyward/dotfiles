@@ -24,7 +24,7 @@ DISABLE_COMPLETION_WAITING_DOTS="true"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(autojump pow bundle rvm svn osx brew pip npm gem redis-cli)
+plugins=(git-flow autojump pow bundler rvm svn osx brew pip npm gem redis-cli)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -37,3 +37,10 @@ if [ -e "$HOME/.aliases" ]; then
     source "$HOME/.aliases"
 fi
 [[ -s $HOME/.rvm/scripts/rvm ]] && source $HOME/.rvm/scripts/rvm
+
+# env
+export WORKON_HOME=$HOME/.virtualenvs
+source /usr/local/bin/virtualenvwrapper.sh
+
+export LC_CTYPE=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
