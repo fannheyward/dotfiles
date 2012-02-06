@@ -14,4 +14,4 @@
 	dc = diff --color --cached
 	ll = log --pretty=oneline --abbrev-commit --max-count=15
 	review = log -p --max-count=1
-	graph = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
+    graph = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative --max-count=20
