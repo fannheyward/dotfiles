@@ -12,6 +12,8 @@ autocmd LocationChange '(dropbox.com|duckduckgo.com|github.com|mail.google.com|p
 set nextpattern+=^下一页$,^下一章$,^翻下页$,^下页$,^>>$,^next$,^older$,^>$
 set previouspattern+=^上一页$,^上一章$,^翻上页$,^上页$,^<<$,^previous$,^newer$,^<$
 
+command! gg :open javascript:void(window.open('https://plus.google.com/share?url='+encodeURIComponent(location)));
+
 command! sina :open javascript:(function(){window.open('http://v.t.sina.com.cn/share/share.php?title='+encodeURIComponent(window.content.getSelection().toString())+'&url='+encodeURIComponent(location.href)+'&source=bookmark','_blank','width=450,height=400');})()
 
 command! qq :open javascript:(function(){window.open('http://v.t.qq.com/share/share.php?title='+encodeURIComponent(window.content.getSelection().toString())+'&url='+encodeURIComponent(location.href)+'&source=bookmark','_blank','width=450,height=400');})()
