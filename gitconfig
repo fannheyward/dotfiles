@@ -15,3 +15,6 @@
 	ll = log --pretty=oneline --abbrev-commit --max-count=15
 	review = log -p --max-count=1
     graph = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset<%an>' --abbrev-commit --date=relative --max-count=20
+	save = stash save
+[push]
+	default = matching
