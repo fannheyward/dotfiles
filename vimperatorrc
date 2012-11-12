@@ -4,6 +4,7 @@
 set runtimepath=/Users/fannheyward/.vimperator
 source! /Users/fannheyward/.vimperatorrc.local
 set editor=/usr/local/bin/mvim\ -f
+set hintchars=asdfqwergv
 
 noremap h gT
 
