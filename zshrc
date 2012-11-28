@@ -24,13 +24,20 @@ DISABLE_COMPLETION_WAITING_DOTS="true"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git-flow autojump pow bundler rvm svn osx brew pip npm gem redis-cli)
+plugins=(pod heroku bundler rvm svn osx brew pip npm gem redis-cli)
 
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 export NODE_PATH="/usr/local/bin/node"
 export EDITOR="/usr/local/bin/vim"
+
+# fuction
+function chpwd() {
+    emulate -L zsh
+    #l
+    pwd
+}
 
 # aliases
 if [ -e "$HOME/.aliases" ]; then
