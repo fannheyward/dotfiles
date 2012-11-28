@@ -42,5 +42,7 @@ fi
 export WORKON_HOME=$HOME/.virtualenvs
 source /usr/local/bin/virtualenvwrapper.sh
 
+export GIT_MERGE_AUTOEDIT=no
+
 export LC_CTYPE=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
