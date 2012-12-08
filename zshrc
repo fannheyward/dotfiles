@@ -24,14 +24,11 @@ DISABLE_COMPLETION_WAITING_DOTS="true"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(pod heroku bundler rvm svn osx brew pip npm gem redis-cli)
+plugins=(pod heroku bundler osx brew pip npm gem redis-cli)
 
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-export NODE_PATH="/usr/local/bin/node"
-export EDITOR="/usr/local/bin/vim"
-
 # fuction
 function chpwd() {
     emulate -L zsh
@@ -43,9 +40,11 @@ function chpwd() {
 if [ -e "$HOME/.aliases" ]; then
     source "$HOME/.aliases"
 fi
-[[ -s $HOME/.rvm/scripts/rvm ]] && source $HOME/.rvm/scripts/rvm
 
 # env
+export EDITOR=vim
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+export PATH="$HOME/.rbenv/bin:$PATH"
 export WORKON_HOME=$HOME/.virtualenvs
 source /usr/local/bin/virtualenvwrapper.sh
 
