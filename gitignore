@@ -11,3 +11,11 @@ tags
 *.perspectivev3
 *.xcworkspace
 xcuserdata
+
+# Files created from merge tools
+*.BACKUP*
+*.BASE*
+*.LOCAL*
+*.REMOTE*
+*.orig
+
