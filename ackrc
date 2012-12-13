@@ -1,0 +1,10 @@
+--sort-files
+--follow
+
+--ignore-dir=build
+
+# Xcode Localizable.strings
+--type-set=localizablestrings=.strings
+# markdown
+--type-set=markdown=.md,.mdown,.markdown,.mmd
+
