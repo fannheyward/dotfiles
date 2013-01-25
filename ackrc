@@ -3,6 +3,7 @@
 --follow
 
 --ignore-dir=build
+--ignore-dir=nginx_runtime
 
 # Xcode Localizable.strings
 --type-set=localizablestrings=.strings
