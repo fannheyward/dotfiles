@@ -15,6 +15,7 @@ alias sharing="python -m SimpleHTTPServer"
 alias dirs="dirs -v"
 alias rake="noglob rake"
 alias pjson="python -mjson.tool"
+alias tmux="tmux -2"
 
 # replac /usr/bin
 alias vi="/usr/local/bin/vim"
