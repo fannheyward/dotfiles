@@ -46,7 +46,13 @@ export EDITOR=vim
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 export PATH="$HOME/.rbenv/bin:$PATH"
 export WORKON_HOME=$HOME/.virtualenvs
-source /usr/local/bin/virtualenvwrapper.sh
+#source /usr/local/bin/virtualenvwrapper.sh
+export PATH="/usr/local/sbin:$PATH"
+
+# OpenResty
+export OPENRESTY_HOME=/usr/local/openresty
+export MOOCHINE_HOME=$HOME/Documents/Server/moochine
+export HADDIT_HOME=$HOME/Documents/Server/Haddit
 
 export GIT_MERGE_AUTOEDIT=no
 
