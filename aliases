@@ -16,6 +16,7 @@ alias dirs="dirs -v"
 alias rake="noglob rake"
 alias pjson="python -mjson.tool"
 alias tmux="tmux -2"
+alias ios="open /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Applications/iPhone\ Simulator.app"
 
 # replac /usr/bin
 alias vi="/usr/local/bin/vim"
