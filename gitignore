@@ -11,6 +11,7 @@ tags
 *.perspectivev3
 *.xcworkspace
 xcuserdata
+build/
 
 # Files created from merge tools
 *.BACKUP*
