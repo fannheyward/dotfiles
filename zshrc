@@ -48,7 +48,8 @@ export PATH="$HOME/.rbenv/bin:$PATH"
 export WORKON_HOME=$HOME/.virtualenvs
 #source /usr/local/bin/virtualenvwrapper.sh
 export PATH="/usr/local/sbin:$PATH"
-export TERM=screen-256color
+export PATH="/usr/local/share/npm/bin:$PATH"
+export TERM=xterm-256color
 
 # OpenResty
 export OPENRESTY_HOME=/usr/local/openresty
