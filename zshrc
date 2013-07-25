@@ -40,7 +40,7 @@ DISABLE_AUTO_UPDATE="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(npm gem redis-cli pip extract osx brew safe-paste)
+plugins=(rbenv npm gem redis-cli pip extract osx brew safe-paste)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -59,8 +59,6 @@ fi
 
 # env
 export EDITOR=vim
-if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
-export PATH="$HOME/.rbenv/bin:$PATH"
 export WORKON_HOME=$HOME/.virtualenvs
 #source /usr/local/bin/virtualenvwrapper.sh
 export PATH="/usr/local/sbin:$PATH"
