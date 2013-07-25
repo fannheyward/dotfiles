@@ -3,6 +3,7 @@ export LS_OPTIONS="-hGF"
 alias ls="ls $LS_OPTIONS"
 alias ll="ls $LS_OPTIONS -l"
 alias la="ls $LS_OPTIONS -lA"
+alias l="ls $LS_OPTIONS -l"
 
 alias ql="qlmanage -p 2>/dev/null"
 alias -- .="pwd|pbcopy"
@@ -19,6 +20,8 @@ alias tmux="tmux -2"
 alias ios="open /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Applications/iPhone\ Simulator.app"
 alias ps="ps aux"
 alias luajit="rlwrap luajit"
+alias chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --proxy-pac-url=http://127.0.0.1:56789/proxy.pac"
+alias nginx="/usr/local/openresty/nginx/sbin/nginx"
 
 # replac /usr/bin
 alias vi="/usr/local/bin/vim"
