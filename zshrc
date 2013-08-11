@@ -52,10 +52,16 @@ function chpwd() {
     pwd
 }
 
+function todo() {
+    touch ~/Desktop/"$*"
+}
+
 # aliases
 if [ -e "$HOME/.aliases" ]; then
     source "$HOME/.aliases"
 fi
+
+. `brew --prefix`/etc/profile.d/z.sh
 
 # env
 export EDITOR=vim
