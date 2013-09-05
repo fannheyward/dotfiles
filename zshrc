@@ -40,7 +40,7 @@ DISABLE_AUTO_UPDATE="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(rbenv npm gem redis-cli pip extract osx brew safe-paste)
+plugins=(pod go vagrant rbenv npm gem redis-cli pip extract osx brew safe-paste)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -60,8 +60,6 @@ function todo() {
 if [ -e "$HOME/.aliases" ]; then
     source "$HOME/.aliases"
 fi
-
-. `brew --prefix`/etc/profile.d/z.sh
 
 # env
 export EDITOR=vim
