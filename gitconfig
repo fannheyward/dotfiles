@@ -7,7 +7,7 @@
 	excludesfile = ~/.gitignore
 [alias]
 	ci = commit
-	st = status
+	st = status -sb
 	co = checkout
 	p = pull
 	d = diff --color
@@ -16,6 +16,7 @@
 	review = log -p --max-count=1
     graph = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset<%an>' --abbrev-commit --date=relative --max-count=20
 	save = stash save
+    pop = stash pop
     last = log --max-count=1 --stat
 	files = log --name-only
 	fs = log --name-only --oneline
