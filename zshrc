@@ -62,12 +62,15 @@ if [ -e "$HOME/.aliases" ]; then
 fi
 
 # env
+export PATH="/usr/local/bin:$PATH"
 export EDITOR=vim
 export WORKON_HOME=$HOME/.virtualenvs
 #source /usr/local/bin/virtualenvwrapper.sh
 export PATH="/usr/local/sbin:$PATH"
 export PATH="/usr/local/share/npm/bin:$PATH"
 export TERM=xterm-256color
+
+export GOPATH="$HOME/Documents/Golang"
 
 # OpenResty
 export OPENRESTY_HOME=/usr/local/openresty
