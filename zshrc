@@ -40,7 +40,7 @@ DISABLE_AUTO_UPDATE="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(pod go vagrant rbenv npm gem redis-cli pip extract osx brew safe-paste)
+plugins=(pod go vagrant rbenv npm gem redis-cli pip extract osx brew safe-paste zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -81,3 +81,4 @@ export GIT_MERGE_AUTOEDIT=no
 
 export LC_CTYPE=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
+
