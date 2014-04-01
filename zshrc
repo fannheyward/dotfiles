@@ -70,7 +70,10 @@ export PATH="/usr/local/sbin:$PATH"
 export PATH="/usr/local/share/npm/bin:$PATH"
 export TERM=xterm-256color
 eval "$(rbenv init -)"
+source `brew --prefix`/etc/profile.d/z.sh
+export PATH="$HOME/.rbenv/shims:$PATH"
 
+export DOCKER_HOST=localhost
 export GOPATH="$HOME/Documents/Golang"
 
 # OpenResty
@@ -84,8 +87,8 @@ export LC_CTYPE=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 
 #alias for cnpm
-alias cnpm="npm --registry=http://registry.cnpmjs.org \
+alias cnpm="npm --registry=http://r.cnpmjs.org \
   --cache=$HOME/.npm/.cache/cnpm \
-  --disturl=http://dist.u.qiniudn.com \
+  --disturl=http://cnpmjs.org/dist \
   --userconfig=$HOME/.cnpmrc"
 
