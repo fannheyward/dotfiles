@@ -9,9 +9,10 @@ tags
 *.sqlite3
 *.pbxuser
 *.perspectivev3
-*.xcworkspace
 xcuserdata
 build/
+.idea/
+node_modules
 
 # Files created from merge tools
 *.BACKUP*
