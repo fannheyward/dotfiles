@@ -40,7 +40,7 @@ DISABLE_AUTO_UPDATE="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(bower pod go vagrant rbenv npm gem redis-cli pip extract osx brew safe-paste zsh-syntax-highlighting)
+plugins=(z xcode docker bower pod go rbenv npm gem redis-cli pip extract osx brew safe-paste zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -67,14 +67,13 @@ export EDITOR=vim
 export WORKON_HOME=$HOME/.virtualenvs
 #source /usr/local/bin/virtualenvwrapper.sh
 export PATH="/usr/local/sbin:$PATH"
-export PATH="/usr/local/share/npm/bin:$PATH"
 export TERM=xterm-256color
 eval "$(rbenv init -)"
-source `brew --prefix`/etc/profile.d/z.sh
 export PATH="$HOME/.rbenv/shims:$PATH"
 
 export DOCKER_HOST=localhost
-export GOPATH="$HOME/Documents/Golang"
+export GOPATH="$HOME/Golang"
+export PATH="$PATH:$GOPATH/bin"
 
 # OpenResty
 export OPENRESTY_HOME=/usr/local/openresty
@@ -87,8 +86,8 @@ export LC_CTYPE=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 
 #alias for cnpm
-alias cnpm="npm --registry=http://r.cnpmjs.org \
-  --cache=$HOME/.npm/.cache/cnpm \
-  --disturl=http://cnpmjs.org/dist \
-  --userconfig=$HOME/.cnpmrc"
+#--cache=$HOME/.npm/.cache/cnpm \
+#--userconfig=$HOME/.cnpmrc"
+alias cnpm="/usr/local/bin/npm --registry=http://registry.npm.taobao.org --disturl=http://dist.cnpmjs.org"
+alias npm=cnpm
 
