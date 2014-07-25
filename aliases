@@ -5,9 +5,13 @@ alias ll="ls $LS_OPTIONS -l"
 alias la="ls $LS_OPTIONS -lA"
 alias l="ls $LS_OPTIONS -l"
 
+alias brwe='brew'
+alias grep='grep --color'
 alias ql="qlmanage -p 2>/dev/null"
 alias -- .="pwd|pbcopy"
 alias -- ..="cd .."
+alias ..='cd ../'
+alias ...='cd ../../'
 #alias rm="rm -i"
 alias rm="trash"
 alias py="python"
@@ -23,8 +27,8 @@ alias chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --p
 alias nginx="/usr/local/openresty/nginx/sbin/nginx"
 
 # replac /usr/bin
-alias vi="/usr/local/bin/vim"
-alias vim="/usr/local/bin/vim"
+alias vi="/usr/local/bin/vim -o"
+alias vim="/usr/local/bin/vim -o"
 alias vimdiff="/usr/local/bin/vim -d"
 #alias svn="/usr/local/bin/svn"
 alias svnst="/usr/local/bin/svn st"
