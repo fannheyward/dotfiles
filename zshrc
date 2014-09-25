@@ -40,7 +40,7 @@ DISABLE_AUTO_UPDATE="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(z xcode docker bower pod go rbenv npm gem redis-cli pip extract osx brew safe-paste zsh-syntax-highlighting)
+plugins=(z xcode docker bower pod go npm gem redis-cli pip extract osx brew safe-paste zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -56,6 +56,9 @@ function todo() {
     touch ~/Desktop/"$*"
 }
 
+# zsh buildin
+autoload -U zmv
+
 # aliases
 if [ -e "$HOME/.aliases" ]; then
     source "$HOME/.aliases"
@@ -63,13 +66,11 @@ fi
 
 # env
 export PATH="/usr/local/bin:$PATH"
-export EDITOR=vim
+export PATH=$(brew --prefix ruby)/bin:$PATH
+export EDITOR=/usr/local/bin/vim
 export WORKON_HOME=$HOME/.virtualenvs
 #source /usr/local/bin/virtualenvwrapper.sh
-export PATH="/usr/local/sbin:$PATH"
 export TERM=xterm-256color
-eval "$(rbenv init -)"
-export PATH="$HOME/.rbenv/shims:$PATH"
 
 export DOCKER_HOST=localhost
 export GOPATH="$HOME/Golang"
