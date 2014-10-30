@@ -75,9 +75,12 @@ export WORKON_HOME=$HOME/.virtualenvs
 #source /usr/local/bin/virtualenvwrapper.sh
 export TERM=xterm-256color
 
-export DOCKER_HOST=localhost
 export GOPATH="$HOME/Golang"
 export PATH="$PATH:$GOPATH/bin"
+
+# Docker
+export DOCKER_CERT_PATH=/Users/fannheyward/.boot2docker/certs/boot2docker-vm
+export DOCKER_TLS_VERIFY=1
 
 # OpenResty
 export OPENRESTY_HOME=/usr/local/openresty
