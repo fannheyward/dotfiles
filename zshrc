@@ -45,6 +45,9 @@ plugins=(z xcode docker bower pod go npm gem redis-cli pip extract osx brew safe
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
+unsetopt inc_append_history
+unsetopt share_history
+
 # fuction
 function chpwd() {
     emulate -L zsh
