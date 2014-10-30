@@ -8,7 +8,7 @@
 	trustctime = false
 [alias]
 	ci = commit
-	st = status -sb
+	st = status
 	co = checkout
 	p = pull
 	d = diff --color
@@ -23,3 +23,9 @@
 	fs = log --name-only --oneline
 [push]
 	default = matching
+[difftool "sourcetree"]
+	cmd = /Applications/DiffMerge.app/Contents/MacOS/DiffMerge --nosplash \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
