@@ -77,7 +77,7 @@ export WORKON_HOME=$HOME/.virtualenvs
 #source /usr/local/bin/virtualenvwrapper.sh
 export TERM=xterm-256color
 
-export GOPATH="$HOME/Golang"
+export GOPATH="$HOME"
 export PATH="$PATH:$GOPATH/bin"
 
 # Docker
