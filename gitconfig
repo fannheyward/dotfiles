@@ -21,6 +21,7 @@
     last = log --max-count=1 --stat
 	files = log --name-only
 	fs = log --name-only --oneline
+	ignore = "!gi() { curl -L -s https://www.gitignore.io/api/$@ ;}; gi"
 [push]
 	default = matching
 [difftool "sourcetree"]
