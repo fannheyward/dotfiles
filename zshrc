@@ -42,7 +42,7 @@ DISABLE_AUTO_UPDATE="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(z xcode docker bower pod go npm gem redis-cli pip extract osx brew safe-paste zsh-syntax-highlighting)
+plugins=(xcode docker bower pod go npm gem redis-cli pip extract osx brew safe-paste zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -70,6 +70,7 @@ if [ -e "$HOME/.aliases" ]; then
 fi
 
 # env
+export HTTP_PROXY=http://127.0.0.1:7080
 export PATH="/usr/local/bin:$PATH"
 export PATH=$(brew --prefix ruby)/bin:$PATH
 export EDITOR=/usr/local/bin/vim

@@ -5,6 +5,7 @@ alias ll="ls $LS_OPTIONS -l"
 alias la="ls $LS_OPTIONS -lA"
 alias l="ls $LS_OPTIONS -l"
 
+alias h='HTTP_PROXY='' http'
 alias brwe='brew'
 alias grep='grep --color'
 alias ql="qlmanage -p 2>/dev/null"
@@ -14,6 +15,7 @@ alias ..='cd ../'
 alias ...='cd ../../'
 #alias rm="rm -i"
 alias rm="trash"
+alias tmp="cd /tmp"
 alias py="python"
 alias dns="dscacheutil -flushcache"
 alias sharing="python -m SimpleHTTPServer"
@@ -22,7 +24,7 @@ alias rake="noglob rake"
 alias luajit="rlwrap /usr/local/openresty/luajit/bin/luajit"
 alias pjson="python -mjson.tool"
 alias tmux="tmux -2"
-alias ios="open /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Applications/iPhone\ Simulator.app"
+alias ios="open '/Applications/Xcode.app/Contents/Developer/Applications/iOS Simulator.app'"
 alias chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --proxy-pac-url=http://127.0.0.1:56789/proxy.pac"
 alias nginx="/usr/local/openresty/nginx/sbin/nginx"
 
