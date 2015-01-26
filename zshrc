@@ -61,6 +61,13 @@ function todo() {
     touch ~/Desktop/"$*"
 }
 
+function csindex() {
+    find . -name "*.h" -o -name "*.c" -o -name "*.cpp" -o -name "*.m" -o -name "*.mm" -o -name "*.py" -o -name "*.lua" -o -name "*.go" > cscope.files
+    cscope -bk
+    ctags --fields=+iaSl -L cscope.files
+    rm cscope.files
+}
+
 # zsh buildin
 autoload -U zmv
 
