@@ -5,7 +5,7 @@ alias ll="ls $LS_OPTIONS -l"
 alias la="ls $LS_OPTIONS -lA"
 alias l="ls $LS_OPTIONS -l"
 
-alias h='HTTP_PROXY='' http'
+alias h='http'
 alias brwe='brew'
 alias grep='grep --color'
 alias ql="qlmanage -p 2>/dev/null"

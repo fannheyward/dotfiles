@@ -1,6 +1,7 @@
 .DS_Store
 .*.sw[a-z]
 tags
+cscope.out
 .svn
 .hg
 *.bak

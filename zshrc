@@ -77,7 +77,6 @@ if [ -e "$HOME/.aliases" ]; then
 fi
 
 # env
-export HTTP_PROXY=http://127.0.0.1:7080
 export PATH="/usr/local/bin:$PATH"
 export PATH=$(brew --prefix ruby)/bin:$PATH
 export EDITOR=/usr/local/bin/vim
