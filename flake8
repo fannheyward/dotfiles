@@ -1,0 +1,6 @@
+# ~/.config/flake8
+[flake8]
+ignore = E113,E203,E221,E265
+max-line-length = 160
+exclude = tests/*
+max-complexity = 10
