@@ -10,7 +10,7 @@
 	ci = commit
 	st = status
 	co = checkout
-	p = pull
+	p = pull --rebase
 	d = diff --color
 	dc = diff --color --cached
     l = log --date=iso
@@ -31,7 +31,5 @@
 [mergetool "sourcetree"]
 	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
-[https]
-    proxy = http://127.0.0.1:1080
-[http]
-    proxy = http://127.0.0.1:1080
+[log]
+	date = iso
