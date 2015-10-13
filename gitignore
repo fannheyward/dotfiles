@@ -14,6 +14,7 @@ xcuserdata
 build/
 .idea/
 node_modules
+typings
 
 # Files created from merge tools
 *.BACKUP*
