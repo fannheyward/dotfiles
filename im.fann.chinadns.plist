@@ -7,14 +7,13 @@
     <key>ProgramArguments</key>
     <array>
         <string>/usr/local/bin/chinadns</string>
+      <string>-m</string>
       <string>-p</string>
       <string>5300</string>
-      <string>-l</string>
-      <string>/usr/local/share/iplist.txt</string>
       <string>-c</string>
       <string>/usr/local/share/chnroute.txt</string>
       <string>-s</string>
-      <string>223.5.5.5,1.2.4.8,168.95.1.1,8.8.4.4</string>
+      <string>119.29.29.29,208.67.222.222:443</string>
     </array>
     <key>KeepAlive</key>
     <true/>
