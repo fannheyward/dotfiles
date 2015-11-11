@@ -42,7 +42,7 @@ DISABLE_AUTO_UPDATE="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(k go npm extract osx brew safe-paste zsh-syntax-highlighting)
+plugins=(pod k go npm extract osx brew safe-paste zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -77,7 +77,6 @@ if [ -e "$HOME/.aliases" ]; then
 fi
 
 # env
-export PATH="/usr/local/bin:$PATH"
 export PATH=$(brew --prefix ruby)/bin:$PATH
 export EDITOR=/usr/local/bin/vim
 export WORKON_HOME=$HOME/.virtualenvs
@@ -88,8 +87,8 @@ export GOPATH="$HOME"
 export PATH="$PATH:$GOPATH/bin"
 
 # Docker
-export DOCKER_CERT_PATH=/Users/fannheyward/.boot2docker/certs/boot2docker-vm
-export DOCKER_TLS_VERIFY=1
+#export DOCKER_CERT_PATH=/Users/fannheyward/.boot2docker/certs/boot2docker-vm
+#export DOCKER_TLS_VERIFY=1
 
 # OpenResty
 export OPENRESTY_HOME=/usr/local/openresty
@@ -101,3 +100,23 @@ export GIT_MERGE_AUTOEDIT=no
 export LC_CTYPE=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 
+function mkicns() {
+    if [[ -z "$@" ]]; then
+        echo "Input file missing"
+    else
+        filename=${1%.*}
+        mkdir $filename.iconset
+        sips -z 16 16   $1 --out $filename.iconset/icon_16x16.png
+        sips -z 32 32   $1 --out $filename.iconset/icon_16x16@2x.png
+        sips -z 32 32   $1 --out $filename.iconset/icon_32x32.png
+        sips -z 64 64   $1 --out $filename.iconset/icon_32x32@2x.png
+        sips -z 128 128 $1 --out $filename.iconset/icon_128x128.png
+        sips -z 256 256 $1 --out $filename.iconset/icon_128x128@2x.png
+        sips -z 256 256 $1 --out $filename.iconset/icon_256x256.png
+        sips -z 512 512 $1 --out $filename.iconset/icon_256x256@2x.png
+        sips -z 512 512 $1 --out $filename.iconset/icon_512x512.png
+        cp $1 $filename.iconset/icon_512x512@2x.png
+        iconutil -c icns $filename.iconset
+        #rm -r $filename.iconset
+    fi
+}
