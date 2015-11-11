@@ -13,8 +13,7 @@ alias -- .="pwd|pbcopy"
 alias -- ..="cd .."
 alias ..='cd ../'
 alias ...='cd ../../'
-#alias rm="rm -i"
-alias rm="trash"
+alias rm="rm -i"
 alias tmp="cd /tmp"
 alias py="python"
 alias dns="dscacheutil -flushcache"
@@ -29,13 +28,16 @@ alias chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --p
 alias nginx="/usr/local/openresty/nginx/sbin/nginx"
 
 # replac /usr/bin
-alias vi="/usr/local/bin/vim -o"
+alias vi="/usr/local/bin/vim"
 alias vim="/usr/local/bin/vim -o"
 alias vimdiff="/usr/local/bin/vim -d"
 #alias svn="/usr/local/bin/svn"
 alias svnst="/usr/local/bin/svn st"
 alias ctags="/usr/local/bin/ctags"
 alias git="/usr/local/bin/git"
+alias rails="/usr/local/bin/rails"
+
+alias update_cow="curl -L git.io/cow | bash"
 
 #haddit
 alias postgresql_start="pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start"
