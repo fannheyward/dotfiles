@@ -33,3 +33,9 @@
 	trustExitCode = true
 [log]
 	date = iso
+[branch]
+	autosetuprebase = always
+[branch "master"]
+	rebase = true
+[branch "develop"]
+	rebase = true
