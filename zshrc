@@ -68,6 +68,8 @@ function csindex() {
     rm cscope.files
 }
 
+code () { VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args $* ;}
+
 # zsh buildin
 autoload -U zmv
 
@@ -77,6 +79,7 @@ if [ -e "$HOME/.aliases" ]; then
 fi
 
 # env
+export HOMEBREW_BOTTLE_DOMAIN=http://7xkcej.dl1.z0.glb.clouddn.com
 export PATH=$(brew --prefix ruby)/bin:$PATH
 export EDITOR=/usr/local/bin/vim
 export WORKON_HOME=$HOME/.virtualenvs
