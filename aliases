@@ -7,6 +7,7 @@ alias l="ls $LS_OPTIONS -l"
 
 alias h='http'
 alias brwe='brew'
+alias faf='fzf'
 alias grep='grep --color'
 alias ql="qlmanage -p 2>/dev/null"
 alias -- .="pwd|pbcopy"
@@ -19,17 +20,22 @@ alias py="python"
 alias dns="dscacheutil -flushcache"
 alias sharing="python -m SimpleHTTPServer"
 alias dirs="dirs -v"
-alias rake="noglob rake"
-alias luajit="rlwrap /usr/local/openresty/luajit/bin/luajit"
+#alias rake="noglob rake"
+alias luajit="rlwrap /usr/local/openresty/luajit/bin/luajit-2.1.0-alpha"
 alias pjson="python -mjson.tool"
 alias tmux="tmux -2"
 alias ios="open '/Applications/Xcode.app/Contents/Developer/Applications/iOS Simulator.app'"
-alias chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --proxy-pac-url=http://127.0.0.1:56789/proxy.pac"
 alias nginx="/usr/local/openresty/nginx/sbin/nginx"
+#alias bower='noglob bower'
 
 # replac /usr/bin
-alias vi="/usr/local/bin/vim"
-alias vim="/usr/local/bin/vim -o"
+alias tidy="/usr/local/bin/tidy"
+alias nv="/usr/local/bin/nvim"
+alias nvim="/usr/local/bin/nvim -o"
+alias vi="/usr/local/bin/nvim"
+alias vim="/usr/local/bin/nvim -o"
+alias vvi="/usr/local/bin/vim"
+alias vvim="/usr/local/bin/vim -o"
 alias vimdiff="/usr/local/bin/vim -d"
 #alias svn="/usr/local/bin/svn"
 alias svnst="/usr/local/bin/svn st"
