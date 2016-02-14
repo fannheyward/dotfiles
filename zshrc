@@ -45,6 +45,7 @@ DISABLE_AUTO_UPDATE="true"
 plugins=(pod k go npm extract osx brew safe-paste zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
+source $ZSH/custom/enhancd.sh
 
 # Customize to your needs...
 unsetopt inc_append_history
@@ -81,10 +82,11 @@ fi
 # env
 export HOMEBREW_BOTTLE_DOMAIN=http://7xkcej.dl1.z0.glb.clouddn.com
 export PATH=$(brew --prefix ruby)/bin:$PATH
-export EDITOR=/usr/local/bin/vim
+export EDITOR=/usr/local/bin/nvim
 export WORKON_HOME=$HOME/.virtualenvs
 #source /usr/local/bin/virtualenvwrapper.sh
 export TERM=xterm-256color
+export ENHANCD_FILTER=fzf
 
 export GOPATH="$HOME"
 export PATH="$PATH:$GOPATH/bin"
