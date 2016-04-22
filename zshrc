@@ -69,8 +69,6 @@ function csindex() {
     rm cscope.files
 }
 
-code () { VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args $* ;}
-
 # zsh buildin
 autoload -U zmv
 
@@ -80,6 +78,7 @@ if [ -e "$HOME/.aliases" ]; then
 fi
 
 # env
+export HOMEBREW_NO_ANALYTICS=1
 export HOMEBREW_BOTTLE_DOMAIN=http://7xkcej.dl1.z0.glb.clouddn.com
 export PATH=$(brew --prefix ruby)/bin:$PATH
 export EDITOR=/usr/local/bin/nvim
@@ -112,10 +111,12 @@ function mkicns() {
         filename=${1%.*}
         mkdir $filename.iconset
         sips -z 16 16   $1 --out $filename.iconset/icon_16x16.png
+        sips -z 28 28   $1 --out $filename.iconset/icon_28x28.png
         sips -z 32 32   $1 --out $filename.iconset/icon_16x16@2x.png
         sips -z 32 32   $1 --out $filename.iconset/icon_32x32.png
         sips -z 64 64   $1 --out $filename.iconset/icon_32x32@2x.png
         sips -z 128 128 $1 --out $filename.iconset/icon_128x128.png
+        sips -z 108 108 $1 --out $filename.iconset/icon_108x108.png
         sips -z 256 256 $1 --out $filename.iconset/icon_128x128@2x.png
         sips -z 256 256 $1 --out $filename.iconset/icon_256x256.png
         sips -z 512 512 $1 --out $filename.iconset/icon_256x256@2x.png
@@ -125,3 +126,5 @@ function mkicns() {
         #rm -r $filename.iconset
     fi
 }
+
+# eval "$(direnv hook zsh)"
