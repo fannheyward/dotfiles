@@ -42,7 +42,7 @@ DISABLE_AUTO_UPDATE="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(pod k go npm extract osx brew safe-paste zsh-syntax-highlighting)
+plugins=(docker pod k go npm extract osx brew safe-paste zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 source $ZSH/custom/enhancd.sh
@@ -115,6 +115,8 @@ function mkicns() {
         sips -z 32 32   $1 --out $filename.iconset/icon_16x16@2x.png
         sips -z 32 32   $1 --out $filename.iconset/icon_32x32.png
         sips -z 64 64   $1 --out $filename.iconset/icon_32x32@2x.png
+        sips -z 80 80   $1 --out $filename.iconset/icon_80x80.png
+        sips -z 120 120 $1 --out $filename.iconset/icon_120x120.png
         sips -z 128 128 $1 --out $filename.iconset/icon_128x128.png
         sips -z 108 108 $1 --out $filename.iconset/icon_108x108.png
         sips -z 256 256 $1 --out $filename.iconset/icon_128x128@2x.png
@@ -128,3 +130,4 @@ function mkicns() {
 }
 
 # eval "$(direnv hook zsh)"
+
