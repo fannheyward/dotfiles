@@ -5,6 +5,7 @@ alias ll="ls $LS_OPTIONS -l"
 alias la="ls $LS_OPTIONS -lA"
 alias l="ls $LS_OPTIONS -l"
 
+alias ssh="sshrc"
 alias h='http'
 alias brwe='brew'
 alias faf='fzf'

@@ -42,7 +42,7 @@ DISABLE_AUTO_UPDATE="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(docker pod k go npm extract osx brew safe-paste zsh-syntax-highlighting)
+plugins=(ansible docker pod k go npm extract osx brew safe-paste zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 source $ZSH/custom/enhancd.sh
@@ -78,6 +78,7 @@ if [ -e "$HOME/.aliases" ]; then
 fi
 
 # env
+export https_proxy=http://127.0.0.1:1080;export http_proxy=http://127.0.0.1:1080
 export HOMEBREW_NO_ANALYTICS=1
 export HOMEBREW_BOTTLE_DOMAIN=http://7xkcej.dl1.z0.glb.clouddn.com
 export PATH=$(brew --prefix ruby)/bin:$PATH
@@ -131,3 +132,5 @@ function mkicns() {
 
 # eval "$(direnv hook zsh)"
 
+export FZF_DEFAULT_COMMAND='ag -g ""'
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
