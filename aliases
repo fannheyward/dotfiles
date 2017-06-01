@@ -28,6 +28,8 @@ alias tmux="tmux -2"
 alias ios="open '/Applications/Xcode.app/Contents/Developer/Applications/iOS Simulator.app'"
 alias nginx="/usr/local/openresty/nginx/sbin/nginx"
 #alias bower='noglob bower'
+alias last='fc -ln -1 | pbcopy'
+alias save='pbpaste | cat >'
 
 # replac /usr/bin
 alias tidy="/usr/local/bin/tidy"
