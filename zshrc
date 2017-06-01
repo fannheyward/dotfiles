@@ -46,8 +46,10 @@ plugins=(ansible docker pod k go npm extract osx brew safe-paste zsh-syntax-high
 
 source $ZSH/oh-my-zsh.sh
 source $ZSH/custom/enhancd.sh
+source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # Customize to your needs...
+ulimit -n 8192
 unsetopt inc_append_history
 unsetopt share_history
 
