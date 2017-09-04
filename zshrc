@@ -46,6 +46,7 @@ plugins=(ansible docker pod k go npm extract osx brew safe-paste zsh-syntax-high
 
 source $ZSH/oh-my-zsh.sh
 source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+fpath=(/usr/local/share/zsh-completions $fpath)
 
 # Customize to your needs...
 ulimit -n 8192
