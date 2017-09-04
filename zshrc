@@ -83,7 +83,6 @@ fi
 export https_proxy=http://127.0.0.1:1080;export http_proxy=http://127.0.0.1:1080
 export HOMEBREW_NO_ANALYTICS=1
 export HOMEBREW_BOTTLE_DOMAIN=http://7xkcej.dl1.z0.glb.clouddn.com
-export PATH=$(brew --prefix ruby)/bin:$PATH
 export EDITOR=/usr/local/bin/nvim
 export WORKON_HOME=$HOME/.virtualenvs
 #source /usr/local/bin/virtualenvwrapper.sh
@@ -92,6 +91,7 @@ export ENHANCD_FILTER=fzf
 
 export GOPATH="$HOME"
 export PATH="$PATH:$GOPATH/bin"
+export PATH="/usr/local/sbin:$PATH"
 
 # Docker
 #export DOCKER_CERT_PATH=/Users/fannheyward/.boot2docker/certs/boot2docker-vm
