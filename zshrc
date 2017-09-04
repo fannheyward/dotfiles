@@ -45,7 +45,6 @@ DISABLE_AUTO_UPDATE="true"
 plugins=(ansible docker pod k go npm extract osx brew safe-paste zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
-source $ZSH/custom/enhancd.sh
 source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # Customize to your needs...
