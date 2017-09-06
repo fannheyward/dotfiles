@@ -1,0 +1,13 @@
+# http://docs.rubygems.org/read/chapter/11
+---
+gem: --user-install --env-shebang --no-rdoc --no-ri
+benchmark: false
+verbose: true
+update_sources: true
+sources:
+- https://gems.ruby-china.org
+backtrace: true
+bulk_threshold: 1000
+install: --format-executable --user-install
+update: --format-executable --user-install
+uninstall: --format-executable --user-install
