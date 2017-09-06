@@ -92,6 +92,8 @@ export ENHANCD_FILTER=fzf
 export GOPATH="$HOME"
 export PATH="$PATH:$GOPATH/bin"
 export PATH="/usr/local/sbin:$PATH"
+export PATH="/usr/local/opt/python/libexec/bin:$PATH"
+export PATH="/usr/local/openresty/bin:$PATH"
 
 # Docker
 #export DOCKER_CERT_PATH=/Users/fannheyward/.boot2docker/certs/boot2docker-vm
