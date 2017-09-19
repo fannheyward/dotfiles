@@ -4,7 +4,7 @@
 [color]
 	ui = auto
 [core]
-	excludesfile = ~/.gitignore
+	excludesfile = /Users/fannheyward/.gitignore
 	trustctime = false
 [alias]
 	ci = commit
@@ -26,7 +26,7 @@
 [push]
 	default = matching
 [difftool "sourcetree"]
-	cmd = /Applications/DiffMerge.app/Contents/MacOS/DiffMerge --nosplash \"$LOCAL\" \"$REMOTE\"
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path = 
 [mergetool "sourcetree"]
 	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"

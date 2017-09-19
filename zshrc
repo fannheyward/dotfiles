@@ -95,6 +95,7 @@ export PATH="/usr/local/sbin:$PATH"
 export PATH="/usr/local/opt/python/libexec/bin:$PATH"
 export PATH="/usr/local/openresty/bin:$PATH"
 export PATH="$(ruby -rubygems -e 'puts Gem.user_dir')/bin:$PATH"
+export PATH="$HOME/.fastlane/bin:$PATH"
 
 # Docker
 #export DOCKER_CERT_PATH=/Users/fannheyward/.boot2docker/certs/boot2docker-vm
