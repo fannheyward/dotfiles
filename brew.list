@@ -1,3 +1,5 @@
+autoconf
+automake
 bsdiff
 dep
 diff-so-fancy
@@ -41,6 +43,7 @@ sshrc
 the_silver_searcher
 tmux
 unibilium
+universal-ctags
 wget
 xz
 zsh-autosuggestions
