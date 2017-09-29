@@ -20,6 +20,7 @@ libtermkey
 libuv
 libvterm
 libyaml
+lua@5.1
 mongodb
 msgpack
 ncdu
@@ -37,6 +38,7 @@ python3
 readline
 reattach-to-user-namespace
 redis
+rlwrap
 sqlite
 ssdb
 sshrc
@@ -45,6 +47,7 @@ tmux
 unibilium
 universal-ctags
 wget
+wrk
 xz
 zsh-autosuggestions
 zsh-completions
