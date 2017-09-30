@@ -23,6 +23,7 @@
 	files = log --name-only
 	fs = log --name-only --oneline
 	ignore = "!gi() { curl -L -s https://www.gitignore.io/api/$@ ;}; gi"
+	git = !exec git
 [push]
 	default = matching
 [difftool "sourcetree"]
