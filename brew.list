@@ -1,6 +1,7 @@
 autoconf
 automake
 bsdiff
+caddy
 dep
 diff-so-fancy
 dnsmasq
@@ -21,7 +22,9 @@ libuv
 libvterm
 libyaml
 lua@5.1
+luajit
 mongodb
+mpg123
 msgpack
 ncdu
 neovim
