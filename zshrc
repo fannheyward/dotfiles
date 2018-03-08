@@ -85,20 +85,19 @@ export HOMEBREW_NO_ANALYTICS=1
 export HOMEBREW_BOTTLE_DOMAIN=http://7xkcej.dl1.z0.glb.clouddn.com
 export EDITOR=/usr/local/bin/nvim
 export WORKON_HOME=$HOME/.virtualenvs
-#source /usr/local/bin/virtualenvwrapper.sh
 export TERM=xterm-256color
 export ENHANCD_FILTER=fzf
+export KEYTIMEOUT=1
 
 export GOPATH="$HOME"
 export PATH="$PATH:$GOPATH/bin"
-export PATH="/usr/local/sbin:$PATH"
-export PATH="/usr/local/opt/python/libexec/bin:$PATH"
-export PATH="/usr/local/openresty/bin:$PATH"
-export PATH="$(ruby -rubygems -e 'puts Gem.user_dir')/bin:$PATH"
-export PATH="$HOME/.fastlane/bin:$PATH"
-export PATH="$HOME/.luarocks/bin/:$PATH"
-export PATH="/usr/local/opt/mongodb@3.4/bin:$PATH"
-export PATH="/usr/local/opt/postgresql@9.6/bin:$PATH"
+export PATH="$PATH:$HOME/.luarocks/bin"
+export PATH="$PATH:$HOME/.local/bin"
+export PATH="$PATH:$(ruby -rubygems -e 'puts Gem.user_dir')/bin"
+export PATH="$PATH:/usr/local/openresty/bin"
+export PATH="$PATH:/usr/local/opt/mongodb@3.4/bin"
+export PATH="$PATH:/usr/local/opt/postgresql@9.6/bin"
+export PATH="$PATH:/usr/local/opt/python@2/bin"
 
 # Docker
 #export DOCKER_CERT_PATH=/Users/fannheyward/.boot2docker/certs/boot2docker-vm
