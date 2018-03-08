@@ -14,7 +14,6 @@ gettext
 git
 go
 htop
-httpie
 icu4c
 jemalloc
 jq
@@ -42,7 +41,7 @@ postgresql@9.6
 privoxy
 protobuf
 python
-python3
+python@2
 readline
 reattach-to-user-namespace
 redis
