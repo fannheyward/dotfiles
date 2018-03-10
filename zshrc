@@ -94,10 +94,10 @@ export PATH="$PATH:$GOPATH/bin"
 export PATH="$PATH:$HOME/.luarocks/bin"
 export PATH="$PATH:$HOME/.local/bin"
 export PATH="$PATH:$(ruby -rubygems -e 'puts Gem.user_dir')/bin"
+export PATH="$PATH:/usr/local/sbin"
 export PATH="$PATH:/usr/local/openresty/bin"
 export PATH="$PATH:/usr/local/opt/mongodb@3.4/bin"
 export PATH="$PATH:/usr/local/opt/postgresql@9.6/bin"
-export PATH="$PATH:/usr/local/opt/python@2/bin"
 
 # Docker
 #export DOCKER_CERT_PATH=/Users/fannheyward/.boot2docker/certs/boot2docker-vm
