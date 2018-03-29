@@ -26,6 +26,7 @@ libvterm
 libyaml
 lua@5.1
 luajit
+maven
 mongodb@3.4
 msgpack
 ncdu
@@ -48,11 +49,9 @@ redis
 rlwrap
 sqlite
 ssdb
-sshrc
 the_silver_searcher
 tmux
 unibilium
-universal-ctags
 wget
 wrk
 xz
