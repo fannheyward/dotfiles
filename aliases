@@ -10,21 +10,16 @@ alias brwe='brew'
 alias faf='fzf'
 alias grep='grep --color'
 alias ql="qlmanage -p 2>/dev/null"
-alias -- .="pwd|pbcopy"
 alias -- ..="cd .."
-alias ..='cd ../'
-alias ...='cd ../../'
 alias rm="rm -i"
 alias tmp="cd /tmp"
 alias py="python"
-alias dns="dscacheutil -flushcache"
 alias sharing="python -m SimpleHTTPServer"
 alias dirs="dirs -v"
 #alias rake="noglob rake"
 alias luajit="rlwrap /usr/local/openresty/luajit/bin/luajit"
 alias pjson="python -mjson.tool"
 alias tmux="tmux -2"
-alias ios="open '/Applications/Xcode.app/Contents/Developer/Applications/iOS Simulator.app'"
 alias nginx="/usr/local/openresty/nginx/sbin/nginx"
 #alias bower='noglob bower'
 alias last='fc -ln -1 | pbcopy'
@@ -41,10 +36,3 @@ alias svnst="/usr/local/bin/svn st"
 alias ctags="/usr/local/bin/ctags"
 alias git="/usr/local/bin/git"
 alias rails="/usr/local/bin/rails"
-
-alias update_cow="curl -L git.io/cow | bash"
-
-#haddit
-alias postgresql_start="pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start"
-alias postgresql_stop="pg_ctl -D /usr/local/var/postgres stop -s -m fast"
-
