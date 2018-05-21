@@ -42,7 +42,6 @@ brew "wget"
 brew "wrk"
 brew "yarn"
 brew "zsh-autosuggestions"
-brew "zsh-completions"
 brew "zsh-syntax-highlighting"
 brew "universal-ctags/universal-ctags/universal-ctags", args: ["HEAD"]
 cask "keepingyouawake"
