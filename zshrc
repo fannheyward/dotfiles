@@ -1,5 +1,3 @@
-fpath=(/usr/local/share/zsh-completions $fpath)
-
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
 
@@ -42,11 +40,10 @@ DISABLE_AUTO_UPDATE="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(ansible docker pod z go npm extract osx brew safe-paste zsh-syntax-highlighting)
+plugins=(yarn ansible docker pod z go npm extract osx brew safe-paste zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-fpath=(/usr/local/share/zsh-completions $fpath)
 
 # Customize to your needs...
 ulimit -n 8192
@@ -62,13 +59,6 @@ function chpwd() {
 
 function todo() {
     touch ~/Desktop/"$*"
-}
-
-function csindex() {
-    find . -name "*.h" -o -name "*.c" -o -name "*.cpp" -o -name "*.m" -o -name "*.mm" -o -name "*.py" -o -name "*.lua" -o -name "*.go" > cscope.files
-    cscope -bk
-    ctags --fields=+iaSl -L cscope.files
-    rm cscope.files
 }
 
 # zsh buildin
@@ -96,10 +86,6 @@ export PATH="$PATH:/usr/local/sbin"
 export PATH="$PATH:/usr/local/openresty/bin"
 export PATH="$PATH:/usr/local/opt/mongodb@3.4/bin"
 export PATH="$PATH:/usr/local/opt/postgresql@9.6/bin"
-
-# Docker
-#export DOCKER_CERT_PATH=/Users/fannheyward/.boot2docker/certs/boot2docker-vm
-#export DOCKER_TLS_VERIFY=1
 
 # OpenResty
 export OPENRESTY_HOME=/usr/local/openresty
