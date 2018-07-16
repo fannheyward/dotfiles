@@ -29,7 +29,6 @@ alias save='pbpaste | cat >'
 alias tidy="/usr/local/bin/tidy"
 alias vi="/usr/local/bin/nvim"
 alias vim="/usr/local/bin/nvim -o"
-alias nvim="/usr/local/bin/nvim -o"
 alias vimdiff="/usr/local/bin/nvim -d"
 #alias svn="/usr/local/bin/svn"
 alias svnst="/usr/local/bin/svn st"
