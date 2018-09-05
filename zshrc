@@ -72,6 +72,7 @@ fi
 # env
 export https_proxy=http://127.0.0.1:1080;export http_proxy=http://127.0.0.1:1080
 export HOMEBREW_NO_ANALYTICS=1
+export HOMEBREW_NO_AUTO_UPDATE=1
 export HOMEBREW_BOTTLE_DOMAIN=http://7xkcej.dl1.z0.glb.clouddn.com
 export EDITOR=/usr/local/bin/nvim
 export WORKON_HOME=$HOME/.virtualenvs
