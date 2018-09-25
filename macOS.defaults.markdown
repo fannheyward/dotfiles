@@ -13,3 +13,8 @@ defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
 defaults write com.microsoft.VSCodeInsiders ApplePressAndHoldEnabled -bool false
 ```
 
+Dark mod for menu bar only:
+
+```
+defaults write -g NSRequiresAquaSystemAppearance -bool Yes
+```
