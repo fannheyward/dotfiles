@@ -126,4 +126,6 @@ function mkicns() {
 # eval "$(direnv hook zsh)"
 
 export FZF_DEFAULT_COMMAND='ag -g ""'
+export FZF_DEFAULT_OPTS="--ansi --preview-window 'right:60%' --preview 'bat --color=always --style=header,grid --line-range :300 {}'"
+
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
