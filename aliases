@@ -35,3 +35,6 @@ alias svnst="/usr/local/bin/svn st"
 alias ctags="/usr/local/bin/ctags"
 alias git="/usr/local/bin/git"
 alias rails="/usr/local/bin/rails"
+
+alias -s md=mdcat
+alias -s markdown=mdcat
