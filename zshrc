@@ -105,6 +105,8 @@ export PATH="$PATH:/usr/local/opt/mysql@5.6/bin"
 export FZF_DEFAULT_COMMAND='ag -g ""'
 export FZF_DEFAULT_OPTS="--ansi --preview-window 'right:60%' --preview 'bat --color=always --style=header,grid --line-range :100 {}'"
 
+ssh-add -K ~/.ssh/id_rsa_WORK
+
 eval "$(luajit $HOME/src/z.lua/z.lua --init zsh once enhanced)"
 
 [ -f "${XDG_CONFIG_HOME:-$HOME/.config}"/fzf/fzf.zsh ] && source "${XDG_CONFIG_HOME:-$HOME/.config}"/fzf/fzf.zsh
