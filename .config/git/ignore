@@ -18,6 +18,8 @@ node_modules
 typings
 .ropeproject/
 .tern-port
+vendor
+.vagrant
 
 # Files created from merge tools
 *.BACKUP*
@@ -25,4 +27,3 @@ typings
 *.LOCAL*
 *.REMOTE*
 *.orig
-
