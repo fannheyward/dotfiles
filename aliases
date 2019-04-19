@@ -13,28 +13,24 @@ alias ql="qlmanage -p 2>/dev/null"
 alias -- ..="cd .."
 alias rm="rm -i"
 alias tmp="cd /tmp"
-alias py="python"
+alias py="python3"
+alias python="python3"
 alias sharing="python -m SimpleHTTPServer"
 alias dirs="dirs -v"
-#alias rake="noglob rake"
+alias tmux="tmux -2"
 alias luajit="rlwrap /usr/local/openresty/luajit/bin/luajit"
 alias pjson="python -mjson.tool"
-alias tmux="tmux -2"
-alias nginx="/usr/local/openresty/nginx/sbin/nginx"
-#alias bower='noglob bower'
+alias nginx="/usr/local/bin/openresty"
 alias last='fc -ln -1 | pbcopy'
 alias save='pbpaste | cat >'
+alias cat='bat'
+alias less='bat'
+alias zz='cd "$(z -l -s | fzf --height 35%)"'
 
-# replac /usr/bin
-alias tidy="/usr/local/bin/tidy"
 alias vi="nvim"
 alias vim="nvim -o"
 alias vimdiff="nvim -d"
-#alias svn="/usr/local/bin/svn"
-alias svnst="/usr/local/bin/svn st"
 alias ctags="/usr/local/bin/ctags"
-alias git="/usr/local/bin/git"
-alias rails="/usr/local/bin/rails"
 
 alias -s md=mdcat
 alias -s markdown=mdcat
