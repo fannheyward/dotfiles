@@ -6,8 +6,8 @@
 	l = log --date=iso
 	st = status
 	co = checkout
-	save = stash
-	pop = stash
+	save = stash save
+	pop = stash pop
 [log]
 	date = iso
 [user]
