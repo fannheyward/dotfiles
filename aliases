@@ -18,7 +18,6 @@ alias python="python3"
 alias sharing="python -m SimpleHTTPServer"
 alias dirs="dirs -v"
 alias tmux="tmux -2"
-alias luajit="rlwrap /usr/local/openresty/luajit/bin/luajit"
 alias pjson="python -mjson.tool"
 alias nginx="/usr/local/bin/openresty"
 alias last='fc -ln -1 | pbcopy'
@@ -26,6 +25,7 @@ alias save='pbpaste | cat >'
 alias cat='bat'
 alias less='bat'
 alias zz='cd "$(z -l -s | fzf --height 35%)"'
+alias rg='rg --smart-case'
 
 alias vi="nvim"
 alias vim="nvim -o"
