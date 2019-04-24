@@ -98,7 +98,7 @@ export GOPATH="$HOME"
 export PATH="$PATH:$GOPATH/bin"
 export PATH="$PATH:$HOME/.luarocks/bin"
 export PATH="$PATH:$HOME/.local/bin"
-export PATH="$PATH:$(ruby -rubygems -e 'puts Gem.user_dir')/bin"
+export PATH="$PATH:$(ruby -e 'puts Gem.user_dir')/bin"
 export PATH="$PATH:/usr/local/sbin"
 export PATH="$PATH:/usr/local/opt/mysql@5.6/bin"
 
