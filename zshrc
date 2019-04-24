@@ -102,7 +102,8 @@ export PATH="$PATH:$(ruby -rubygems -e 'puts Gem.user_dir')/bin"
 export PATH="$PATH:/usr/local/sbin"
 export PATH="$PATH:/usr/local/opt/mysql@5.6/bin"
 
-export FZF_DEFAULT_COMMAND='rg --files'
+export FZF_DEFAULT_COMMAND='fd --type file'
+export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 export FZF_DEFAULT_OPTS="--ansi --preview-window 'right:60%' --preview 'bat --color=always --style=header,grid --line-range :100 {}'"
 
 ssh-add -K ~/.ssh/id_rsa_WORK
