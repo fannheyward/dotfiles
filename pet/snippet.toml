@@ -1,0 +1,9 @@
+[[snippets]]
+  description = "Upgrade Neovim"
+  command = "cd $HOME/bin && curl -O -L https://github.com/neovim/neovim/releases/download/nightly/nvim-macos.tar.gz && rm -rf nvim-osx64 && tar xzf nvim-macos.tar.gz"
+  output = ""
+
+[[snippets]]
+  description = "Makefile for Go"
+  command = "curl -O https://gist.githubusercontent.com/fannheyward/d58f66c91f7f052e0a27acf2d700103a/raw/Makefile"
+  output = ""
