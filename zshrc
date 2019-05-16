@@ -90,12 +90,15 @@ autoload -U zmv
 export HOMEBREW_NO_ANALYTICS=1
 export HOMEBREW_NO_AUTO_UPDATE=1
 export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles
+export FLUTTER_STORAGE_BASE_URL=https://mirrors.tuna.tsinghua.edu.cn/flutter
+export PUB_HOSTED_URL=https://mirrors.tuna.tsinghua.edu.cn/dart-pub/
 export EDITOR=nvim
 export KEYTIMEOUT=1
 
 export GO111MODULE=on
 export GOPATH="$HOME"
 export PATH="$PATH:$GOPATH/bin"
+export PATH="$PATH:$HOME/flutter/bin"
 export PATH="$PATH:$HOME/.luarocks/bin"
 export PATH="$PATH:$HOME/.local/bin"
 export PATH="$PATH:$(ruby -e 'puts Gem.user_dir')/bin"
