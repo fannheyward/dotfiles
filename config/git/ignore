@@ -12,6 +12,7 @@ cscope.out
 *.pbxuser
 *.perspectivev3
 xcuserdata
+xcshareddata
 build/
 .idea/
 node_modules

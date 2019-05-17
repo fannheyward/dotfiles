@@ -31,6 +31,7 @@ alias vi="nvim"
 alias vim="nvim -o"
 alias vimdiff="nvim -d"
 alias ctags="/usr/local/bin/ctags"
+alias ag='rg'
 
 alias -s md=mdcat
 alias -s markdown=mdcat
