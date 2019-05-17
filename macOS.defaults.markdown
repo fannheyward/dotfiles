@@ -18,3 +18,9 @@ Dark mod for menu bar only:
 ```sh
 defaults write -g NSRequiresAquaSystemAppearance -bool Yes
 ```
+
+IDEA
+
+```sh
+defaults write com.jetbrains.intellij.ce ApplePressAndHoldEnabled -bool false
+```
