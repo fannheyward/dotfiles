@@ -24,7 +24,7 @@ ZSH_THEME="robbyrussell"
 # HYPHEN_INSENSITIVE="true"
 
 # Uncomment the following line to disable bi-weekly auto-update checks.
-# DISABLE_AUTO_UPDATE="true"
+DISABLE_AUTO_UPDATE="true"
 
 # Uncomment the following line to change how often to auto-update (in days).
 # export UPDATE_ZSH_DAYS=13
@@ -61,7 +61,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(bgnotify command-not-found docker vagrant yarn go npm extract osx brew safe-paste)
+plugins=(bgnotify yarn go npm osx)
 
 source $ZSH/oh-my-zsh.sh
 source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
@@ -81,9 +81,6 @@ function chpwd() {
     #l
     pwd
 }
-
-# zsh buildin
-autoload -U zmv
 
 # env
 # export https_proxy=http://127.0.0.1:1080;export http_proxy=http://127.0.0.1:1080
@@ -108,8 +105,6 @@ export PATH="$PATH:/usr/local/opt/mysql@5.6/bin"
 export FZF_DEFAULT_COMMAND='fd --type file'
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 export FZF_DEFAULT_OPTS="--ansi --preview-window 'right:60%' --preview 'bat --color=always --style=header,grid --line-range :100 {}'"
-
-ssh-add -K ~/.ssh/id_rsa_WORK
 
 eval "$(luajit $HOME/src/z.lua/z.lua --init zsh once enhanced)"
 
