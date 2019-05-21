@@ -61,7 +61,7 @@ DISABLE_AUTO_UPDATE="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(bgnotify yarn go npm osx)
+plugins=(bgnotify z osx)
 
 source $ZSH/oh-my-zsh.sh
 source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
@@ -96,17 +96,13 @@ export GO111MODULE=on
 export GOPATH="$HOME"
 export PATH="$PATH:$GOPATH/bin"
 export PATH="$PATH:$HOME/flutter/bin"
-export PATH="$PATH:$HOME/.luarocks/bin"
 export PATH="$PATH:$HOME/.local/bin"
-export PATH="$PATH:$(ruby -e 'puts Gem.user_dir')/bin"
 export PATH="$PATH:/usr/local/sbin"
 export PATH="$PATH:/usr/local/opt/mysql@5.6/bin"
 
 export FZF_DEFAULT_COMMAND='fd --type file'
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 export FZF_DEFAULT_OPTS="--ansi --preview-window 'right:60%' --preview 'bat --color=always --style=header,grid --line-range :100 {}'"
-
-eval "$(luajit $HOME/src/z.lua/z.lua --init zsh once enhanced)"
 
 [ -f "${XDG_CONFIG_HOME:-$HOME/.config}"/fzf/fzf.zsh ] && source "${XDG_CONFIG_HOME:-$HOME/.config}"/fzf/fzf.zsh
 
