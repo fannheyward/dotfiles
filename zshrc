@@ -82,6 +82,10 @@ function chpwd() {
     pwd
 }
 
+function zz() {
+  cd "$(_z -l 2>&1 | sed 's/^[0-9,.]* *//' | fzf --height 40%)"
+}
+
 # env
 # export https_proxy=http://127.0.0.1:1080;export http_proxy=http://127.0.0.1:1080
 export HOMEBREW_NO_ANALYTICS=1
