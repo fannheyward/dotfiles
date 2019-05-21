@@ -17,7 +17,7 @@
 	rebase = true
 [core]
 	pager = diff-so-fancy | less --tabs=4 -RFX
-	excludesfile = /Users/fannheyward/.config/git/ignore
+	excludesfile = ~/.config/git/ignore
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path = 

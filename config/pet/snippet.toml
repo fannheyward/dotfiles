@@ -7,3 +7,13 @@
   description = "Makefile for Go"
   command = "curl -O https://gist.githubusercontent.com/fannheyward/d58f66c91f7f052e0a27acf2d700103a/raw/Makefile"
   output = ""
+
+[[snippets]]
+  description = "Upgrade gopls"
+  command = "cd && go get -u golang.org/x/tools/cmd/gopls"
+  output = ""
+
+[[snippets]]
+  description = "Upgrade bingo gopls"
+  command = "pushd $HOME/src/tools/cmd/gopls && git pull && go install && popd"
+  output = ""
