@@ -97,8 +97,8 @@ function zz() {
 export HOMEBREW_NO_ANALYTICS=1
 export HOMEBREW_NO_AUTO_UPDATE=1
 export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles
-export FLUTTER_STORAGE_BASE_URL=https://mirrors.tuna.tsinghua.edu.cn/flutter
-export PUB_HOSTED_URL=https://mirrors.tuna.tsinghua.edu.cn/dart-pub/
+export FLUTTER_STORAGE_BASE_URL=https://storage.flutter-io.cn
+export PUB_HOSTED_URL=https://pub.flutter-io.cn
 export EDITOR=nvim
 export KEYTIMEOUT=1
 
