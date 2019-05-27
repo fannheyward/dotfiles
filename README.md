@@ -1,1 +1,5 @@
-Config files for vim/bash etc of @[fannheyward](http://fann.im).
+# dotfiles
+
+## Requirements
+
+`brew install zsh bat fd ripgrep fzf diff-so-fancy mdcat`
