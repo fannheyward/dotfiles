@@ -15,5 +15,5 @@
 
 [[snippets]]
   description = "Upgrade bingo gopls"
-  command = "pushd $HOME/src/tools/cmd/gopls && git pull && go install && popd"
+  command = "pushd $HOME/src/tools && git pull && git fetch go && git merge --no-edit go/master && cd cmd/gopls && go install && popd"
   output = ""
