@@ -21,6 +21,7 @@ typings
 .tern-port
 vendor
 .vagrant
+yarn-error.log
 
 # Files created from merge tools
 *.BACKUP*
