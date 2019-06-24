@@ -102,6 +102,7 @@ export PUB_HOSTED_URL=https://pub.flutter-io.cn
 export EDITOR=nvim
 export KEYTIMEOUT=1
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home
+export GIT_MERGE_AUTOEDIT=no
 
 export GO111MODULE=on
 export GOPATH="$HOME"
