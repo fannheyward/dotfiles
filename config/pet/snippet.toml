@@ -12,8 +12,3 @@
   description = "Upgrade gopls"
   command = "cd && go get -u golang.org/x/tools/cmd/gopls"
   output = ""
-
-[[snippets]]
-  description = "Upgrade bingo gopls"
-  command = "pushd $HOME/src/tools && git pull && git fetch go && git merge --no-edit go/master && cd cmd/gopls && go install && popd"
-  output = ""
