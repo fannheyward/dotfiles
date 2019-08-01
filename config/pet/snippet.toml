@@ -10,5 +10,5 @@
 
 [[snippets]]
   description = "Upgrade gopls"
-  command = "cd && go get -u golang.org/x/tools/gopls@latest"
+  command = "cd && go get golang.org/x/tools/gopls@latest"
   output = ""
