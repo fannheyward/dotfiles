@@ -113,6 +113,8 @@ export PATH="$PATH:/usr/local/sbin"
 export PATH="$PATH:/usr/local/opt/mysql@5.6/bin"
 export PATH="$PATH:/usr/local/opt/node@10/bin"
 export PATH="$PATH:$HOME/.yarn/bin"
+export GEM_HOME="$HOME/.gem"
+export PATH="$PATH:$GEM_HOME/bin"
 
 export FZF_DEFAULT_COMMAND='fd --type file'
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
