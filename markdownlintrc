@@ -1,0 +1,5 @@
+{
+  "comment": "put at ~/.markdownlintrc",
+  "default": true,
+  "line_length": false
+}
