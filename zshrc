@@ -103,6 +103,7 @@ export EDITOR=nvim
 export KEYTIMEOUT=1
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home
 export GIT_MERGE_AUTOEDIT=no
+export CDPATH=$HOME/src
 
 export GO111MODULE=on
 export GOPATH="$HOME"
