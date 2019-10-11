@@ -24,3 +24,11 @@ IDEA
 ```sh
 defaults write com.jetbrains.intellij.ce ApplePressAndHoldEnabled -bool false
 ```
+
+Maccy
+
+```sh
+defaults write org.p0deje.Maccy hotKey control+option+m
+defaults write org.p0deje.Maccy pasteByDefault true
+defaults write org.p0deje.Maccy fuzzySearch true
+```
