@@ -2,4 +2,4 @@
 
 ## Requirements
 
-`brew install zsh bat fd ripgrep fzf diff-so-fancy mdcat`
+`brew install git bat fd ripgrep fzf diff-so-fancy mdcat zsh-autosuggestions zsh-syntax-highlighting zsh-completions`
