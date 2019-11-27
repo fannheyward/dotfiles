@@ -81,13 +81,6 @@ fi
 # Customize to your needs...
 ulimit -n 8192
 
-# fuction
-function chpwd() {
-    emulate -L zsh
-    #l
-    pwd
-}
-
 function zz() {
   cd "$(_z -l 2>&1 | sed 's/^[0-9,.]* *//' | fzf --height 40%)"
 }
@@ -128,4 +121,6 @@ export FZF_DEFAULT_OPTS="--ansi --preview-window 'right:60%' --preview 'bat --co
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
+eval "$(starship init zsh)"
 
