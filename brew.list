@@ -14,6 +14,7 @@ icu4c
 jansson
 jq
 libevent
+libyaml
 mdcat
 ncdu
 ncurses
@@ -27,11 +28,11 @@ python
 readline
 ripgrep
 sqlite
+starship
 tmux
 universal-ctags
 watchman
 xz
-zsh
 zsh-autosuggestions
 zsh-completions
 zsh-syntax-highlighting
