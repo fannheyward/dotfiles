@@ -72,6 +72,8 @@ plugins=(bgnotify z osx)
 source $ZSH/oh-my-zsh.sh
 source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source ~/.zsh-autopair/autopair.zsh
+autopair-init
 fpath=(/usr/local/share/zsh-completions $fpath)
 
 if [ -e "$HOME/.aliases" ]; then
