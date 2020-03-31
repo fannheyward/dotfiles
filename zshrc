@@ -115,6 +115,7 @@ export PATH="$PATH:$HOME/bin/nvim-osx64/bin"
 export PATH="$PATH:$HOME/Library/Android/sdk/platform-tools"
 export SDKBOX_HOME=$HOME/.sdkbox
 export PATH=${SDKBOX_HOME}/bin:$PATH
+export NEXTWORD_DATA_PATH=$HOME/Documents/nextword-data
 
 export FZF_DEFAULT_COMMAND='fd --type file'
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
