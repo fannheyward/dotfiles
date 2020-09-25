@@ -22,6 +22,7 @@ alias cat='bat'
 alias less='bat'
 alias ag='rg --smart-case'
 alias rg='rg --smart-case'
+alias v="nvim -u ${HOME}/src/init.vim/vimrc_for_server"
 alias vi="nvim"
 alias vim="nvim -o"
 alias vimdiff="nvim -d"
