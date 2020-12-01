@@ -7,6 +7,7 @@ alias l="ls $LS_OPTIONS -l"
 
 alias h='http'
 alias brwe='brew'
+alias gitt='git'
 alias faf='fzf'
 alias grep='grep --color'
 alias ql="qlmanage -p 2>/dev/null"
