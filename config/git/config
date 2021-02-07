@@ -5,6 +5,7 @@
 	dc = diff --color --cached
 	l = log --date=iso
 	st = status
+	stt = status
 	co = checkout
 	save = stash save
 	pop = stash pop

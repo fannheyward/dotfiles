@@ -11,12 +11,12 @@ cscope.out
 *.sqlite3
 *.pbxuser
 *.perspectivev3
+.netrwhist
 xcuserdata
 xcshareddata
 build/
 .idea/
 node_modules
-typings
 .ropeproject/
 .tern-port
 vendor
