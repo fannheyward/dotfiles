@@ -113,9 +113,11 @@ export GEM_HOME="$HOME/.gem"
 export PATH="$PATH:$GEM_HOME/bin"
 export PATH="$PATH:$HOME/.cargo/bin"
 export PATH="$PATH:$HOME/bin/nvim-osx64/bin"
+export PATH="$PATH:$HOME/bin/AdGuardHome"
 export PATH="$PATH:$HOME/Library/Android/sdk/platform-tools"
 export SDKBOX_HOME=$HOME/.sdkbox
 export PATH=${SDKBOX_HOME}/bin:$PATH
+export PATH=/opt/homebrew/bin:$PATH
 export NEXTWORD_DATA_PATH=$HOME/Documents/nextword-data
 
 export FZF_DEFAULT_COMMAND='fd --type file'

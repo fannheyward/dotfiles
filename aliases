@@ -28,8 +28,6 @@ alias v="nvim -u ${HOME}/src/init.vim/vimrc_for_server"
 alias vi="nvim"
 alias vim="nvim -o"
 alias vimdiff="nvim -d"
-alias ctags="/usr/local/bin/ctags"
-alias nginx="/usr/local/bin/openresty"
 
 alias -s md=mdcat
 alias -s markdown=mdcat
