@@ -70,15 +70,6 @@ ZSH_THEME="robbyrussell"
 plugins=(bgnotify z osx)
 
 source $ZSH/oh-my-zsh.sh
-source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source ~/.zsh-autopair/autopair.zsh
-autopair-init
-fpath=(/usr/local/share/zsh-completions $fpath)
-
-if [ -e "$HOME/.aliases" ]; then
-    source "$HOME/.aliases"
-fi
 
 # Customize to your needs...
 ulimit -n 8192
@@ -93,21 +84,25 @@ export HOMEBREW_BOOTSNAP=1;
 export HOMEBREW_NO_ANALYTICS=1
 export HOMEBREW_NO_AUTO_UPDATE=1
 export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles
+export HOMEBREW_PREFIX="/opt/homebrew"
+# export HOMEBREW_PREFIX="/usr/local"
+
 export FLUTTER_STORAGE_BASE_URL=https://storage.flutter-io.cn
 export PUB_HOSTED_URL=https://pub.flutter-io.cn
+
 export EDITOR=nvim
 export KEYTIMEOUT=1
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home
 export GIT_MERGE_AUTOEDIT=no
+
 export CDPATH=$HOME/src
+export NEXTWORD_DATA_PATH=$HOME/nextword-data
+export JAVA_HOME=$HOME/bin/OpenJDK/Contents/Home
 
 export GO111MODULE=on
 export GOPATH="$HOME"
 export PATH="$PATH:$GOPATH/bin"
 export PATH="$PATH:$HOME/flutter/bin"
 export PATH="$PATH:$HOME/.local/bin"
-export PATH="$PATH:/usr/local/sbin"
-export PATH="$PATH:/usr/local/opt/mysql@5.6/bin"
 export PATH="$PATH:$HOME/.yarn/bin"
 export GEM_HOME="$HOME/.gem"
 export PATH="$PATH:$GEM_HOME/bin"
@@ -115,14 +110,28 @@ export PATH="$PATH:$HOME/.cargo/bin"
 export PATH="$PATH:$HOME/bin/nvim-osx64/bin"
 export PATH="$PATH:$HOME/bin/AdGuardHome"
 export PATH="$PATH:$HOME/Library/Android/sdk/platform-tools"
-export SDKBOX_HOME=$HOME/.sdkbox
-export PATH=${SDKBOX_HOME}/bin:$PATH
-export PATH=/opt/homebrew/bin:$PATH
-export NEXTWORD_DATA_PATH=$HOME/Documents/nextword-data
+export PATH="${HOMEBREW_PREFIX}/opt/curl/bin:$PATH"
+export PATH="${HOMEBREW_PREFIX}/bin:$PATH"
 
 export FZF_DEFAULT_COMMAND='fd --type file'
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 export FZF_DEFAULT_OPTS="--ansi --preview-window 'right:60%' --preview 'bat --color=always --style=header,grid --line-range :100 {}'"
+
+if [ -r "${HOMEBREW_PREFIX}/share/zsh-autosuggestions/zsh-autosuggestions.zsh" ]; then
+    source "${HOMEBREW_PREFIX}/share/zsh-autosuggestions/zsh-autosuggestions.zsh"
+fi
+if [ -r "${HOMEBREW_PREFIX}/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" ]; then
+    source "${HOMEBREW_PREFIX}/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
+fi
+if [ -r "$HOME/.zsh-autopair/autopair.zsh" ]; then
+    source "$HOME/.zsh-autopair/autopair.zsh"
+    autopair-init
+fi
+if [ -d "${HOMEBREW_PREFIX}/share/zsh-completions" ]; then
+    fpath=("${HOMEBREW_PREFIX}/share/zsh-completions" $fpath)
+fi
+
+[ -f "$HOME/.aliases" ] && source "$HOME/.aliases"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
