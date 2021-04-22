@@ -142,3 +142,18 @@ if [ -f "${HOME}/google-cloud-sdk/path.zsh.inc" ]; then . "${HOME}/google-cloud-
 
 # The next line enables shell command completion for gcloud.
 if [ -f "${HOME}/google-cloud-sdk/completion.zsh.inc" ]; then . "${HOME}/google-cloud-sdk/completion.zsh.inc"; fi
+
+function miniforge() {
+    __conda_setup="$($HOME'/miniforge3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+    if [ $? -eq 0 ]; then
+        eval "$__conda_setup"
+    else
+        if [ -f "$HOME/miniforge3/etc/profile.d/conda.sh" ]; then
+            . "$HOME/miniforge3/etc/profile.d/conda.sh"
+        else
+            export PATH="$HOME/miniforge3/bin:$PATH"
+        fi
+    fi
+    unset __conda_setup
+}
+
