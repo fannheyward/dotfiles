@@ -127,6 +127,10 @@ if [ -r "$HOME/.zsh-autopair/autopair.zsh" ]; then
     source "$HOME/.zsh-autopair/autopair.zsh"
     autopair-init
 fi
+if [ -r "${HOMEBREW_PREFIX}/share/zsh/site-functions" ]; then
+    fpath=("${HOMEBREW_PREFIX}/share/zsh/site-functions" $fpath)
+    compinit
+fi
 
 [ -f "$HOME/.aliases" ] && source "$HOME/.aliases"
 
