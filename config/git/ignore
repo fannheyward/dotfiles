@@ -5,6 +5,7 @@ tags
 cscope.out
 .svn
 .hg
+.venv
 *.bak
 *.pyc
 *.sqlite
