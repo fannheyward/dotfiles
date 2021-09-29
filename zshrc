@@ -87,6 +87,7 @@ export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.ustc.edu.cn/homebrew-bottles/bottl
 export HOMEBREW_PREFIX="/opt/homebrew"
 # export HOMEBREW_PREFIX="/usr/local"
 
+export CARGO_HTTP_MULTIPLEXING=false
 export FLUTTER_STORAGE_BASE_URL=https://storage.flutter-io.cn
 export PUB_HOSTED_URL=https://pub.flutter-io.cn
 
