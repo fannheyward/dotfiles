@@ -67,7 +67,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(bgnotify z macos)
+plugins=(gh bgnotify z macos)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -97,6 +97,7 @@ export GIT_MERGE_AUTOEDIT=no
 
 export CDPATH=$HOME/src
 export NEXTWORD_DATA_PATH=$HOME/nextword-data
+export MOCWORD_DATA=$HOME/mocword.sqlite
 export JAVA_HOME=$HOME/bin/OpenJDK/Contents/Home
 
 export GO111MODULE=on
