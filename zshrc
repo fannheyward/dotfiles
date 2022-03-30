@@ -96,9 +96,8 @@ export KEYTIMEOUT=1
 export GIT_MERGE_AUTOEDIT=no
 
 export CDPATH=$HOME/src
-export NEXTWORD_DATA_PATH=$HOME/nextword-data
 export MOCWORD_DATA=$HOME/mocword.sqlite
-export JAVA_HOME=$HOME/bin/OpenJDK/Contents/Home
+export JAVA_HOME=${HOMEBREW_PREFIX}/opt/openjdk/libexec/openjdk.jdk/Contents/Home
 
 export GO111MODULE=on
 export GOPATH="$HOME"
@@ -109,7 +108,6 @@ export PATH="$PATH:$HOME/.yarn/bin"
 export GEM_HOME="$HOME/.gem"
 export PATH="$PATH:$GEM_HOME/bin"
 export PATH="$PATH:$HOME/.cargo/bin"
-export PATH="$PATH:$HOME/bin/nvim-osx64/bin"
 export PATH="$PATH:$HOME/bin/AdGuardHome"
 export PATH="$PATH:$HOME/Library/Android/sdk/platform-tools"
 export PATH="${HOMEBREW_PREFIX}/opt/curl/bin:$PATH"
