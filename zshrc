@@ -83,6 +83,7 @@ function zz() {
 export HOMEBREW_BOOTSNAP=1;
 export HOMEBREW_NO_ANALYTICS=1
 export HOMEBREW_NO_AUTO_UPDATE=1
+export HOMEBREW_NO_INSTALL_FROM_API=1
 export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.ustc.edu.cn/homebrew-bottles/bottles
 export HOMEBREW_PREFIX="/opt/homebrew"
 # export HOMEBREW_PREFIX="/usr/local"
