@@ -67,7 +67,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(gh bgnotify z macos)
+plugins=(gh z macos)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -75,7 +75,7 @@ source $ZSH/oh-my-zsh.sh
 ulimit -n 8192
 
 function zz() {
-  cd "$(_z -l 2>&1 | sed 's/^[0-9,.]* *//' | fzf --height 40%)"
+  cd "$(zshz -l 2>&1 | sed 's/^[0-9,.]* *//' | fzf --height 40% --preview '')"
 }
 
 # env
