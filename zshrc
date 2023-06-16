@@ -75,7 +75,7 @@ source $ZSH/oh-my-zsh.sh
 ulimit -n 8192
 
 function zz() {
-  cd "$(zshz -l 2>&1 | sed 's/^[0-9,.]* *//' | fzf --height 40% --preview '')"
+  cd "$(zshz -l 2>&1 | sed 's/^[0-9,.]* *//' | fzf --delimiter / --nth -1,.. --height 40% --preview '')"
 }
 
 # env
@@ -116,7 +116,7 @@ export PATH="${HOMEBREW_PREFIX}/bin:$PATH"
 
 export FZF_DEFAULT_COMMAND='fd --type file'
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
-export FZF_DEFAULT_OPTS="--ansi --preview-window 'right:60%' --preview 'bat --color=always --style=header,grid --line-range :100 {}'"
+export FZF_DEFAULT_OPTS="--delimiter / --nth -1,.. --ansi --preview-window 'right:60%' --preview 'bat --color=always --style=header,grid --line-range :100 {}'"
 
 if [ -r "${HOMEBREW_PREFIX}/share/zsh-autosuggestions/zsh-autosuggestions.zsh" ]; then
     source "${HOMEBREW_PREFIX}/share/zsh-autosuggestions/zsh-autosuggestions.zsh"
