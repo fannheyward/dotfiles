@@ -7,6 +7,7 @@
 	st = status
 	stt = status
 	co = checkout
+	cp = cherry-pick
 	save = stash save
 	pop = stash pop
 [log]
