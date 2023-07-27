@@ -133,6 +133,7 @@ if [ -r "${HOMEBREW_PREFIX}/share/zsh/site-functions" ]; then
 fi
 
 [ -f "$HOME/.aliases" ] && source "$HOME/.aliases"
+[ -f "$HOME/.tokens" ] && source "$HOME/.tokens"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
