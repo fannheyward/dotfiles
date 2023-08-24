@@ -8,6 +8,7 @@ alias l="ls $LS_OPTIONS -l"
 alias h='ht'
 alias n='npm'
 alias y='yarn'
+alias p='pnpm'
 alias brwe='brew'
 alias gitt='git'
 alias faf='fzf'
@@ -29,6 +30,7 @@ alias vi="nvim"
 alias vim="nvim -o"
 alias vimdiff="nvim -d"
 alias fuzzysearch="maple grep"
+alias copilot="github-copilot-cli"
 
 alias -s md=mdcat
 alias -s markdown=mdcat

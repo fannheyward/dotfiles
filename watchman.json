@@ -1,0 +1,14 @@
+{
+  "enforce_root_files": true,
+  "root_files": [
+    ".watchmanconfig"
+  ],
+  "ignore_dirs": [
+    "_site",
+    "node_modules",
+    "dist",
+    "coverage",
+    "build",
+    "logs"
+  ]
+}
