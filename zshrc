@@ -102,17 +102,18 @@ export WATCHMAN_CONFIG_FILE="$HOME/.config/watchman.json"
 
 export GO111MODULE=on
 export GOPATH="$HOME"
-export PATH="$PATH:$GOPATH/bin"
-export PATH="$PATH:$HOME/flutter/bin"
-export PATH="$PATH:$HOME/.local/bin"
-export PATH="$PATH:$HOME/.yarn/bin"
 export GEM_HOME="$HOME/.gem"
-export PATH="$PATH:$GEM_HOME/bin"
-export PATH="$PATH:$HOME/.cargo/bin"
-export PATH="$PATH:$HOME/bin/AdGuardHome"
-export PATH="$PATH:$HOME/Library/Android/sdk/platform-tools"
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+export PATH="$GEM_HOME/bin:$PATH"
+export PATH="$HOME/.yarn/bin:$PATH"
+export PATH="$HOME/.cargo/bin:$PATH"
+export PATH="$HOME/flutter/bin:$PATH"
+export PATH="$HOME/bin/AdGuardHome:$PATH"
+export PATH="$HOME/Library/Android/sdk/platform-tools:$PATH"
 export PATH="${HOMEBREW_PREFIX}/opt/curl/bin:$PATH"
 export PATH="${HOMEBREW_PREFIX}/bin:$PATH"
+export PATH="$HOME/bin:$PATH"
 
 export FZF_DEFAULT_COMMAND='fd --type file'
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
@@ -135,6 +136,7 @@ fi
 
 [ -f "$HOME/.aliases" ] && source "$HOME/.aliases"
 [ -f "$HOME/.tokens" ] && source "$HOME/.tokens"
+[ -f "$HOME/.bun/_bun" ] && source "$HOME/.bun/_bun"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
