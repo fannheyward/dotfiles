@@ -80,7 +80,6 @@ function zz() {
 
 # env
 # export https_proxy=http://127.0.0.1:1080;export http_proxy=http://127.0.0.1:1080
-export HOMEBREW_BOOTSNAP=1;
 export HOMEBREW_NO_ANALYTICS=1
 export HOMEBREW_API_DOMAIN="https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles/api"
 export HOMEBREW_BOTTLE_DOMAIN="https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles"
@@ -99,6 +98,7 @@ export CDPATH=$HOME/src
 export MOCWORD_DATA=$HOME/mocword.sqlite
 export JAVA_HOME=${HOMEBREW_PREFIX}/opt/openjdk/libexec/openjdk.jdk/Contents/Home
 export WATCHMAN_CONFIG_FILE="$HOME/.config/watchman.json"
+export RIPGREP_CONFIG_PATH="$HOME/.config/ripgreprc"
 
 export GO111MODULE=on
 export GOPATH="$HOME"
@@ -106,7 +106,6 @@ export GEM_HOME="$HOME/.gem"
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 export PATH="$GEM_HOME/bin:$PATH"
-export PATH="$HOME/.yarn/bin:$PATH"
 export PATH="$HOME/.cargo/bin:$PATH"
 export PATH="$HOME/flutter/bin:$PATH"
 export PATH="$HOME/bin/AdGuardHome:$PATH"
