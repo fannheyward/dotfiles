@@ -124,8 +124,8 @@ fi
 if [ -r "${HOMEBREW_PREFIX}/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" ]; then
     source "${HOMEBREW_PREFIX}/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
 fi
-if [ -r "$HOME/.zsh-autopair/autopair.zsh" ]; then
-    source "$HOME/.zsh-autopair/autopair.zsh"
+if [ -r "${HOMEBREW_PREFIX}/share/zsh-autopair/autopair.zsh" ]; then
+    source "${HOMEBREW_PREFIX}/share/zsh-autopair/autopair.zsh"
     autopair-init
 fi
 if [ -r "${HOMEBREW_PREFIX}/share/zsh/site-functions" ]; then
