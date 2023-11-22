@@ -4,6 +4,7 @@
     ".watchmanconfig"
   ],
   "ignore_dirs": [
+    "/opt/homebrew",
     "_site",
     "node_modules",
     "dist",
