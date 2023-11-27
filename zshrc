@@ -142,7 +142,6 @@ fi
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
 eval "$(starship init zsh)"
-eval "$(direnv hook zsh)"
 
 function setup_gcloud() {
     # The next line updates PATH for the Google Cloud SDK.
