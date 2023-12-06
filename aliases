@@ -23,8 +23,8 @@ alias tmux="tmux -2"
 alias pjson="python -mjson.tool"
 alias last='fc -ln -1 | pbcopy'
 alias save='pbpaste | cat >'
-alias cat='bat'
-alias less='bat'
+alias cat='bat --theme=gruvbox-dark'
+alias less='bat --theme=gruvbox-dark'
 alias ag='rg --smart-case'
 alias v="nvim -u ${HOME}/src/init.vim/vimrc_for_server"
 alias vi="nvim"
