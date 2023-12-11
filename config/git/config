@@ -28,3 +28,5 @@
 	process = git-lfs filter-process
 [github]
 	user = fannheyward
+[push]
+	autoSetupRemote = true

@@ -5,11 +5,11 @@ alias ll="ls $LS_OPTIONS -l"
 alias la="ls $LS_OPTIONS -lA"
 alias l="ls $LS_OPTIONS -l"
 
-alias h='ht'
-alias b='bun'
+alias b='brew'
 alias n='npm'
 alias y='yarn'
 alias p='pnpm'
+alias j='just'
 alias brwe='brew'
 alias gitt='git'
 alias faf='fzf'
