@@ -1,5 +1,11 @@
 # macOS defaults setting
 
+Stop writing of `.DS_Store`
+
+```sh
+defaults write com.apple.desktopservices DSDontWriteNetworkStores true
+```
+
 Change application language:
 
 ```sh

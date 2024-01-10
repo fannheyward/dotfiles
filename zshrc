@@ -134,11 +134,11 @@ if [ -r "${HOMEBREW_PREFIX}/share/zsh/site-functions" ]; then
     compinit
 fi
 
-[ -f "$HOME/.aliases" ] && source "$HOME/.aliases"
-[ -f "$HOME/.tokens" ] && source "$HOME/.tokens"
-[ -f "$HOME/.bun/_bun" ] && source "$HOME/.bun/_bun"
+[ -s "$HOME/.aliases" ] && source "$HOME/.aliases"
+[ -s "$HOME/.tokens" ] && source "$HOME/.tokens"
+[ -s "$HOME/.bun/_bun" ] && source "$HOME/.bun/_bun"
 
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+[ -s ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
@@ -146,10 +146,10 @@ eval "$(starship init zsh)"
 
 function setup_gcloud() {
     # The next line updates PATH for the Google Cloud SDK.
-    if [ -f "${HOME}/google-cloud-sdk/path.zsh.inc" ]; then . "${HOME}/google-cloud-sdk/path.zsh.inc"; fi
+    if [ -s "${HOME}/google-cloud-sdk/path.zsh.inc" ]; then . "${HOME}/google-cloud-sdk/path.zsh.inc"; fi
 
     # The next line enables shell command completion for gcloud.
-    if [ -f "${HOME}/google-cloud-sdk/completion.zsh.inc" ]; then . "${HOME}/google-cloud-sdk/completion.zsh.inc"; fi
+    if [ -s "${HOME}/google-cloud-sdk/completion.zsh.inc" ]; then . "${HOME}/google-cloud-sdk/completion.zsh.inc"; fi
 }
 
 function miniforge() {
@@ -157,7 +157,7 @@ function miniforge() {
     if [ $? -eq 0 ]; then
         eval "$__conda_setup"
     else
-        if [ -f "$HOME/miniforge3/etc/profile.d/conda.sh" ]; then
+        if [ -s "$HOME/miniforge3/etc/profile.d/conda.sh" ]; then
             . "$HOME/miniforge3/etc/profile.d/conda.sh"
         else
             export PATH="$HOME/miniforge3/bin:$PATH"
