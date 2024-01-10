@@ -98,7 +98,6 @@ export GIT_MERGE_AUTOEDIT=no
 export CDPATH=.:$HOME/src
 export MOCWORD_DATA=$HOME/mocword.sqlite
 export JAVA_HOME=${HOMEBREW_PREFIX}/opt/openjdk/libexec/openjdk.jdk/Contents/Home
-export WATCHMAN_CONFIG_FILE="$HOME/.config/watchman.json"
 export RIPGREP_CONFIG_PATH="$HOME/.config/ripgreprc"
 
 export GO111MODULE=on

@@ -1,10 +1,5 @@
 {
-  "enforce_root_files": true,
-  "root_files": [
-    ".watchmanconfig"
-  ],
   "ignore_dirs": [
-    "/opt/homebrew",
     "_site",
     "node_modules",
     "dist",
