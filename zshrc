@@ -91,9 +91,11 @@ export FLUTTER_STORAGE_BASE_URL=https://storage.flutter-io.cn
 export PUB_HOSTED_URL=https://pub.flutter-io.cn
 export OLLAMA_HOST=127.0.0.1:11434
 
+export ADBLOCK=1
 export EDITOR=nvim
 export KEYTIMEOUT=1
 export GIT_MERGE_AUTOEDIT=no
+export DISABLE_OPENCOLLECTIVE=1
 
 export CDPATH=.:$HOME/src
 export MOCWORD_DATA=$HOME/mocword.sqlite
