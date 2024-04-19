@@ -89,7 +89,6 @@ export HOMEBREW_PREFIX="/opt/homebrew"
 export CARGO_HTTP_MULTIPLEXING=false
 export FLUTTER_STORAGE_BASE_URL=https://storage.flutter-io.cn
 export PUB_HOSTED_URL=https://pub.flutter-io.cn
-export OLLAMA_HOST=127.0.0.1:11434
 
 export ADBLOCK=1
 export EDITOR=nvim
