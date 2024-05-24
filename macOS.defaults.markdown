@@ -12,6 +12,12 @@ Change application language:
 defaults write com.apple.Safari AppleLanguages '("zh-Hans-CN")'
 ```
 
+Decrease key repeat delay:
+
+```sh
+defaults write -g KeyRepeat -int 1
+```
+
 VSCode:
 
 ```sh
