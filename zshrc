@@ -101,6 +101,9 @@ export MOCWORD_DATA=$HOME/mocword.sqlite
 export JAVA_HOME=${HOMEBREW_PREFIX}/opt/openjdk/libexec/openjdk.jdk/Contents/Home
 export RIPGREP_CONFIG_PATH="$HOME/.config/ripgreprc"
 
+export OLLAMA_ORIGINS="*"
+export OLLAMA_HOST="0.0.0.0"
+
 export GO111MODULE=on
 export GOPATH="$HOME"
 export GEM_HOME="$HOME/.gem"

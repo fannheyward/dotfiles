@@ -44,3 +44,10 @@ defaults write org.p0deje.Maccy hotKey control+option+m
 defaults write org.p0deje.Maccy pasteByDefault true
 defaults write org.p0deje.Maccy fuzzySearch true
 ```
+
+Ollama
+
+```sh
+launchctl setenv OLLAMA_ORIGINS "*"
+launchctl setenv OLLAMA_HOST "0.0.0.0"
+```
