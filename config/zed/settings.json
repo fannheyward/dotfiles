@@ -9,6 +9,11 @@
 {
   "theme": "One Dark",
   "assistant": {
+    "default_model": {
+      "provider": "openai",
+      "model": "gpt-4o"
+    },
+    "version": "2",
     "button": false
   },
   "collaboration_panel": {

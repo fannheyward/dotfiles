@@ -30,3 +30,5 @@
 	user = fannheyward
 [push]
 	autoSetupRemote = true
+[merge]
+	ff = only
