@@ -7,6 +7,7 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
+  "vim_mode": true,
   "theme": "One Dark",
   "assistant": {
     "default_model": {
@@ -19,6 +20,7 @@
   "collaboration_panel": {
     "button": false
   },
+  "file_scan_exclusions": ["**/node_modules/**", ".tags"],
   "telemetry": {
     "diagnostics": false,
     "metrics": false
