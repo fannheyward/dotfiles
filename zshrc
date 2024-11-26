@@ -95,6 +95,7 @@ export EDITOR=nvim
 export KEYTIMEOUT=1
 export GIT_MERGE_AUTOEDIT=no
 export DISABLE_OPENCOLLECTIVE=1
+export COREPACK_ENABLE_AUTO_PIN=0
 
 export CDPATH=.:$HOME/src
 export MOCWORD_DATA=$HOME/mocword.sqlite
