@@ -10,6 +10,7 @@ ca-certificates
 cmake
 curl
 diff-so-fancy
+difftastic
 double-conversion
 dua-cli
 edencommon
@@ -26,6 +27,7 @@ gh
 git
 glog
 go
+gopls
 grpc
 hyperfine
 icu4c
