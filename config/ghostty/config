@@ -4,5 +4,9 @@ theme = neobones_light
 
 copy-on-select = true
 
+macos-titlebar-style = tabs
+
+keybind = global:cmd+`=toggle_quick_terminal
 keybind = command+left=previous_tab
 keybind = command+right=next_tab
+
