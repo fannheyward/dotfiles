@@ -2,7 +2,6 @@ font-size = 16
 theme = neobones_light
 
 copy-on-select = true
-clipboard-trim-trailing-spaces = true
 
 keybind = command+left=previous_tab
 keybind = command+right=next_tab
