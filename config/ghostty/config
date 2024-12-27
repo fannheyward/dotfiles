@@ -1,3 +1,4 @@
+# ghostty +show-config --default --docs
 font-size = 16
 theme = neobones_light
 
