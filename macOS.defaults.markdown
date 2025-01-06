@@ -1,6 +1,8 @@
 # macOS defaults setting
 
-Speedup development tools: add tools from `System Preferences` -> `Privacy & Security`
+Speedup development tools: add tools from `System Preferences` -> `Privacy & Security` -> `Developer Tools`
+
+```sh
 
 Stop writing of `.DS_Store`
 
