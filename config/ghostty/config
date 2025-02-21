@@ -3,6 +3,7 @@ font-size = 16
 theme = catppuccin-frappe
 
 copy-on-select = clipboard
+window-inherit-working-directory = false
 
 keybind = global:cmd+`=toggle_quick_terminal
 keybind = command+left=previous_tab
