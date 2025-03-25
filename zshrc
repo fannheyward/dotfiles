@@ -170,9 +170,9 @@ function miniforge() {
     unset __conda_setup
 }
 
-ff() {
+function ff() {
   local repo
-  repo=$(fd -t d -H -u "^\.git$" ~/src -x dirname {} | fzf)
+  repo=$(fd -t d -H "^\.git$" ~/src -x dirname {} | fzf)
 
   if [[ -n "$repo" ]]; then
     cd "$repo" && nvim
