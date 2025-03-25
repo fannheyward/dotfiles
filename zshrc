@@ -118,6 +118,7 @@ export PATH="$HOME/Library/Android/sdk/platform-tools:$PATH"
 export PATH="${HOMEBREW_PREFIX}/opt/curl/bin:$PATH"
 export PATH="${HOMEBREW_PREFIX}/bin:$PATH"
 export PATH="$HOME/bin:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
 
 export FZF_DEFAULT_COMMAND='fd --type file --color=never'
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
