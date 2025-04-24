@@ -10,6 +10,12 @@ Stop writing of `.DS_Store`
 defaults write com.apple.desktopservices DSDontWriteNetworkStores true
 ```
 
+Decrease statusbar item spacing
+
+```sh
+defaults write -g NSStatusItemSpacing -int 8
+```
+
 Change application language:
 
 ```sh
