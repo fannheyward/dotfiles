@@ -7,6 +7,7 @@ alias l="ls $LS_OPTIONS -l"
 
 alias b='brew'
 alias n='npm'
+alias ni='npm install'
 alias y='yarn'
 alias p='pnpm'
 alias j='just'
