@@ -174,7 +174,7 @@ function miniforge() {
 
 function ff() {
   local repo
-  repo=$(fd -t d -H "^\.git$" ~/src -x dirname {} | fzf)
+  repo=$(fd -t d -L -H "^\.git$" ~/src -x dirname {} | fzf)
 
   if [[ -n "$repo" ]]; then
     cd "$repo" && nvim
