@@ -2,4 +2,4 @@
 
 ## Requirements
 
-`brew install go nodejs starship jq ncdu gh git bat fd ripgrep fzf diff-so-fancy mdcat zsh-autosuggestions zsh-syntax-highlighting zsh-completions zsh-autopair`
+`brew install nodejs starship jq dua-cli gh git bat fd ripgrep fzf difftastic zsh-autosuggestions zsh-syntax-highlighting zsh-completions zsh-autopair`
