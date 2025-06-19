@@ -1,16 +1,22 @@
-# Documentation and Planning Requirements
+# CLAUDE.md
 
-## Mandatory Documentation for Major Changes
+This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
-When implementing any significant module changes, feature additions, or architectural modifications, you MUST create and maintain documentation in the `docs/plan/` directory.
+## Use `ast-grep`
 
-## Required Documentation Process
+You run in an environment where `ast-grep` is available; whenever a search requires syntax-aware or structural matching, default to `ast-grep --lang rust -p '<pattern>'` (or set `--lang` appropriately) and avoid falling back to text-only tools like `rg` or `grep` unless I explicitly request a plain-text search.
+
+## Documentation and Planning Requirements
+
+When implementing any significant module changes, feature additions, or architectural modifications, you MUST create and maintain documentation in the `docs/plan/` directory. This ensures that all major work is properly tracked, documented, and can be resumed by anyone on the team.
+
+### Required Documentation Process
 
 1. **Create Planning Document**: Before starting any major modification, create a detailed plan document in `docs/plan/[feature-name]-plan.md`
 2. **Document Progress**: Update the plan document with progress status as work progresses
 3. **Maintain Both Tracking Systems**: Use both in-memory todo lists AND persistent documentation
 
-## Plan Document Structure
+### Plan Document Structure
 
 ```markdown
 # [Feature/Change Name] Plan
@@ -43,7 +49,7 @@ Real-time status updates (✅ ✓ ⏳ ❌)
 List of all files that will be modified
 ```
 
-## When to Create Plan Documents
+### When to Create Plan Documents
 
 - New feature implementations
 - Architectural refactoring (like removing v1 dependencies)
@@ -53,11 +59,9 @@ List of all files that will be modified
 - Performance optimizations
 - Major bug fixes that affect multiple components
 
-## Documentation Maintenance
+### Documentation Maintenance
 
 - Update progress markers in real-time as tasks complete
 - Record any deviation from original plan with reasoning
 - Document lessons learned and implementation notes
 - Keep status current for team visibility
-
-This ensures that all major work is properly tracked, documented, and can be resumed by anyone on the team.
