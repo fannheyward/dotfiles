@@ -1,0 +1,30 @@
+{
+  "includePatterns": ["**/*"],
+  "excludePatterns": ["node_modules/**", "build/**", "dist/**", "out-tsc/**"],
+  "allowFileAccess": true,
+  "permissions": {
+    "allow": [
+      "Bash(git diff:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(npm ci)",
+      "Bash(npm install)",
+      "Bash(npm run lint)",
+      "Bash(npm run test)",
+      "Bash(npm run test:*)",
+      "Bash(npm run build:*)",
+
+      "Read(src/**)",
+      "Read(package*.json)",
+
+      "Edit(src/**)"
+    ],
+    "deny": [
+      "Bash(rm:*)",
+      "Bash(git push:*)"
+    ]
+  },
+
+  "env": {
+  }
+}
