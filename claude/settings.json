@@ -7,6 +7,11 @@
       "Bash(git diff:*)",
       "Bash(git add:*)",
       "Bash(git commit:*)",
+
+      "Bash(rg:*)",
+      "Bash(sg:*)",
+      "Bash(ast-grep:*)",
+
       "Bash(npm ci)",
       "Bash(npm install)",
       "Bash(npm run lint)",
