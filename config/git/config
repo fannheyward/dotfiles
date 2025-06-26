@@ -35,3 +35,5 @@
 	autoSetupRemote = true
 [merge]
 	ff = only
+[fetch]
+	prune = true
