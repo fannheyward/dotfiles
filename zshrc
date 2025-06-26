@@ -139,8 +139,8 @@ if [ -r "${HOMEBREW_PREFIX}/share/zsh/site-functions" ]; then
     compinit
 fi
 
+[ -s "$HOME/.env" ] && source "$HOME/.env"
 [ -s "$HOME/.aliases" ] && source "$HOME/.aliases"
-[ -s "$HOME/.tokens" ] && source "$HOME/.tokens"
 [ -s "$HOME/.bun/_bun" ] && source "$HOME/.bun/_bun"
 
 [ -s ~/.fzf.zsh ] && source ~/.fzf.zsh
