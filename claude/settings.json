@@ -1,7 +1,4 @@
 {
-  "includePatterns": ["**/*"],
-  "excludePatterns": ["node_modules/**", "build/**", "dist/**", "out-tsc/**"],
-  "allowFileAccess": true,
   "permissions": {
     "allow": [
       "Bash(git diff:*)",
