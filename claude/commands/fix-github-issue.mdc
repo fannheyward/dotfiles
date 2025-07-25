@@ -1,14 +1,13 @@
-请分析并修复 GitHub 议题：$ARGUMENTS。
+请分析并修复 GitHub issue：$ARGUMENTS。
 
 遵循以下步骤：
 
-1. 使用 `gh issue view` 获取议题详情
-2. 理解议题中描述的问题
+1. 使用 `gh issue view` 获取 issue 详情
+2. 理解 issue 中描述的问题
 3. 搜索代码库中的相关文件
-4. 实现必要的更改来修复议题
+4. 创建新的分支进行修复，例如 `fix-issue-123`
 5. 编写并运行测试来验证修复
 6. 确保代码通过 Lint 检查和类型检查
 7. 创建描述性的提交消息
-8. 推送并创建 PR
 
 记住在所有与 GitHub 相关的任务中使用 GitHub CLI (`gh`)。
