@@ -1,32 +1,26 @@
 {
+  "env": {},
   "permissions": {
     "allow": [
       "Bash(git diff:*)",
       "Bash(git add:*)",
       "Bash(git commit:*)",
-
       "Bash(rg:*)",
       "Bash(sg:*)",
       "Bash(ast-grep:*)",
-
       "Bash(npm ci)",
       "Bash(npm install)",
       "Bash(npm run lint)",
       "Bash(npm run test)",
       "Bash(npm run test:*)",
       "Bash(npm run build:*)",
-
       "Read(src/**)",
       "Read(package*.json)",
-
       "Edit(src/**)"
     ],
     "deny": [
       "Bash(rm:*)",
       "Bash(git push:*)"
     ]
-  },
-
-  "env": {
   }
 }
