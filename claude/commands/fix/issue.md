@@ -22,10 +22,9 @@ Analyze and fix the GitHub issue: $ARGUMENTS.
        - **@ux-reviewer** - For UI/UX-impacting changes
     5. **Refactor** - **@code-simplifier** to improve code while keeping tests green
     6. **Commit** - Atomic commits following Conventional Commits
-5. **Branching** - Create a new branch for the fix, e.g., `fix/issue-123`.
-6. **Testing** - Write and run tests to verify the fix.
-7. **Linting and Type Checking** - Ensure the code passes lint checks and type checks.
+5. **Testing** - Write and run tests to verify the fix.
+6. **Linting and Type Checking** - Ensure the code passes lint checks and type checks.
+7. **Branching** - Create a new branch for the fix, e.g., `fix/issue-123`.
 8. **Commit Message** - Create a descriptive commit message, one logical change per commit with conventional messages.
-9. **No Direct Pushes** - DO NOT direct pushes to master/main branch; use pull requests for changes.
 
 Remember to use the GitHub CLI (`gh`) for all tasks related to GitHub.
