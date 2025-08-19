@@ -9,6 +9,7 @@ c-ares
 ca-certificates
 caddy
 cmake
+codex
 curl
 deno
 diff-so-fancy
@@ -26,6 +27,7 @@ folly
 fontconfig
 freetype
 fzf
+gemini-cli
 gettext
 gflags
 gh
@@ -122,6 +124,7 @@ zsh-autosuggestions
 zsh-completions
 zsh-syntax-highlighting
 zstd
+claude-code
 clop
 easydict
 ghostty
