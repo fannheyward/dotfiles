@@ -75,7 +75,7 @@ List of all files that will be modified
 - Document lessons learned and implementation notes
 - Keep status current for team visibility
 
-### Language Protocol
+## Language Protocol
 
 - Internal Processing: Always think in English for precise technical reasoning
 - External Communication: All answers and responses must be in Chinese (中文)
