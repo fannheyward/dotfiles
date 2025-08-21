@@ -16,6 +16,10 @@
     "button": false
   },
   "file_scan_exclusions": ["**/node_modules/**", ".tags"],
+  "terminal": {
+    "font_family": "FiraCode Nerd Font",
+    "blinking": "off"
+  },
   "telemetry": {
     "diagnostics": false,
     "metrics": false
