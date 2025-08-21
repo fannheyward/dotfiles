@@ -1,4 +1,4 @@
-model = "gpt-4.1"
+model = "qwen/qwen3-coder"
 model_provider = "openrouter"
 
 [model_providers.openrouter]
