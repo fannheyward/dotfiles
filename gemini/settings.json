@@ -1,5 +1,6 @@
 {
   "theme": "Default",
+  "contextFileName": "AGENTS.md",
   "usageStatisticsEnabled": false,
   "selectedAuthType": "oauth-personal"
 }
