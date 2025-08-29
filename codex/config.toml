@@ -1,4 +1,4 @@
-model = "qwen/qwen3-coder"
+model = "openai/gpt-5"
 model_provider = "openrouter"
 
 [model_providers.openrouter]

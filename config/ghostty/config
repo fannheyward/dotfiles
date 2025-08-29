@@ -6,7 +6,7 @@ copy-on-select = clipboard
 window-inherit-working-directory = false
 window-new-tab-position = end
 
-keybind = global:cmd+`=toggle_quick_terminal
+# keybind = global:cmd+`=toggle_quick_terminal
 keybind = command+left=previous_tab
 keybind = command+right=next_tab
 keybind = shift+enter=text:\n
