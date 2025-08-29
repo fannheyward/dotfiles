@@ -7,6 +7,14 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
+  "agent_servers": {
+    "gemini": {
+      "ignore_system_version": false
+    },
+    "claude": {
+      "ignore_system_version": false
+    }
+  },
   "features": {
     "edit_prediction_provider": "zed"
   },
