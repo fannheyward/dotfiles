@@ -1,6 +1,6 @@
 # AGENTS.md
 
-This file provides guidance to Code Agent when working with code in this repository.
+This file provides **global** guidance for Code Agent, including documentation standards, planning requirements, and language protocols. You must also refer local AGENTS.md files for project-specific guidelines.
 
 ## Documentation and Planning Requirements
 
