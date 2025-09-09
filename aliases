@@ -33,7 +33,7 @@ alias vim="nvim -o"
 alias vimdiff="nvim -d"
 alias minivim="/opt/homebrew/bin/vim -u ~/src/init.vim/mini.vim"
 alias mininvim="nvim -u ~/src/init.vim/mini.vim"
-alias claudex="cd ~/src/claudex && source .venv/bin/activate && uvicorn claudex.proxy:app"
+alias claudex="cd ~/src/claudex && source .venv/bin/activate && uvicorn claudex.proxy:app --host 0.0.0.0"
 
 alias -s md=mdcat
 alias -s markdown=mdcat
