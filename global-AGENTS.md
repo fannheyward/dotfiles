@@ -80,8 +80,9 @@ List of all files that will be modified
 
 ## Tools Requirements
 
-- `gh`: GitHub CLI to view issue details, PR information and more
+- `jq`: JSON processor
+- `yq`: YAML/TOML/XML/INI processor
 - `fd`: find files in local codebase
 - `rg`: ripgrep for plain-text searches
+- `gh`: GitHub CLI to view issue details, PR information and more
 - `ast-grep`: syntax-aware or structural code searches, default to `ast-grep --lang ts -p '<pattern>'` (or set `--lang` appropriately)
-- `jq`: JSON processor to slice and filter and map and transform JSON data
