@@ -83,4 +83,5 @@ List of all files that will be modified
 - `gh`: GitHub CLI to view issue details, PR information and more
 - `fd`: find files in local codebase
 - `rg`: ripgrep for plain-text searches
-- `ast-grep`: for syntax-aware or structural code searches, default to `ast-grep --lang ts -p '<pattern>'` (or set `--lang` appropriately)
+- `ast-grep`: syntax-aware or structural code searches, default to `ast-grep --lang ts -p '<pattern>'` (or set `--lang` appropriately)
+- `jq`: JSON processor to slice and filter and map and transform JSON data
