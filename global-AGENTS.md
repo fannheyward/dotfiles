@@ -1,6 +1,6 @@
 # AGENTS.md
 
-This file provides **global** guidance for Code Agent, including documentation standards, planning requirements, and language protocols. You must also refer local AGENTS.md files for project-specific guidelines.
+This file provides **global** guidance for Code Agent, including documentation standards, planning requirements, languages and tools requirements. You must also refer local AGENTS.md files for project-specific guidelines.
 
 ## Documentation and Planning Requirements
 
@@ -71,13 +71,16 @@ List of all files that will be modified
 - Document lessons learned and implementation notes
 - Keep status current for team visibility
 
-## Language Protocol
+## Language Requirements
 
 - Internal Processing: Always think in English for precise technical reasoning
 - External Communication: All answers and responses must be in Chinese (中文)
 - Consistency: Maintain Chinese as the exclusive language for user interactions
 - Context Switching: Process technical concepts in English, translate outputs to Chinese
 
-## Use `ast-grep`
+## Tools Requirements
 
-You run in an environment where `ast-grep` is available; whenever a search requires syntax-aware or structural matching, default to `ast-grep --lang rust -p '<pattern>'` (or set `--lang` appropriately) and avoid falling back to text-only tools like `rg` or `grep` unless I explicitly request a plain-text search.
+- `gh`: GitHub CLI to view issue details, PR information and more
+- `fd`: find files in local codebase
+- `rg`: ripgrep for plain-text searches
+- `ast-grep`: for syntax-aware or structural code searches, default to `ast-grep --lang ts -p '<pattern>'` (or set `--lang` appropriately)
