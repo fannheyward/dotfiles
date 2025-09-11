@@ -67,7 +67,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(gh z macos)
+plugins=(gh macos)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -148,6 +148,7 @@ fi
 # test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
 eval "$(starship init zsh)"
+eval "$(zoxide init zsh)"
 eval "$(atuin init zsh)"
 
 function setup_gcloud() {
