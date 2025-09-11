@@ -8,7 +8,6 @@ export ZSH=$HOME/.oh-my-zsh
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="robbyrussell"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -69,7 +68,7 @@ ZSH_THEME="robbyrussell"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(gh macos)
 
-source $ZSH/oh-my-zsh.sh
+zstyle ':omz:update' mode disabled
 
 # Customize to your needs...
 ulimit -n 8192
@@ -108,20 +107,20 @@ export OLLAMA_HOST="0.0.0.0"
 export GO111MODULE=on
 export GOPATH="$HOME"
 export GEM_HOME="$HOME/.gem"
-export BUN_INSTALL="$HOME/.bun"
-export PATH="$BUN_INSTALL/bin:$PATH"
-export PATH="$GEM_HOME/bin:$PATH"
-export PATH="$HOME/.cargo/bin:$PATH"
-export PATH="$HOME/flutter/bin:$PATH"
-export PATH="$HOME/bin/AdGuardHome:$PATH"
-export PATH="$HOME/Library/Android/sdk/platform-tools:$PATH"
-export PATH="${HOMEBREW_PREFIX}/opt/curl/bin:$PATH"
-export PATH="${HOMEBREW_PREFIX}/bin:$PATH"
-export PATH="$HOME/bin:$PATH"
-export PATH="$HOME/.local/bin:$PATH"
+
+# Use zsh arrays for PATH for speed and deduplication
+typeset -U path PATH
+path=(
+  "$HOME/bin"
+  "$HOME/.local/bin"
+  "$HOME/.cargo/bin"
+  "$HOME/bin/AdGuardHome"
+  "${HOMEBREW_PREFIX}/bin"
+  "${HOMEBREW_PREFIX}/opt/curl/bin"
+  $path
+)
 
 export FZF_DEFAULT_COMMAND='fd --type file --color=never'
-export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 export FZF_DEFAULT_OPTS="--delimiter / --nth -1,.. --ansi --preview-window 'right:60%' --preview 'bat --color=always --style=header,grid --line-range :100 {}'"
 
 if [ -r "${HOMEBREW_PREFIX}/share/zsh-autosuggestions/zsh-autosuggestions.zsh" ]; then
@@ -136,16 +135,14 @@ if [ -r "${HOMEBREW_PREFIX}/share/zsh-autopair/autopair.zsh" ]; then
 fi
 if [ -r "${HOMEBREW_PREFIX}/share/zsh/site-functions" ]; then
     fpath=("${HOMEBREW_PREFIX}/share/zsh/site-functions" $fpath)
-    compinit
 fi
 
 [ -s "$HOME/.env" ] && source "$HOME/.env"
 [ -s "$HOME/.aliases" ] && source "$HOME/.aliases"
-[ -s "$HOME/.bun/_bun" ] && source "$HOME/.bun/_bun"
-
-[ -s ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
+source $ZSH/oh-my-zsh.sh
 
 eval "$(starship init zsh)"
 eval "$(zoxide init zsh)"
