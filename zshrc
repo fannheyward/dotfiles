@@ -73,10 +73,6 @@ zstyle ':omz:update' mode disabled
 # Customize to your needs...
 ulimit -n 8192
 
-function zz() {
-  cd "$(zshz -l 2>&1 | sed 's/^[0-9,.]* *//' | fzf --delimiter / --nth -1,.. --height 40% --preview '')"
-}
-
 # env
 # export https_proxy=http://127.0.0.1:1080;export http_proxy=http://127.0.0.1:1080
 export HOMEBREW_NO_ANALYTICS=1
@@ -111,12 +107,12 @@ export GEM_HOME="$HOME/.gem"
 # Use zsh arrays for PATH for speed and deduplication
 typeset -U path PATH
 path=(
-  "$HOME/bin"
-  "$HOME/.local/bin"
-  "$HOME/.cargo/bin"
-  "$HOME/bin/AdGuardHome"
   "${HOMEBREW_PREFIX}/bin"
   "${HOMEBREW_PREFIX}/opt/curl/bin"
+  "$HOME/.cargo/bin"
+  "$HOME/.local/bin"
+  "$HOME/bin/AdGuardHome"
+  "$HOME/bin"
   $path
 )
 
