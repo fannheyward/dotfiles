@@ -1,4 +1,4 @@
-model = "openai/gpt-5"
+model = "openai/gpt-5-codex"
 model_provider = "openrouter"
 model_reasoning_effort = "high"
 
