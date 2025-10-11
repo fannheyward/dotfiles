@@ -10,11 +10,12 @@
       "api_base_url": "https://ai-proxy.chatwise.app/openrouter/api/v1/chat/completions",
       "api_key": "${OPENROUTER_API_KEY}",
       "models": [
+        "z-ai/glm-4.6",
+        "openai/gpt-5",
+        "openai/gpt-5-codex",
         "google/gemini-2.5-pro",
         "x-ai/grok-code-fast-1",
-        "deepseek/deepseek-v3.2-exp",
-        "z-ai/glm-4.6",
-        "openai/gpt-5"
+        "deepseek/deepseek-v3.2-exp"
       ],
       "transformer": {
         "use": [
