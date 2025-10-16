@@ -7,23 +7,16 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
-  "agent_servers": {
-    "gemini": {
-      "ignore_system_version": false
-    },
-    "claude": {
-      "ignore_system_version": false
-    }
-  },
-  "features": {
-    "edit_prediction_provider": "zed"
-  },
   "vim_mode": true,
   "theme": "One Dark",
   "collaboration_panel": {
     "button": false
   },
-  "file_scan_exclusions": ["**/node_modules/**", ".tags"],
+  "file_scan_exclusions": [
+    "**/.git",
+    "**/node_modules/**",
+    ".tags"
+  ],
   "terminal": {
     "font_family": "FiraCode Nerd Font",
     "blinking": "off"
