@@ -9,14 +9,9 @@ Analyze and fix the GitHub issue: $ARGUMENTS.
 
 ## Workflow
 
-1. **Check issue details** - Use `gh issue view` to get the issue description and context.
-2. **Understand the problem** - Read the issue carefully to understand the problem being reported.
-3. **Search for related files** - Identify which files in the codebase are related to the issue.
-4. **Fix Implementation** - Implement minimal fix based on the issue scope
-5. **Review the changes** - Focus on code quality and maintainability
-6. **Refactoring** - Refactor as needed based on the review of the changes
-7. **Linting and Type Checking** - Ensure the code passes lint checks and type checks.
-8. **Branching** - Create a new branch for the fix, e.g., `fix/issue-123`.
-9. **Commit Message** - Create a descriptive commit message, one logical change per commit with conventional messages.
+1. **Check issue details** - Use `gh issue view` to understand the problem and context.
+2. **Identify files** - Locate the relevant files in the codebase that need modification.
+3. **Implement and Verify** - Implement a minimal, high-quality fix. Ensure the code is clean, maintainable, and follows existing coding styles. Verify that it passes all CI checks, including linting and testing.
+4. **Commit changes** - Create a new branch using the format `fix/issue-123`, and commit your work with a clear, descriptive and conventional commit message.
 
 Remember to use the GitHub CLI (`gh`) for all tasks related to GitHub.
