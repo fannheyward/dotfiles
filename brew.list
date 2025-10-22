@@ -9,7 +9,6 @@ c-ares
 ca-certificates
 caddy
 cmake
-codex
 curl
 deno
 diff-so-fancy
@@ -27,7 +26,6 @@ folly
 fontconfig
 freetype
 fzf
-gemini-cli
 gettext
 gflags
 gh
@@ -90,7 +88,7 @@ procs
 protobuf
 pstree
 python-certifi
-python@3.13
+python@3.14
 re2
 readline
 ripgrep
@@ -118,13 +116,14 @@ xh
 xorgproto
 xxhash
 xz
+yq
 yt-dlp
+zoxide
 zsh-autopair
 zsh-autosuggestions
 zsh-completions
 zsh-syntax-highlighting
 zstd
-claude-code
 clop
 easydict
 ghostty
