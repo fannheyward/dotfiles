@@ -1,5 +1,5 @@
-model = "openai/gpt-5-codex"
-model_provider = "openrouter"
+model = "openai/gpt-5.1-codex"
+model_provider = "cliproxyapi"
 model_reasoning_effort = "high"
 model_reasoning_summary = "detailed"
 web_search_request = true
