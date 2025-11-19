@@ -1,6 +1,19 @@
 {
-  "theme": "Default",
-  "contextFileName": "AGENTS.md",
-  "usageStatisticsEnabled": false,
-  "selectedAuthType": "oauth-personal"
+  "context": {
+    "fileName": "AGENTS.md"
+  },
+  "security": {
+    "auth": {
+      "selectedType": "oauth-personal"
+    }
+  },
+  "ui": {
+    "theme": "Default"
+  },
+  "privacy": {
+    "usageStatisticsEnabled": false
+  },
+  "general": {
+    "previewFeatures": true
+  }
 }
