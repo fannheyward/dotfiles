@@ -8,7 +8,6 @@ network_access = true
 [model_providers.openrouter]
 name = "openrouter"
 base_url = "https://openrouter.ai/api/v1"
-# base_url = "https://ai-proxy.chatwise.app/openrouter/api/v1"
 env_key = "OPENROUTER_API_KEY"
 
 [model_providers.cliproxyapi]
