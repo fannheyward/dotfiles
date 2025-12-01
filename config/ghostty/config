@@ -1,6 +1,6 @@
 # ghostty +show-config --default --docs
-font-size = 16
-theme = Catppuccin Frappe
+font-size = 18
+theme = Catppuccin Latte
 
 copy-on-select = clipboard
 window-inherit-working-directory = false
