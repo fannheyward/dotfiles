@@ -35,3 +35,7 @@
 	autoSetupRemote = true
 [merge]
 	ff = only
+[lfs "customtransfer.xet"]
+	path = git-xet
+	args = transfer
+	concurrent = true
