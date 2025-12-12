@@ -5,9 +5,9 @@
   "env": {
     "ANTHROPIC_BASE_URL": "http://127.0.0.1:8317",
     "ANTHROPIC_AUTH_TOKEN": "sk",
-    "ANTHROPIC_DEFAULT_HAIKU_MODEL": "openai/gpt-5-codex",
-    "ANTHROPIC_DEFAULT_SONNET_MODEL": "openai/gpt-5-codex",
-    "ANTHROPIC_DEFAULT_OPUS_MODEL": "openai/gpt-5-codex",
+    "ANTHROPIC_DEFAULT_HAIKU_MODEL": "anthropic/claude-haiku-4.5",
+    "ANTHROPIC_DEFAULT_SONNET_MODEL": "anthropic/claude-sonnet-4.5",
+    "ANTHROPIC_DEFAULT_OPUS_MODEL": "anthropic/claude-opus-4.5",
     "BASH_DEFAULT_TIMEOUT_MS": "600000",
     "BASH_MAX_TIMEOUT_MS": "600000",
     "ENABLE_BACKGROUND_TASKS": "1",
