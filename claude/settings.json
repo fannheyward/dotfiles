@@ -22,6 +22,7 @@
       "Bash(sg:*)",
       "Bash(git diff:*)",
       "Bash(git add:*)",
+      "Bash(git show:*)",
       "Bash(git commit:*)",
       "Bash(npm ci)",
       "Bash(npm install)",
