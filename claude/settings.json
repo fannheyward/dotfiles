@@ -82,5 +82,8 @@
       "Bash(rm -rf ~/*)",
       "Bash(sudo:*)"
     ]
+  },
+  "enabledPlugins": {
+    "document-skills@anthropic-agent-skills": true
   }
 }
