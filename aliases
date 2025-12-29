@@ -25,7 +25,6 @@ alias pjson="python -mjson.tool"
 alias last='fc -ln -1 | pbcopy'
 alias save='pbpaste | cat >'
 alias cat='bat'
-alias less='bat'
 alias ag='rg --smart-case'
 alias v="nvim -u ${HOME}/src/init.vim/vimrc_for_server"
 alias vi="nvim"
