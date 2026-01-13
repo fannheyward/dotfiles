@@ -1,11 +1,9 @@
 {
-  "model": "anthropic/claude-opus-4.5",
-  "alwaysThinkingEnabled": true,
   "cleanupPeriodDays": 30,
   "env": {
     "ANTHROPIC_BASE_URL": "http://127.0.0.1:8317",
     "ANTHROPIC_AUTH_TOKEN": "sk",
-    "ANTHROPIC_MODEL": "anthropic/claude-opus-4.5",
+    "ANTHROPIC_MODEL": "anthropic/claude-sonnet-4.5",
     "ANTHROPIC_SMALL_FAST_MODEL": "anthropic/claude-haiku-4.5",
     "ANTHROPIC_DEFAULT_HAIKU_MODEL": "anthropic/claude-haiku-4.5",
     "ANTHROPIC_DEFAULT_SONNET_MODEL": "anthropic/claude-sonnet-4.5",
@@ -83,7 +81,11 @@
       "Bash(sudo:*)"
     ]
   },
+  "model": "anthropic/claude-opus-4.5",
   "enabledPlugins": {
-    "document-skills@anthropic-agent-skills": true
-  }
+    "document-skills@anthropic-agent-skills": true,
+    "code-simplifier@claude-plugins-official": true,
+    "hookify@claude-plugins-official": true
+  },
+  "alwaysThinkingEnabled": true
 }
