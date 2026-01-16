@@ -83,9 +83,10 @@
   },
   "model": "anthropic/claude-opus-4.5",
   "enabledPlugins": {
-    "document-skills@anthropic-agent-skills": true,
+    "document-skills@anthropic-agent-skills": false,
     "code-simplifier@claude-plugins-official": true,
-    "hookify@claude-plugins-official": true
+    "hookify@claude-plugins-official": true,
+    "ast-grep@ast-grep-marketplace": true
   },
   "alwaysThinkingEnabled": true
 }

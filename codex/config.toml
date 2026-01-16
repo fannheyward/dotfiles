@@ -2,8 +2,16 @@ model = "openai/gpt-5.2-codex"
 model_provider = "cliproxyapi"
 model_reasoning_effort = "high"
 model_reasoning_summary = "detailed"
+model_auto_compact_token_limit = 233000
+tool_output_token_limit = 25000
 web_search_request = true
 network_access = true
+
+[features]
+apply_patch_freeform = true
+skills = true
+shell_snapshot = true
+web_search_request = true
 
 [model_providers.openrouter]
 name = "openrouter"
