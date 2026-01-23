@@ -1,5 +1,5 @@
 model = "openai/gpt-5.2-codex"
-model_provider = "cliproxyapi"
+model_provider = "openrouter"
 model_reasoning_effort = "high"
 model_reasoning_summary = "detailed"
 model_auto_compact_token_limit = 233000
@@ -8,7 +8,6 @@ web_search_request = true
 network_access = true
 
 [features]
-apply_patch_freeform = true
 skills = true
 shell_snapshot = true
 web_search_request = true
@@ -17,6 +16,7 @@ web_search_request = true
 name = "openrouter"
 base_url = "https://openrouter.ai/api/v1"
 env_key = "OPENROUTER_API_KEY"
+wire_api = "responses"
 
 [model_providers.cliproxyapi]
 name = "cliproxyapi"
