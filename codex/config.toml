@@ -4,6 +4,7 @@ model_reasoning_effort = "high"
 model_reasoning_summary = "detailed"
 model_auto_compact_token_limit = 233000
 tool_output_token_limit = 25000
+collaboration_modes = true
 web_search_request = true
 network_access = true
 
