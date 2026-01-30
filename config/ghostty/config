@@ -1,6 +1,5 @@
 # ghostty +show-config --default --docs
 auto-update = download
-auto-update-channel = tip
 
 font-size = 18
 theme = Catppuccin Latte
