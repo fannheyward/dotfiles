@@ -4,14 +4,12 @@ model_reasoning_effort = "high"
 model_reasoning_summary = "detailed"
 model_auto_compact_token_limit = 233000
 tool_output_token_limit = 25000
-collaboration_modes = true
-web_search_request = true
+web_search = "live"
 network_access = true
 
 [features]
-skills = true
+collaboration_modes = true
 shell_snapshot = true
-web_search_request = true
 
 [model_providers.openrouter]
 name = "openrouter"
