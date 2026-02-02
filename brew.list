@@ -1,3 +1,4 @@
+ada-url
 ast-grep
 atuin
 bat
@@ -9,6 +10,7 @@ ca-certificates
 caddy
 cairo
 certifi
+cliproxyapi
 cmake
 curl
 deno
@@ -34,7 +36,6 @@ gflags
 gh
 giflib
 git
-git-extras
 git-lfs
 git-xet
 gitleaks
@@ -45,6 +46,7 @@ gofumpt
 gopls
 graphite2
 harfbuzz
+hdrhistogram_c
 huggingface-cli
 hyperfine
 icu4c@77
@@ -75,6 +77,7 @@ libxrender
 libyaml
 little-cms2
 llama.cpp
+llhttp
 lpeg
 lua
 luajit
@@ -83,6 +86,7 @@ lz4
 lzo
 m4
 miniserve
+mole
 mpdecimal
 ncurses
 neovim
@@ -90,6 +94,7 @@ node
 oha
 oniguruma
 openjdk
+openjdk@21
 openssl@3
 parquet-cli
 pcre2
@@ -112,6 +117,7 @@ stylua
 tmux
 tokei
 tree-sitter
+tree-sitter-cli
 typos-cli
 unibilium
 universal-ctags
@@ -135,6 +141,5 @@ zsh-syntax-highlighting
 zstd
 clop
 easydict
-ghostty
 logseq
 sequel-ace
