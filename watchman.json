@@ -1,6 +1,9 @@
 {
   "prefer_split_fsevents_watcher": true,
   "ignore_dirs": [
+    ".claude",
+    ".codex",
+    ".gemini",
     "_site",
     "build",
     "coverage",
