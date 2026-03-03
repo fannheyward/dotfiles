@@ -6,6 +6,7 @@ model_auto_compact_token_limit = 233000
 tool_output_token_limit = 25000
 web_search = "live"
 network_access = true
+personality = "pragmatic"
 
 [features]
 collaboration_modes = true

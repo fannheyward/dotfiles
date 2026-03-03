@@ -5,6 +5,8 @@ font-size = 18
 theme = Catppuccin Latte
 
 copy-on-select = clipboard
+clipboard-paste-protection = true
+clipboard-paste-bracketed-safe = true
 window-inherit-working-directory = false
 window-new-tab-position = end
 
