@@ -1,23 +1,32 @@
 {
+  "$schema": "https://json.schemastore.org/claude-code-settings.json",
+  "alwaysThinkingEnabled": true,
+  "attribution": {
+    "commit": "",
+    "pr": ""
+  },
   "cleanupPeriodDays": 30,
+  "enabledPlugins": {
+    "ast-grep@ast-grep-marketplace": true,
+    "code-simplifier@claude-plugins-official": true,
+    "document-skills@anthropic-agent-skills": false
+  },
   "env": {
-    "ANTHROPIC_BASE_URL": "http://127.0.0.1:8317",
     "ANTHROPIC_AUTH_TOKEN": "sk",
-    "ANTHROPIC_MODEL": "anthropic/claude-sonnet-4.6",
-    "ANTHROPIC_SMALL_FAST_MODEL": "anthropic/claude-haiku-4.5",
+    "ANTHROPIC_BASE_URL": "http://127.0.0.1:8317",
     "ANTHROPIC_DEFAULT_HAIKU_MODEL": "anthropic/claude-haiku-4.5",
-    "ANTHROPIC_DEFAULT_SONNET_MODEL": "anthropic/claude-sonnet-4.6",
     "ANTHROPIC_DEFAULT_OPUS_MODEL": "anthropic/claude-opus-4.6",
-    "CLAUDE_CODE_SUBAGENT_MODEL": "anthropic/claude-sonnet-4.6",
+    "ANTHROPIC_DEFAULT_SONNET_MODEL": "anthropic/claude-sonnet-4.6",
+    "ANTHROPIC_MODEL": "anthropic/claude-sonnet-4.6",
     "BASH_DEFAULT_TIMEOUT_MS": "600000",
     "BASH_MAX_TIMEOUT_MS": "600000",
-    "ENABLE_BACKGROUND_TASKS": "1",
+    "CLAUDE_BASH_MAINTAIN_PROJECT_WORKING_DIR": "true",
     "CLAUDE_CODE_ATTRIBUTION_HEADER": "0",
     "CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC": "1",
-    "CLAUDE_BASH_MAINTAIN_PROJECT_WORKING_DIR": "true",
+    "CLAUDE_CODE_SUBAGENT_MODEL": "anthropic/claude-sonnet-4.6",
+    "ENABLE_BACKGROUND_TASKS": "1",
     "SHELL": "/opt/homebrew/bin/zsh"
   },
-  "includeCoAuthoredBy": false,
   "permissions": {
     "allow": [
       "Bash(rg:*)",
@@ -81,12 +90,5 @@
       "Bash(rm -rf ~/*)",
       "Bash(sudo:*)"
     ]
-  },
-  "model": "anthropic/claude-opus-4.5",
-  "enabledPlugins": {
-    "document-skills@anthropic-agent-skills": false,
-    "code-simplifier@claude-plugins-official": true,
-    "ast-grep@ast-grep-marketplace": true
-  },
-  "alwaysThinkingEnabled": true
+  }
 }
