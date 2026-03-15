@@ -133,12 +133,12 @@ if [ -r "${HOMEBREW_PREFIX}/share/zsh/site-functions" ]; then
     fpath=("${HOMEBREW_PREFIX}/share/zsh/site-functions" $fpath)
 fi
 
-[ -s "$HOME/.env" ] && source "$HOME/.env"
-[ -s "$HOME/.aliases" ] && source "$HOME/.aliases"
-
 # test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
 source $ZSH/oh-my-zsh.sh
+
+[ -s "$HOME/.env" ] && source "$HOME/.env"
+[ -s "$HOME/.aliases" ] && source "$HOME/.aliases"
 
 eval "$(starship init zsh)"
 eval "$(zoxide init zsh)"

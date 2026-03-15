@@ -1,9 +1,12 @@
-#export LS_OPTIONS='--color=auto'
-export LS_OPTIONS="-hGF"
-alias ls="ls $LS_OPTIONS"
-alias ll="ls $LS_OPTIONS -l"
-alias la="ls $LS_OPTIONS -lA"
-alias l="ls $LS_OPTIONS -l"
+if (( $+commands[eza] )); then
+    alias l='eza'
+    alias ls='eza'
+    alias tree='eza --tree'
+else
+    export LS_OPTIONS="-hGF"
+    alias l="ls $LS_OPTIONS"
+    alias ls="ls $LS_OPTIONS"
+fi
 
 alias b='brew'
 alias n='npm'
@@ -21,7 +24,7 @@ alias tmux="tmux -2"
 alias openc="opencode"
 alias pjson="python -mjson.tool"
 alias last='fc -ln -1 | pbcopy'
-alias save='pbpaste | cat >'
+alias save='pbpaste | bat >'
 alias cat='bat'
 alias ag='rg --smart-case'
 alias v="nvim -u ${HOME}/src/init.vim/vimrc_for_server"
