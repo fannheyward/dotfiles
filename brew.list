@@ -20,6 +20,7 @@ dotenv-linter
 double-conversion
 dua-cli
 edencommon
+eza
 fb303
 fbthrift
 fd
@@ -47,9 +48,9 @@ gopls
 graphite2
 harfbuzz
 hdrhistogram_c
+hf
 huggingface-cli
 hyperfine
-icu4c@77
 icu4c@78
 jansson
 jpeg-turbo
@@ -79,7 +80,7 @@ little-cms2
 llama.cpp
 llhttp
 lpeg
-lua
+lua@5.4
 luajit
 luv
 lz4
@@ -105,7 +106,7 @@ python-certifi
 python@3.14
 readline
 ripgrep
-rtmpdump
+rtk
 ruby
 ruff
 rust-analyzer
@@ -140,6 +141,4 @@ zsh-completions
 zsh-syntax-highlighting
 zstd
 clop
-easydict
-logseq
 sequel-ace
