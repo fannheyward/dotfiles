@@ -2,19 +2,14 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
-## Use `ast-grep`
+## BASELINE
 
-You run in an environment where `ast-grep` is available; whenever a search requires syntax-aware or structural matching, default to `ast-grep --lang rust -p '<pattern>'` (or set `--lang` appropriately) and avoid falling back to text-only tools like `rg` or `grep` unless I explicitly request a plain-text search.
+- 如无必要，勿增实体
+- 按需使用 Plan Mode
 
 ## Documentation and Planning Requirements
 
-When implementing any significant module changes, feature additions, or architectural modifications, you MUST create and maintain documentation in the `docs/plan/` directory. This ensures that all major work is properly tracked, documented, and can be resumed by anyone on the team.
-
-### Required Documentation Process
-
-1. **Create Planning Document**: Before starting any major modification, create a detailed plan document in `docs/plan/[feature-name]-plan.md`
-2. **Document Progress**: Update the plan document with progress status as work progresses
-3. **Maintain Both Tracking Systems**: Use both in-memory todo lists AND persistent documentation
+When implementing any significant module changes, feature additions, or architectural modifications, you MUST create and maintain documentation in the `docs/plan/` directory. Update the plan document with progress status as work progresses, ensures that all major work is properly tracked, documented, and can be resumed by anyone on the team.
 
 ### Plan Document Structure
 
@@ -36,10 +31,6 @@ How the change will be implemented
 ## Implementation Steps
 
 Detailed breakdown of tasks with priorities and status
-
-## Timeline
-
-Expected completion dates for each phase
 
 ## Risk Assessment
 
@@ -81,3 +72,12 @@ List of all files that will be modified
 - External Communication: All answers and responses must be in Chinese (中文)
 - Consistency: Maintain Chinese as the exclusive language for user interactions
 - Context Switching: Process technical concepts in English, translate outputs to Chinese
+
+## Tools Requirements
+
+- `jq`: JSON processor
+- `yq`: YAML/TOML/XML/INI processor
+- `fd`: find files in local codebase
+- `rg`: ripgrep for plain-text searches
+- `gh`: GitHub CLI to view issue details, PR information and more
+- `ast-grep`: syntax-aware or structural code searches, default to `ast-grep --lang ts -p '<pattern>'` (or set `--lang` appropriately)
