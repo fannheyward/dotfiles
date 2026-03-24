@@ -1,0 +1,12 @@
+#:schema https://docs.jj-vcs.dev/latest/config-schema.json
+
+[user]
+name = "Heyward Fann"
+email = "fannheyward@gmail.com"
+
+[ui]
+default-command = "status"
+
+[aliases]
+# Push current change to master (moves bookmark automatically)
+push-master = ["bookmark", "set", "master", "-r", "@-", "&&", "git", "push"]
