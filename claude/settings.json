@@ -90,5 +90,6 @@
       "Bash(rm -rf ~/*)",
       "Bash(sudo:*)"
     ]
-  }
+  },
+  "showClearContextOnPlanAccept": true
 }
