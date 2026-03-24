@@ -13,6 +13,7 @@ certifi
 cliproxyapi
 cmake
 curl
+dav1d
 deno
 diff-so-fancy
 difftastic
@@ -24,6 +25,7 @@ eza
 fb303
 fbthrift
 fd
+ffmpeg
 fizz
 fmt
 fnm
@@ -34,6 +36,7 @@ fx
 fzf
 gettext
 gflags
+ggml
 gh
 giflib
 git
@@ -53,15 +56,17 @@ huggingface-cli
 hyperfine
 icu4c@78
 jansson
+jj
 jpeg-turbo
 jq
 just
+lame
 libevent
 libgit2
-libiconv
 libnghttp2
 libnghttp3
 libngtcp2
+libomp
 libpng
 libsodium
 libssh2
@@ -69,6 +74,7 @@ libtiff
 libtool
 libunistring
 libuv
+libvpx
 libx11
 libxau
 libxcb
@@ -97,6 +103,7 @@ oniguruma
 openjdk
 openjdk@21
 openssl@3
+opus
 parquet-cli
 pcre2
 pixman
@@ -110,11 +117,13 @@ rtk
 ruby
 ruff
 rust-analyzer
+sdl2
 simdjson
 snappy
 sqlite
 starship
 stylua
+svt-av1
 tmux
 tokei
 tree-sitter
@@ -128,6 +137,8 @@ uvwasi
 vim
 wangle
 watchman
+x264
+x265
 xh
 xorgproto
 xxhash
@@ -137,7 +148,6 @@ yt-dlp
 zoxide
 zsh-autopair
 zsh-autosuggestions
-zsh-completions
 zsh-syntax-highlighting
 zstd
 clop
