@@ -6,3 +6,9 @@ email = "fannheyward@gmail.com"
 
 [ui]
 default-command = "status"
+
+[git]
+colocate = true
+
+[aliases]
+track-master = ["bookmark", "track", "master", "--remote=origin"]
