@@ -22,7 +22,7 @@
 [pull]
 	rebase = true
 [core]
-	pager = diff-so-fancy | less --tabs=4 -RFX
+	pager = diff-so-fancy | less --tabs=4 -RF
 	excludesfile = ~/.config/git/ignore
 [filter "lfs"]
 	required = true
@@ -39,3 +39,5 @@
 	path = git-xet
 	args = transfer
 	concurrent = true
+[interactive]
+	diffFilter = diff-so-fancy --patch
