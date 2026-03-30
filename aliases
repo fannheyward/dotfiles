@@ -12,7 +12,6 @@ alias b='brew'
 alias n='npm'
 alias ni='npm install'
 alias p='pnpm'
-alias j='just'
 alias brwe='brew'
 alias gitt='git'
 alias ql="qlmanage -p 2>/dev/null"
