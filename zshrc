@@ -92,6 +92,7 @@ export GIT_MERGE_AUTOEDIT=no
 export DISABLE_OPENCOLLECTIVE=1
 export COREPACK_ENABLE_AUTO_PIN=0
 
+export BUN_INSTALL="$HOME/.bun"
 export CDPATH=.:$HOME/src
 export MOCWORD_DATA=$HOME/mocword.sqlite
 export JAVA_HOME=${HOMEBREW_PREFIX}/opt/openjdk/libexec/openjdk.jdk/Contents/Home
@@ -109,6 +110,7 @@ typeset -U path PATH
 path=(
   "${HOMEBREW_PREFIX}/bin"
   "${HOMEBREW_PREFIX}/opt/curl/bin"
+  "${BUN_INSTALL}/bin"
   "$HOME/.cargo/bin"
   "$HOME/.local/bin"
   "$HOME/bin/AdGuardHome"
@@ -139,6 +141,7 @@ source $ZSH/oh-my-zsh.sh
 
 [ -s "$HOME/.env" ] && source "$HOME/.env"
 [ -s "$HOME/.aliases" ] && source "$HOME/.aliases"
+[ -s "$BUN_INSTALL/_bun" ] && source "$BUN_INSTALL/_bun"
 
 eval "$(starship init zsh)"
 eval "$(zoxide init zsh)"
