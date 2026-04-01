@@ -88,6 +88,7 @@ export PUB_HOSTED_URL=https://pub.flutter-io.cn
 export ADBLOCK=1
 export EDITOR=nvim
 export KEYTIMEOUT=1
+export DISABLE_TELEMETRY=1
 export GIT_MERGE_AUTOEDIT=no
 export DISABLE_OPENCOLLECTIVE=1
 export COREPACK_ENABLE_AUTO_PIN=0
