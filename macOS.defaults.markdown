@@ -28,6 +28,12 @@ Decrease key repeat delay:
 defaults write -g KeyRepeat -int 1
 ```
 
+Disable icon in menu bar for actions:
+
+```sh
+defaults write -g NSMenuEnableActionImages -bool NO
+```
+
 VSCode:
 
 ```sh
