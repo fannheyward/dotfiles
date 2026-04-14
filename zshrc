@@ -122,17 +122,17 @@ path=(
 export FZF_DEFAULT_COMMAND='fd --type file --color=never'
 export FZF_DEFAULT_OPTS="--delimiter / --nth -1,.. --ansi --preview-window 'right:60%' --preview 'bat --color=always --style=header,grid --line-range :100 {}'"
 
-if [ -r "${HOMEBREW_PREFIX}/share/zsh-autosuggestions/zsh-autosuggestions.zsh" ]; then
+if [[ -r "${HOMEBREW_PREFIX}/share/zsh-autosuggestions/zsh-autosuggestions.zsh" ]]; then
     source "${HOMEBREW_PREFIX}/share/zsh-autosuggestions/zsh-autosuggestions.zsh"
 fi
-if [ -r "${HOMEBREW_PREFIX}/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" ]; then
+if [[ -r "${HOMEBREW_PREFIX}/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" ]]; then
     source "${HOMEBREW_PREFIX}/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
 fi
-if [ -r "${HOMEBREW_PREFIX}/share/zsh-autopair/autopair.zsh" ]; then
+if [[ -r "${HOMEBREW_PREFIX}/share/zsh-autopair/autopair.zsh" ]]; then
     source "${HOMEBREW_PREFIX}/share/zsh-autopair/autopair.zsh"
     autopair-init
 fi
-if [ -r "${HOMEBREW_PREFIX}/share/zsh/site-functions" ]; then
+if [[ -r "${HOMEBREW_PREFIX}/share/zsh/site-functions" ]]; then
     fpath=("${HOMEBREW_PREFIX}/share/zsh/site-functions" $fpath)
 fi
 
@@ -140,9 +140,9 @@ fi
 
 source $ZSH/oh-my-zsh.sh
 
-[ -s "$HOME/.env" ] && source "$HOME/.env"
-[ -s "$HOME/.aliases" ] && source "$HOME/.aliases"
-[ -s "$BUN_INSTALL/_bun" ] && source "$BUN_INSTALL/_bun"
+[[ -s "$HOME/.env" ]] && source "$HOME/.env"
+[[ -s "$HOME/.aliases" ]] && source "$HOME/.aliases"
+[[ -s "$BUN_INSTALL/_bun" ]] && source "$BUN_INSTALL/_bun"
 
 eval "$(starship init zsh)"
 eval "$(zoxide init zsh)"
@@ -150,18 +150,18 @@ eval "$(atuin init zsh)"
 
 function setup_gcloud() {
     # The next line updates PATH for the Google Cloud SDK.
-    if [ -s "${HOME}/google-cloud-sdk/path.zsh.inc" ]; then . "${HOME}/google-cloud-sdk/path.zsh.inc"; fi
+    if [[ -s "${HOME}/google-cloud-sdk/path.zsh.inc" ]]; then . "${HOME}/google-cloud-sdk/path.zsh.inc"; fi
 
     # The next line enables shell command completion for gcloud.
-    if [ -s "${HOME}/google-cloud-sdk/completion.zsh.inc" ]; then . "${HOME}/google-cloud-sdk/completion.zsh.inc"; fi
+    if [[ -s "${HOME}/google-cloud-sdk/completion.zsh.inc" ]]; then . "${HOME}/google-cloud-sdk/completion.zsh.inc"; fi
 }
 
 function miniforge() {
     __conda_setup="$($HOME'/miniforge3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-    if [ $? -eq 0 ]; then
+    if [[ $? -eq 0 ]]; then
         eval "$__conda_setup"
     else
-        if [ -s "$HOME/miniforge3/etc/profile.d/conda.sh" ]; then
+        if [[ -s "$HOME/miniforge3/etc/profile.d/conda.sh" ]]; then
             . "$HOME/miniforge3/etc/profile.d/conda.sh"
         else
             export PATH="$HOME/miniforge3/bin:$PATH"
