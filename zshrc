@@ -97,7 +97,7 @@ export BUN_INSTALL="$HOME/.bun"
 export CDPATH=.:$HOME/src
 export MOCWORD_DATA=$HOME/mocword.sqlite
 export JAVA_HOME=${HOMEBREW_PREFIX}/opt/openjdk/libexec/openjdk.jdk/Contents/Home
-export RIPGREP_CONFIG_PATH="$HOME/.config/ripgreprc"
+export RIPGREP_CONFIG_PATH="$HOME/src/dotfiles/ripgreprc"
 
 export OLLAMA_ORIGINS="*"
 export OLLAMA_HOST="0.0.0.0"
