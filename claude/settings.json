@@ -3,7 +3,7 @@
   "cleanupPeriodDays": 30,
   "env": {
     "ANTHROPIC_AUTH_TOKEN": "sk",
-    "ANTHROPIC_BASE_URL": "http://127.0.0.1:8317",
+    "ANTHROPIC_BASE_URL": "http://10.13.11.33:8317",
     "ANTHROPIC_DEFAULT_HAIKU_MODEL": "anthropic/claude-haiku-4.5",
     "ANTHROPIC_DEFAULT_OPUS_MODEL": "anthropic/claude-opus-4.7",
     "ANTHROPIC_DEFAULT_SONNET_MODEL": "anthropic/claude-sonnet-4.6",
@@ -101,5 +101,6 @@
     }
   },
   "alwaysThinkingEnabled": true,
-  "showClearContextOnPlanAccept": true
+  "showClearContextOnPlanAccept": true,
+  "theme": "dark"
 }
