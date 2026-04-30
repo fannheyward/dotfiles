@@ -28,8 +28,4 @@ alias cat='bat'
 alias ag='rg --smart-case'
 alias v="nvim -u ${HOME}/src/init.vim/vimrc_for_server"
 alias vi="nvim"
-alias vim="nvim -o"
-alias vimdiff="nvim -d"
-alias minivim="/opt/homebrew/bin/vim -u ~/src/init.vim/mini.vim"
-alias mininvim="nvim -u ~/src/init.vim/mini.vim"
 
