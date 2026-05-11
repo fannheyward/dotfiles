@@ -6,63 +6,63 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/tw93/Waza.git",
       "skillPath": "skills/check/SKILL.md",
-      "skillFolderHash": "2631395ba8d66d8fbd3e22ebaf2188d81bd28126",
+      "skillFolderHash": "8718308c05511aaeb062c0db13f5c334aa8a0f8f",
       "installedAt": "2026-04-13T07:06:46.153Z",
-      "updatedAt": "2026-04-28T00:59:54.941Z"
+      "updatedAt": "2026-05-11T02:12:30.802Z"
     },
     "design": {
       "source": "tw93/Waza",
       "sourceType": "github",
       "sourceUrl": "https://github.com/tw93/Waza.git",
       "skillPath": "skills/design/SKILL.md",
-      "skillFolderHash": "2c9038b40af86f6cda9d9eb1661da52319ec0041",
+      "skillFolderHash": "dd94497ffd95d2cc07205ff1d4c6dda9d19ceb58",
       "installedAt": "2026-04-13T07:06:46.590Z",
-      "updatedAt": "2026-04-28T00:59:57.074Z"
+      "updatedAt": "2026-05-11T02:12:40.199Z"
     },
     "hunt": {
       "source": "tw93/Waza",
       "sourceType": "github",
       "sourceUrl": "https://github.com/tw93/Waza.git",
       "skillPath": "skills/hunt/SKILL.md",
-      "skillFolderHash": "034122f0878ea33989603ac2c2ab907dcf1820bd",
+      "skillFolderHash": "fb8747ce80cd7a8198abe12c30f69275f56660d0",
       "installedAt": "2026-04-13T07:06:47.459Z",
-      "updatedAt": "2026-04-28T00:59:59.151Z"
+      "updatedAt": "2026-05-11T02:12:50.644Z"
     },
     "learn": {
       "source": "tw93/Waza",
       "sourceType": "github",
       "sourceUrl": "https://github.com/tw93/Waza.git",
       "skillPath": "skills/learn/SKILL.md",
-      "skillFolderHash": "8e0951171267c07dcfbe3dc686f52847fc291903",
+      "skillFolderHash": "228cb1a7e6f309f295040874ac90305e7bf50ee6",
       "installedAt": "2026-04-13T07:06:47.926Z",
-      "updatedAt": "2026-04-28T01:00:01.352Z"
+      "updatedAt": "2026-05-11T02:13:01.829Z"
     },
     "read": {
       "source": "tw93/Waza",
       "sourceType": "github",
       "sourceUrl": "https://github.com/tw93/Waza.git",
       "skillPath": "skills/read/SKILL.md",
-      "skillFolderHash": "2a94b4b1a62c287b5b776a4a7e22ef5b1b66d16f",
+      "skillFolderHash": "ca35320248e45c4e8d4a0e6b6bbd7ccc92072640",
       "installedAt": "2026-04-13T07:06:48.371Z",
-      "updatedAt": "2026-04-28T01:00:03.800Z"
+      "updatedAt": "2026-05-11T02:13:14.762Z"
     },
     "think": {
       "source": "tw93/Waza",
       "sourceType": "github",
       "sourceUrl": "https://github.com/tw93/Waza.git",
       "skillPath": "skills/think/SKILL.md",
-      "skillFolderHash": "c00d27e38ea8266d070aeabe3932af48e7868b43",
+      "skillFolderHash": "15a1de52ac21ef07cfe9c92ebe884d38ca6d0327",
       "installedAt": "2026-04-13T07:06:48.820Z",
-      "updatedAt": "2026-04-28T01:00:06.033Z"
+      "updatedAt": "2026-05-11T02:13:23.939Z"
     },
     "write": {
       "source": "tw93/Waza",
       "sourceType": "github",
       "sourceUrl": "https://github.com/tw93/Waza.git",
       "skillPath": "skills/write/SKILL.md",
-      "skillFolderHash": "008c7a28e116f0381b5a538d4a5dfb78168ec583",
+      "skillFolderHash": "e94e0c28e09487deddabeff89feb74505475066e",
       "installedAt": "2026-04-13T07:06:49.570Z",
-      "updatedAt": "2026-04-28T01:00:08.317Z"
+      "updatedAt": "2026-05-11T02:13:30.190Z"
     },
     "find-skills": {
       "source": "vercel-labs/skills",

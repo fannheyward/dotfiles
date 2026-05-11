@@ -14,6 +14,12 @@
     "dock": "right"
   },
   "agent": {
+    "default_model": {
+      "effort": "high",
+      "provider": "copilot_chat",
+      "model": "claude-sonnet-4.6",
+      "enable_thinking": true
+    },
     "dock": "left",
     "favorite_models": [],
     "model_parameters": []
@@ -21,7 +27,7 @@
   "git_panel": {
     "dock": "right"
   },
-  "vim_mode": true,
+  "vim_mode": false,
   "theme": "One Dark",
   "collaboration_panel": {
     "dock": "right",
