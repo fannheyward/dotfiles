@@ -82,15 +82,6 @@
       "pluginName": "example-skills",
       "installedAt": "2026-04-16T03:59:01.592Z",
       "updatedAt": "2026-04-16T03:59:01.592Z"
-    },
-    "talk-normal": {
-      "source": "hexiecs/talk-normal",
-      "sourceType": "github",
-      "sourceUrl": "https://github.com/hexiecs/talk-normal.git",
-      "skillPath": "skill/SKILL.md",
-      "skillFolderHash": "90560c7a89479e18fb65ca8e75e8a6e11cc3e217",
-      "installedAt": "2026-04-21T09:24:08.692Z",
-      "updatedAt": "2026-04-21T09:24:08.692Z"
     }
   },
   "dismissed": {
