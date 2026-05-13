@@ -1,3 +1,5 @@
+# export RIPGREP_CONFIG_PATH="$HOME/src/dotfiles/ripgreprc"
+
 # Add my 'web' type.
 --type-add
 web:*.{html,css,js}*
