@@ -1,11 +1,13 @@
 # AGENTS.md
 
-This file provides **global** guidance for Code Agent, including documentation standards, planning requirements, languages and tools requirements. You must also refer local AGENTS.md files for project-specific guidelines.
+This file provides **global** guidance for Code Agent, including baseline rules, documentation standards, planning requirements, programming philosophy, languages and tools requirements. You must also refer local AGENTS.md files for project-specific guidelines.
 
 ## BASELINE
 
-- 如无必要，勿增实体
-- 按需使用 Plan Mode
+- Rule 1: Think Before Coding. No silent assumptions. State what you're assuming. Surface tradeoffs. Ask before guessing. Push back when a simpler approach exists.
+- Rule 2: Simplicity First. Minimum code that solves the problem. No speculative features. No abstractions for single-use code. If a senior engineer would call it overcomplicated — simplify.
+- Rule 3: Surgical Changes. Touch only what you must. Don't "improve" adjacent code, comments, or formatting. Don't refactor what isn't broken. Match existing style.
+- Rule 4: Goal-Driven Execution. Define success criteria. Loop until verified. Check what success looks like and iterate.
 
 ## Documentation and Planning Requirements
 
@@ -26,7 +28,7 @@ Detailed analysis of what needs to be changed and why
 
 ## Strategy and Approach
 
-How the change will be implemented
+How the change will be implemented. High-level design and architecture decisions. Analyze the risks and consequences of different approaches and justify the chosen one
 
 ## Implementation Steps
 
@@ -66,12 +68,20 @@ List of all files that will be modified
 - Document lessons learned and implementation notes
 - Keep status current for team visibility
 
+## Programming Philosophy and Quality
+
+- Code is written for humans to read and maintain first; machine execution is a byproduct
+- Priority: readability and maintainability > correctness (including edge cases and error handling) > performance > code length
+- Strictly follow idiomatic community best practices
+- Avoid duplicated/copy-paste, unclear messy abstractions, over-engineering and unnecessary complexity without real benefit
+
 ## Language Requirements
 
 - Internal Processing: Always think in English for precise technical reasoning
-- External Communication: All answers and responses must be in Chinese (中文)
-- Consistency: Maintain Chinese as the exclusive language for user interactions
+- External Communication: All answers and responses must be in Chinese
 - Context Switching: Process technical concepts in English, translate outputs to Chinese
+- All code, comments, identifiers/variables etc, use English only
+- Comments should explain **why** rather than restating **what**
 
 ## Tools Requirements
 
