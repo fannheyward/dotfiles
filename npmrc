@@ -1,0 +1,4 @@
+fund=false
+ignore-scripts=true
+allow-git=none
+min-release-age=3
