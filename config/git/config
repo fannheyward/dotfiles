@@ -10,9 +10,11 @@
 	pop = stash pop
 	d = diff --color
 	dc = diff --color --cached
+	dt = -c diff.external=difft diff
 	dl = -c diff.external=difft log --ext-diff
 	ds = -c diff.external=difft show --ext-diff
-	dt = -c diff.external=difft diff
+	hd = -c core.pager=\"hunk pager\" diff
+	hs = -c core.pager=\"hunk pager\" show
 	graph = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(auto)%d%C(reset)' --all
 [log]
 	date = iso
