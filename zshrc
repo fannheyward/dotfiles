@@ -114,7 +114,6 @@ path=(
   "${BUN_INSTALL}/bin"
   "$HOME/.cargo/bin"
   "$HOME/.local/bin"
-  "$HOME/bin/AdGuardHome"
   "$HOME/bin"
   $path
 )
