@@ -92,6 +92,7 @@ lz4
 lzo
 m4
 miniserve
+mise
 mole
 mpdecimal
 ncurses
@@ -112,7 +113,6 @@ python-certifi
 python@3.14
 readline
 ripgrep
-rtk
 ruby
 ruff
 rust-analyzer
