@@ -124,8 +124,8 @@ export FZF_DEFAULT_OPTS="--delimiter / --nth -1,.. --ansi --preview-window 'righ
 if [[ -r "${HOMEBREW_PREFIX}/share/zsh-autosuggestions/zsh-autosuggestions.zsh" ]]; then
     source "${HOMEBREW_PREFIX}/share/zsh-autosuggestions/zsh-autosuggestions.zsh"
 fi
-if [[ -r "${HOMEBREW_PREFIX}/share/zsh-fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh" ]]; then
-    source "${HOMEBREW_PREFIX}/share/zsh-fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh"
+if [[ -r "${HOMEBREW_PREFIX}/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" ]]; then
+    source "${HOMEBREW_PREFIX}/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
 fi
 if [[ -r "${HOMEBREW_PREFIX}/share/zsh-autopair/autopair.zsh" ]]; then
     source "${HOMEBREW_PREFIX}/share/zsh-autopair/autopair.zsh"
