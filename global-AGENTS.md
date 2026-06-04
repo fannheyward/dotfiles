@@ -90,4 +90,5 @@ List of all files that will be modified
 - `fd`: find files in local codebase
 - `rg`: ripgrep for plain-text searches
 - `gh`: GitHub CLI to view issue details, PR information and more
+- `rtk`: token-optimized CLI proxy for shell commands, @/Users/fannheyward/src/dotfiles/RTK.md
 - `ast-grep`: syntax-aware or structural code searches, default to `ast-grep --lang ts -p '<pattern>'` (or set `--lang` appropriately)
