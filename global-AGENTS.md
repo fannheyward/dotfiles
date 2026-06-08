@@ -11,7 +11,7 @@ This file provides **global** guidance for Code Agent, including baseline rules,
 
 ## Documentation and Planning Requirements
 
-When implementing any significant module changes, feature additions, or architectural modifications, you MUST create and maintain documentation in the `docs/plan/` directory. Update the plan document with progress status as work progresses, ensures that all major work is properly tracked, documented, and can be resumed by anyone on the team.
+When implementing significant module changes, feature additions, database schema updates, API migrations, security improvements, performance optimizations, or architectural refactorings, you MUST create and maintain documentation in the `docs/plan/` directory. Update the plan document with progress status as work progresses, ensures that all major work is properly tracked, documented, and can be resumed by anyone on the team.
 
 ### Plan Document Structure
 
@@ -51,23 +51,6 @@ Real-time status updates (✅ ✓ ⏳ ❌)
 List of all files that will be modified
 ```
 
-### When to Create Plan Documents
-
-- New feature implementations
-- Architectural refactoring (like removing v1 dependencies)
-- Database schema changes
-- API version migrations
-- Security enhancements
-- Performance optimizations
-- Major bug fixes that affect multiple components
-
-### Documentation Maintenance
-
-- Update progress markers in real-time as tasks complete
-- Record any deviation from original plan with reasoning
-- Document lessons learned and implementation notes
-- Keep status current for team visibility
-
 ## Programming Philosophy and Quality
 
 - Code is written for humans to read and maintain first; machine execution is a byproduct
@@ -82,6 +65,16 @@ List of all files that will be modified
 - Context Switching: Process technical concepts in English, translate outputs to Chinese
 - All code, comments, identifiers/variables etc, use English only
 - Comments should explain **why** rather than restating **what**
+
+## Compact Instructions
+
+When compressing, preserve in priority order:
+
+1. Architecture decisions (NEVER summarize)
+2. Modified files and their key changes
+3. Current verification status (pass/fail)
+4. Open TODOs and rollback notes
+5. Tool outputs (can delete, keep pass/fail only)
 
 ## Tools Requirements
 
