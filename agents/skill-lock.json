@@ -91,6 +91,15 @@
       "skillFolderHash": "18af5ff8fde22d8348740e92529e428d975b9b27",
       "installedAt": "2026-05-22T02:35:47.864Z",
       "updatedAt": "2026-05-22T02:35:47.864Z"
+    },
+    "text-to-lottie": {
+      "source": "diffusionstudio/lottie",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/diffusionstudio/lottie.git",
+      "skillPath": "skills/text-to-lottie/SKILL.md",
+      "skillFolderHash": "3642919f0fea65f3c774686b01b7ea3c8d797898",
+      "installedAt": "2026-06-09T01:09:43.009Z",
+      "updatedAt": "2026-06-09T01:09:43.009Z"
     }
   },
   "dismissed": {
@@ -99,16 +108,17 @@
   "lastSelectedAgents": [
     "amp",
     "antigravity",
+    "antigravity-cli",
     "cline",
     "codex",
     "cursor",
     "deepagents",
-    "firebender",
     "gemini-cli",
     "github-copilot",
-    "kimi-cli",
+    "kimi-code-cli",
     "opencode",
     "warp",
+    "zed",
     "claude-code",
     "hermes-agent"
   ]
