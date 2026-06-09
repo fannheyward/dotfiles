@@ -73,6 +73,10 @@ zstyle ':omz:update' mode disabled
 # Customize to your needs...
 ulimit -n 8192
 
+KEYTIMEOUT=1
+CDPATH=.:$HOME/src
+typeset +x KEYTIMEOUT CDPATH
+
 # env
 # export https_proxy=http://127.0.0.1:1080;export http_proxy=http://127.0.0.1:1080
 export HOMEBREW_NO_ANALYTICS=1
@@ -87,14 +91,12 @@ export PUB_HOSTED_URL=https://pub.flutter-io.cn
 
 export ADBLOCK=1
 export EDITOR=nvim
-export KEYTIMEOUT=1
 export DISABLE_TELEMETRY=1
 export GIT_MERGE_AUTOEDIT=no
 export DISABLE_OPENCOLLECTIVE=1
 export COREPACK_ENABLE_AUTO_PIN=0
 
 export BUN_INSTALL="$HOME/.bun"
-export CDPATH=.:$HOME/src
 export MOCWORD_DATA=$HOME/mocword.sqlite
 export JAVA_HOME=${HOMEBREW_PREFIX}/opt/openjdk/libexec/openjdk.jdk/Contents/Home
 export RIPGREP_CONFIG_PATH="$HOME/src/dotfiles/ripgreprc"
@@ -121,16 +123,6 @@ path=(
 export FZF_DEFAULT_COMMAND='fd --type file --color=never'
 export FZF_DEFAULT_OPTS="--delimiter / --nth -1,.. --ansi --preview-window 'right:60%' --preview 'bat --color=always --style=header,grid --line-range :100 {}'"
 
-if [[ -r "${HOMEBREW_PREFIX}/share/zsh-autosuggestions/zsh-autosuggestions.zsh" ]]; then
-    source "${HOMEBREW_PREFIX}/share/zsh-autosuggestions/zsh-autosuggestions.zsh"
-fi
-if [[ -r "${HOMEBREW_PREFIX}/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" ]]; then
-    source "${HOMEBREW_PREFIX}/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
-fi
-if [[ -r "${HOMEBREW_PREFIX}/share/zsh-autopair/autopair.zsh" ]]; then
-    source "${HOMEBREW_PREFIX}/share/zsh-autopair/autopair.zsh"
-    autopair-init
-fi
 if [[ -r "${HOMEBREW_PREFIX}/share/zsh/site-functions" ]]; then
     fpath=("${HOMEBREW_PREFIX}/share/zsh/site-functions" $fpath)
 fi
@@ -177,3 +169,13 @@ function ff() {
     cd "$repo" && nvim
   fi
 }
+
+if [[ -r "${HOMEBREW_PREFIX}/share/zsh-autopair/autopair.zsh" ]]; then
+    source "${HOMEBREW_PREFIX}/share/zsh-autopair/autopair.zsh"
+fi
+if [[ -r "${HOMEBREW_PREFIX}/share/zsh-autosuggestions/zsh-autosuggestions.zsh" ]]; then
+    source "${HOMEBREW_PREFIX}/share/zsh-autosuggestions/zsh-autosuggestions.zsh"
+fi
+if [[ -r "${HOMEBREW_PREFIX}/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" ]]; then
+    source "${HOMEBREW_PREFIX}/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
+fi
