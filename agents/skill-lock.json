@@ -6,63 +6,63 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/tw93/Waza.git",
       "skillPath": "skills/check/SKILL.md",
-      "skillFolderHash": "e177f397d9e4398951e3277b665983c0ece6f0ed",
+      "skillFolderHash": "0c8dd260fdc1f1cafe45171cc4b1275325b4c803",
       "installedAt": "2026-04-13T07:06:46.153Z",
-      "updatedAt": "2026-06-08T02:08:59.208Z"
+      "updatedAt": "2026-06-22T02:56:54.383Z"
     },
     "design": {
       "source": "tw93/Waza",
       "sourceType": "github",
       "sourceUrl": "https://github.com/tw93/Waza.git",
       "skillPath": "skills/design/SKILL.md",
-      "skillFolderHash": "1981b3c84fa48af2df2c523d38f36083dbcdb02e",
+      "skillFolderHash": "766fdfcda4c6f0773916076ecd6fc8fbc9f3e5c6",
       "installedAt": "2026-04-13T07:06:46.590Z",
-      "updatedAt": "2026-06-08T02:09:02.115Z"
+      "updatedAt": "2026-06-22T02:57:08.153Z"
     },
     "hunt": {
       "source": "tw93/Waza",
       "sourceType": "github",
       "sourceUrl": "https://github.com/tw93/Waza.git",
       "skillPath": "skills/hunt/SKILL.md",
-      "skillFolderHash": "a978c65e3caf8ba609b7edd7327a545037616845",
+      "skillFolderHash": "a0cd002379391e1acd9a5eff8fca3c4ac72625f5",
       "installedAt": "2026-04-13T07:06:47.459Z",
-      "updatedAt": "2026-06-08T02:09:06.932Z"
+      "updatedAt": "2026-06-22T02:57:20.912Z"
     },
     "learn": {
       "source": "tw93/Waza",
       "sourceType": "github",
       "sourceUrl": "https://github.com/tw93/Waza.git",
       "skillPath": "skills/learn/SKILL.md",
-      "skillFolderHash": "c83fda3a4fd8a28425bc994cea88a228ea18bfc3",
+      "skillFolderHash": "10607830278153f2c13f71123a382b36f9faea9d",
       "installedAt": "2026-04-13T07:06:47.926Z",
-      "updatedAt": "2026-06-02T03:59:20.136Z"
+      "updatedAt": "2026-06-22T02:57:33.158Z"
     },
     "read": {
       "source": "tw93/Waza",
       "sourceType": "github",
       "sourceUrl": "https://github.com/tw93/Waza.git",
       "skillPath": "skills/read/SKILL.md",
-      "skillFolderHash": "35f1276478d12797277fdf60e49a7d51c2590c66",
+      "skillFolderHash": "91153053187b648225b7f83afdb33107dfd92049",
       "installedAt": "2026-04-13T07:06:48.371Z",
-      "updatedAt": "2026-06-08T02:09:10.220Z"
+      "updatedAt": "2026-06-22T02:58:04.946Z"
     },
     "think": {
       "source": "tw93/Waza",
       "sourceType": "github",
       "sourceUrl": "https://github.com/tw93/Waza.git",
       "skillPath": "skills/think/SKILL.md",
-      "skillFolderHash": "ea8cb244775e276220cf47866ee76269bfb8248f",
+      "skillFolderHash": "6f2b4420bdf6fcb7c48935e162e8c28fef2ea077",
       "installedAt": "2026-04-13T07:06:48.820Z",
-      "updatedAt": "2026-06-08T02:09:19.209Z"
+      "updatedAt": "2026-06-22T02:58:24.463Z"
     },
     "write": {
       "source": "tw93/Waza",
       "sourceType": "github",
       "sourceUrl": "https://github.com/tw93/Waza.git",
       "skillPath": "skills/write/SKILL.md",
-      "skillFolderHash": "bf78792ecdbbbd5de49df5d0b90468f671b216d6",
+      "skillFolderHash": "8c15c75a8379b3ffcaf766ac1937712a586b0d85",
       "installedAt": "2026-04-13T07:06:49.570Z",
-      "updatedAt": "2026-06-08T02:09:29.466Z"
+      "updatedAt": "2026-06-22T02:58:43.516Z"
     },
     "find-skills": {
       "source": "vercel-labs/skills",
@@ -78,10 +78,9 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/anthropics/skills.git",
       "skillPath": "skills/frontend-design/SKILL.md",
-      "skillFolderHash": "928950704df8a8b885c03de5da626331e6f29cf8",
-      "pluginName": "example-skills",
+      "skillFolderHash": "0d5b74a14bdf3ebcd64f352d06376a2ef05ed296",
       "installedAt": "2026-04-16T03:59:01.592Z",
-      "updatedAt": "2026-04-16T03:59:01.592Z"
+      "updatedAt": "2026-06-10T01:01:05.107Z"
     },
     "spark": {
       "source": "wishworldbetter/seedex-skills",
@@ -97,9 +96,18 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/diffusionstudio/lottie.git",
       "skillPath": "skills/text-to-lottie/SKILL.md",
-      "skillFolderHash": "3642919f0fea65f3c774686b01b7ea3c8d797898",
+      "skillFolderHash": "8ef9dfd5ecd7a3cd460263852cbe0fcf0f3e1322",
       "installedAt": "2026-06-09T01:09:43.009Z",
-      "updatedAt": "2026-06-09T01:09:43.009Z"
+      "updatedAt": "2026-06-16T01:13:10.848Z"
+    },
+    "caveman": {
+      "source": "juliusbrussee/caveman",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/juliusbrussee/caveman.git",
+      "skillPath": "skills/caveman/SKILL.md",
+      "skillFolderHash": "a22aa2a0a64d7d4b7b59bbddbdb865fedfb40d9c",
+      "installedAt": "2026-06-18T03:39:00.873Z",
+      "updatedAt": "2026-06-18T03:39:00.873Z"
     }
   },
   "dismissed": {

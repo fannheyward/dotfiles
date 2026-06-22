@@ -2,6 +2,7 @@ model = "openai/gpt-5.5"
 model_provider = "openrouter"
 model_reasoning_effort = "high"
 model_reasoning_summary = "detailed"
+model_supports_reasoning_summaries = true
 web_search = "live"
 network_access = true
 personality = "pragmatic"
