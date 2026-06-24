@@ -2,7 +2,7 @@
 auto-update = download
 
 font-size = 18
-theme = Catppuccin Latte
+theme = Catppuccin Frappe
 
 copy-on-select = clipboard
 clipboard-paste-protection = true

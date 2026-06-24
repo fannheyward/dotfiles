@@ -6,9 +6,9 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/tw93/Waza.git",
       "skillPath": "skills/check/SKILL.md",
-      "skillFolderHash": "0c8dd260fdc1f1cafe45171cc4b1275325b4c803",
+      "skillFolderHash": "7179af1f9fef8c3fbd1a6862f4fe269a7a917870",
       "installedAt": "2026-04-13T07:06:46.153Z",
-      "updatedAt": "2026-06-22T02:56:54.383Z"
+      "updatedAt": "2026-06-23T01:12:33.397Z"
     },
     "design": {
       "source": "tw93/Waza",
@@ -69,9 +69,9 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/vercel-labs/skills.git",
       "skillPath": "skills/find-skills/SKILL.md",
-      "skillFolderHash": "3013fdeb8a11b10b1eb795ec3ae8bfca38f7c26d",
+      "skillFolderHash": "eb6a23305aea6e340d14b9de3766e721f9f4861b",
       "installedAt": "2026-04-13T07:11:45.291Z",
-      "updatedAt": "2026-04-13T07:11:45.291Z"
+      "updatedAt": "2026-06-24T01:07:58.243Z"
     },
     "frontend-design": {
       "source": "anthropics/skills",

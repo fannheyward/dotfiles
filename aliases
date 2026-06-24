@@ -2,6 +2,7 @@ if (( $+commands[eza] )); then
     alias l='eza'
     alias ls='eza'
     alias tree='eza --tree'
+    alias list='eza -l --absolute'
 else
     export LS_OPTIONS="-hGF"
     alias l="ls $LS_OPTIONS"
@@ -28,4 +29,4 @@ alias cat='bat'
 alias ag='rg --smart-case'
 alias v="nvim -u ${HOME}/src/init.vim/vimrc_for_server"
 alias vi="nvim"
-
+alias yoink="open -a 'Yoink'"
