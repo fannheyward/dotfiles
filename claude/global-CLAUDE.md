@@ -78,12 +78,33 @@ When compressing, preserve in priority order:
 
 ## Tools Requirements
 
+### Prefer built-in tools over shelling out (token efficiency)
+
+The built-in tools return structured, auto-truncated output and cost far fewer
+tokens than piping raw shell output into context. Use them as the default:
+
+- Read a file → **`view`** tool, not `cat`/`head`/`tail`/`sed -n` (use `view`'s
+  line-range for large files instead of dumping the whole file).
+- Search file contents → **`grep`** tool, not `grep`/`rg` in `bash`.
+- Find files by name/pattern → the file-search tool, not `find`/`fd`/`ls`.
+
+Reach for `bash` only when a tool genuinely cannot do the job, or for batching
+related shell steps.
+
+### Shell command execution
+
+Use `bash`/`rtk` for commands that actually *do* something (git, builds, tests,
+package managers), not for reading or searching files:
+
+- `rtk`: prefix real shell commands with `rtk` for token efficiency, unless full
+  output is explicitly needed (e.g. `rtk git status`, `rtk ./gradlew assemble`).
 - `jq`: JSON processor
 - `yq`: YAML/TOML/XML/INI processor
-- `fd`: find files in local codebase
-- `rg`: ripgrep for plain-text searches
 - `gh`: GitHub CLI to view issue details, PR information and more
-- `rtk`: Always prefer running commands via `rtk` prefix for token efficiency, unless full output is explicitly needed
-- `ast-grep`: syntax-aware or structural code searches, default to `ast-grep --lang ts -p '<pattern>'` (or set `--lang` appropriately)
+- `ast-grep`: syntax-aware or structural code searches when the plain-text
+  `grep` tool is not enough; default to `ast-grep --lang ts -p '<pattern>'` (or
+  set `--lang` appropriately)
+- `fd` / `rg`: only inside a larger shell pipeline; for plain file finds or text
+  searches, prefer the built-in file-search / `grep` tools above.
 
 @RTK.md
