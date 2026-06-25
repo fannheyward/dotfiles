@@ -113,6 +113,7 @@ typeset -U path PATH
 path=(
   "${HOMEBREW_PREFIX}/bin"
   "${HOMEBREW_PREFIX}/opt/curl/bin"
+  "$HOME/Library/Android/sdk/platform-tools"
   "${BUN_INSTALL}/bin"
   "$HOME/.cargo/bin"
   "$HOME/.local/bin"
