@@ -25,6 +25,9 @@
 	pager = diff-so-fancy | less --tabs=4 -RF
 	excludesfile = ~/.config/git/ignore
 	commitGraph = true
+	fsmonitor = true
+	preloadindex = true
+	untrackedCache = true
 [filter "lfs"]
 	required = true
 	clean = git-lfs clean -- %f
@@ -42,3 +45,5 @@
 	concurrent = true
 [interactive]
 	diffFilter = diff-so-fancy --patch
+[feature]
+	manyFiles = true

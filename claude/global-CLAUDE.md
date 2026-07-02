@@ -31,8 +31,7 @@ This file provides **global** guidance for Claude Code(claude.ai/code), includin
 The built-in tools return structured, auto-truncated output and cost far fewer
 tokens than piping raw shell output into context. Use them as the default:
 
-- Read a file → **`view`** tool, not `cat`/`head`/`tail`/`sed -n` (use `view`'s
-  line-range for large files instead of dumping the whole file).
+- Read a file → **`view`** tool, not `cat`/`head`/`tail`/`sed -n` (use `view`'s line-range for large files instead of dumping the whole file).
 - Search file contents → **`grep`** tool, not `grep`/`rg` in `bash`.
 - Find files by name/pattern → the file-search tool, not `find`/`fd`/`ls`.
 
@@ -41,19 +40,14 @@ related shell steps.
 
 ### Shell command execution
 
-Use `bash`/`rtk` for commands that actually *do* something (git, builds, tests,
-package managers), not for reading or searching files:
+Use `bash` for commands that actually *do* something (git, builds, tests, package managers), not for reading or searching files:
 
-- `rtk`: prefix real shell commands with `rtk` for token efficiency, unless full
-  output is explicitly needed (e.g. `rtk git status`, `rtk ./gradlew assemble`).
+- `rtk`: prefix real shell commands with `rtk` for token efficiency, unless full output is explicitly needed (e.g. `rtk git diff`)
 - `jq`: JSON processor
 - `yq`: YAML/TOML/XML/INI processor
 - `gh`: GitHub CLI to view issue details, PR information and more
-- `ast-grep`: syntax-aware or structural code searches when the plain-text
-  `grep` tool is not enough; default to `ast-grep --lang ts -p '<pattern>'` (or
-  set `--lang` appropriately)
-- `fd` / `rg`: only inside a larger shell pipeline; for plain file finds or text
-  searches, prefer the built-in file-search / `grep` tools above.
+- `ast-grep`: syntax-aware or structural code searches when the plain-text `grep` tool is not enough; default to `ast-grep --lang <lang> -p '<pattern>'`
+- `fd` / `rg`: only inside a larger shell pipeline; for plain file finds or text searches, prefer the built-in file-search / `grep` tools above.
 
 ## Compact Instructions
 
@@ -67,7 +61,7 @@ When compressing, preserve in priority order:
 
 ## Documentation and Planning Requirements
 
-When implementing significant module changes, feature additions, database schema updates, API migrations, security improvements, performance optimizations, or architectural refactorings, you MUST create and maintain documentation in the `docs/plan/` directory. Update the plan document with progress status as work progresses, ensures that all major work is properly tracked, documented, and can be resumed by anyone on the team.
+When implementing significant module changes, feature additions, database schema updates, API migrations, security improvements, performance optimizations, or architectural refactorings, you MUST create and maintain documentation in the `docs/plan/` directory. Update the plan document with progress status as work progresses, ensures that all major work is properly tracked, documented, and can be resumed by anyone on the team. The document should(not-must) include a Mermaid diagram to illustrate the architecture/call chain.
 
 ### Plan Document Structure
 
@@ -81,6 +75,10 @@ Brief description of the change and its purpose
 ## Current Problem Analysis
 
 Detailed analysis of what needs to be changed and why
+
+## Call Chain / Architecture Diagram
+
+[mermaid diagram]
 
 ## Strategy and Approach
 

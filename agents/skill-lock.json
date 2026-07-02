@@ -93,9 +93,9 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/diffusionstudio/lottie.git",
       "skillPath": "skills/text-to-lottie/SKILL.md",
-      "skillFolderHash": "b0de3ef54563bd92de6f6ab3c5826d5e5852969c",
+      "skillFolderHash": "feecde38d4502688635f3f8adfa0931ededc0697",
       "installedAt": "2026-06-09T01:09:43.009Z",
-      "updatedAt": "2026-06-30T01:01:53.866Z"
+      "updatedAt": "2026-07-02T01:20:25.859Z"
     },
     "caveman": {
       "source": "juliusbrussee/caveman",
