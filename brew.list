@@ -39,6 +39,7 @@ icu4c@78
 jansson
 jpeg-turbo
 jq
+json-c
 lame
 libevent
 libffi
