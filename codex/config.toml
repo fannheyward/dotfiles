@@ -1,15 +1,17 @@
-model = "openai/gpt-5.5"
+model = "gpt-5.6-sol"
 model_provider = "openrouter"
-model_reasoning_effort = "high"
+model_reasoning_effort = "medium"
 model_reasoning_summary = "detailed"
-model_supports_reasoning_summaries = true
 web_search = "live"
 network_access = true
 personality = "pragmatic"
+service_tier = "default"
 
 [features]
 collaboration_modes = true
 shell_snapshot = true
+js_repl = false
+hooks = true
 
 [model_providers.openrouter]
 name = "openrouter"
@@ -21,3 +23,13 @@ wire_api = "responses"
 name = "cliproxyapi"
 base_url = "http://127.0.0.1:8317/v1"
 wire_api = "responses"
+
+[desktop]
+conversationDetailMode = "STEPS_PROSE"
+ambient-suggestions-enabled = false
+git-branch-prefix = "fannheyward/"
+followUpQueueMode = "queue"
+dock-icon-preference = "codex-system"
+
+[desktop.open-in-target-preferences]
+global = "ghostty"
