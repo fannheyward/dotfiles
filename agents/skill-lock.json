@@ -121,7 +121,7 @@
       "skillFolderHash": "c84411b360fad91b8756e60fa17fd5b5761422dd",
       "pluginName": "mattpocock-skills",
       "installedAt": "2026-07-08T09:24:16.645Z",
-      "updatedAt": "2026-07-13T05:52:13.026Z"
+      "updatedAt": "2026-07-13T06:16:26.638Z"
     },
     "grilling": {
       "source": "mattpocock/skills",
@@ -202,6 +202,36 @@
       "pluginName": "mattpocock-skills",
       "installedAt": "2026-07-13T05:52:13.026Z",
       "updatedAt": "2026-07-13T05:52:13.026Z"
+    },
+    "improve-codebase-architecture": {
+      "source": "mattpocock/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/mattpocock/skills.git",
+      "skillPath": "skills/engineering/improve-codebase-architecture/SKILL.md",
+      "skillFolderHash": "e5beae48471adf87c513b5cbcb0ca347467546da",
+      "pluginName": "mattpocock-skills",
+      "installedAt": "2026-07-13T06:16:26.635Z",
+      "updatedAt": "2026-07-13T06:16:26.635Z"
+    },
+    "triage": {
+      "source": "mattpocock/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/mattpocock/skills.git",
+      "skillPath": "skills/engineering/triage/SKILL.md",
+      "skillFolderHash": "3e7a49151929d884365035cb322de099c15b33d3",
+      "pluginName": "mattpocock-skills",
+      "installedAt": "2026-07-13T06:16:26.638Z",
+      "updatedAt": "2026-07-13T06:16:26.638Z"
+    },
+    "wayfinder": {
+      "source": "mattpocock/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/mattpocock/skills.git",
+      "skillPath": "skills/engineering/wayfinder/SKILL.md",
+      "skillFolderHash": "83a96a4454c069148d8648fd21ca62a58ac15db2",
+      "pluginName": "mattpocock-skills",
+      "installedAt": "2026-07-13T06:36:47.245Z",
+      "updatedAt": "2026-07-13T06:36:47.245Z"
     }
   },
   "dismissed": {

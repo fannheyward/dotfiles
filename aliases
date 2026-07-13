@@ -2,7 +2,7 @@ if (( $+commands[eza] )); then
     alias l='eza'
     alias ls='eza'
     alias tree='eza --tree'
-    alias list='eza -l --absolute'
+    alias list='eza --absolute -l'
 else
     export LS_OPTIONS="-hGF"
     alias l="ls $LS_OPTIONS"
