@@ -10,6 +10,7 @@ call plug#begin()
 Plug '~/src/coc-rust-analyzer'
 Plug '~/src/coc-pyright'
 Plug '~/src/coc-clangd'
+Plug '~/src/coc-ts'
 
 Plug 'https://github.com/zef/vim-cycle'
 Plug 'https://github.com/tpope/vim-sleuth'
