@@ -6,30 +6,27 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/tw93/Waza.git",
       "skillPath": "skills/check/SKILL.md",
-      "skillFolderHash": "ccf585cec77c1acb22acde46419c054c9cd169a8",
-      "pluginName": "waza-check",
+      "skillFolderHash": "09ffc2bef7aec301da4e3a6b556e90fde4ef5340",
       "installedAt": "2026-07-14T09:01:03.267Z",
-      "updatedAt": "2026-07-14T09:02:03.335Z"
+      "updatedAt": "2026-07-20T01:38:42.818Z"
     },
     "hunt": {
       "source": "tw93/Waza",
       "sourceType": "github",
       "sourceUrl": "https://github.com/tw93/Waza.git",
       "skillPath": "skills/hunt/SKILL.md",
-      "skillFolderHash": "e72572da9e7a84ef9890b72e6201c73ad79820f8",
-      "pluginName": "waza-hunt",
+      "skillFolderHash": "7282337b8e499898fcf6d949719b6de43af570b1",
       "installedAt": "2026-04-13T07:06:47.459Z",
-      "updatedAt": "2026-07-14T09:02:03.338Z"
+      "updatedAt": "2026-07-20T01:38:44.355Z"
     },
     "write": {
       "source": "tw93/Waza",
       "sourceType": "github",
       "sourceUrl": "https://github.com/tw93/Waza.git",
       "skillPath": "skills/write/SKILL.md",
-      "skillFolderHash": "b88b04a30fcfbabcc0a5fd4488c99eeb18b7538c",
-      "pluginName": "waza-write",
+      "skillFolderHash": "513f4f152ccecc742d81b9ea79820bc35213a396",
       "installedAt": "2026-04-13T07:06:49.570Z",
-      "updatedAt": "2026-07-14T09:02:03.339Z"
+      "updatedAt": "2026-07-20T01:38:45.898Z"
     },
     "frontend-design": {
       "source": "anthropics/skills",
@@ -81,9 +78,9 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/tw93/Waza.git",
       "skillPath": "skills/ui/SKILL.md",
-      "skillFolderHash": "ea15d56739522641aa9253f80f3e3306e2665278",
+      "skillFolderHash": "d74ce8e0f60decfa8e8e9e71d60b80c656b4cc57",
       "installedAt": "2026-06-29T02:24:53.690Z",
-      "updatedAt": "2026-07-13T00:48:32.734Z"
+      "updatedAt": "2026-07-20T01:38:47.488Z"
     },
     "grill-with-docs": {
       "source": "mattpocock/skills",

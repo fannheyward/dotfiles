@@ -27,6 +27,7 @@
 	commitGraph = true
 	preloadindex = true
 	untrackedCache = true
+	fsmonitor = true
 [filter "lfs"]
 	required = true
 	clean = git-lfs clean -- %f
