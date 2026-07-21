@@ -25,7 +25,6 @@ Plug 'https://github.com/ludovicchabant/vim-gutentags'
 Plug 'https://github.com/neoclide/coc.nvim', {'branch': 'master', 'do': 'npm i'}
 " Plug 'https://github.com/neoclide/coc.nvim', {'branch': 'release'}
 
-" Plug 'https://github.com/fannheyward/go.vim', { 'for': 'go' }
 Plug 'https://github.com/catppuccin/nvim', { 'as': 'catppuccin' }
 call plug#end()
 " }}}} plug.vim
@@ -35,7 +34,7 @@ colorscheme catppuccin-frappe
 packadd nvim.difftool
 packadd nvim.undotree
 set fileencoding=utf-8
-set fileencodings=utf-8,gbk,chinese,cp936,gb18030,utf-16le,utf-16,big5,euc-jp,euc-kr,latin-1
+set fileencodings=ucs-bom,utf-8,gb18030,cp936,utf-16le,utf-16,big5,euc-jp,euc-kr,latin-1
 
 set cmdheight=2
 set completeopt=menuone,nosort,fuzzy
@@ -103,12 +102,11 @@ augroup common
   autocmd BufNewFile,BufRead LICENSE* setlocal filetype=license
 
   autocmd FileType go setlocal expandtab
-  autocmd FileType go command! -buffer -bang A call go#alternate#Switch(<bang>0, 'edit')
   autocmd FileType lua setlocal includeexpr=substitute(v:fname,'\\.','/','g')
   autocmd FileType lua setlocal include=require
   autocmd FileType lua setlocal define=function
   autocmd FileType markdown setlocal suffixesadd=.md
-  autocmd FileType make set noexpandtab shiftwidth=4 softtabstop=0
+  autocmd FileType make setlocal noexpandtab shiftwidth=4 softtabstop=0
   autocmd FileType crontab setlocal nobackup nowritebackup
   autocmd FileType lua,ruby,html,javascript,typescript,css,json,vue,vim,yaml setlocal shiftwidth=2 tabstop=2
   autocmd FileType vue setlocal iskeyword+=-
@@ -154,7 +152,6 @@ command! -nargs=0 Format        call CocAction('format')
 command! -nargs=0 Fold          call CocAction('fold')
 command! -nargs=0 GitChunkUndo  call CocAction('runCommand', 'git.chunkUndo')
 command! -nargs=0 VSCode        silent! execute ":!code -g %:p\:" . line('.') . ":" . col('.')
-command! -nargs=0 Zed           silent! execute ":!zed --new %:" . line('.') . ":" . col('.')
 command! -nargs=0 BOnly         silent! execute "%bd\|e#\|bd#"
 " }}}} commands
 
@@ -226,25 +223,26 @@ function! s:next_char_pair() abort
   return getline('.')[col] =~# ')\|]\|}\|>\|''\|"\|`'
 endfunction
 
-function! s:show_documentation()
+function! s:show_documentation() abort
   if (index(['vim','help'], &filetype) >= 0)
     execute 'h '.expand('<cword>')
   elseif (coc#rpc#ready())
     call CocActionAsync('definitionHover')
   else
-    execute '!' . &keywordprg . " " . expand('<cword>')
+    normal! K
   endif
 endfunction
 
-function! s:go_to_definition()
+function! s:go_to_definition() abort
   if CocAction('jumpDefinition')
     return v:true
   endif
 
-  let ret = execute("silent! normal \<C-]>")
-  if ret =~ "Error" || ret =~ "错误"
+  try
+    execute "normal! \<C-]>"
+  catch /E426\|E433/
     call searchdecl(expand('<cword>'))
-  endif
+  endtry
 endfunction
 
 if executable("rg")
@@ -288,7 +286,7 @@ endfunction
 " wildignore {{{{
 set wildignore=*.o,*.obj,*~,*.exe,*.a,*.pdb,*.lib
 set wildignore+=*.so,*.dll,*.swp,*.egg,*.jar,*.class,*.pyc,*.pyo,*.bin,*.dex
-set wildignore+=*.log,*.pyc,*.sqlite,*.sqlite3,*.min.js,*.min.css,*.tags
+set wildignore+=*.log,*.sqlite,*.sqlite3,*.min.js,*.min.css,*.tags
 set wildignore+=*.zip,*.7z,*.rar,*.gz,*.tar,*.gzip,*.bz2,*.tgz,*.xz
 set wildignore+=*.png,*.jpg,*.gif,*.bmp,*.tga,*.pcx,*.ppm,*.img,*.iso
 set wildignore+=*.pdf,*.dmg,*.app,*.ipa,*.apk,*.mobi,*.epub
@@ -310,10 +308,6 @@ let g:gutentags_ctags_exclude = ['*.md', '*.json', '*.js', '*.ts', '*.jsx', '*.c
 let HiSetSL = '<Nop>'
 let HiFindTool = 'rg -H --color=never --no-heading --column --smart-case'
 " }}}}
-
-" go.vim {{{{
-let g:go_fmt_command = "gofumpt"
-" }}}} go.vim
 
 " coc.nvim {{{{
 " let g:coc_node_args = ['--nolazy', '--inspect-brk=6045']
