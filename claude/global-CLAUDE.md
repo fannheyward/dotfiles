@@ -20,29 +20,26 @@ This file provides **global** guidance for Claude Code(claude.ai/code), includin
 
 - Internal Processing: Always think in English for precise technical reasoning
 - External Communication: All answers and responses must be in Chinese
-- Context Switching: Process technical concepts in English, translate outputs to Chinese
-- All code, comments, identifiers/variables etc, use English only
+- Context Switching: Process technical concepts in English, transcreate to Chinese
+- Plan documents, comments, git commit messages etc, use Chinese only
 - Comments should explain **why** rather than restating **what**
 
 ## Tools Requirements
 
 ### Prefer built-in tools over shelling out (token efficiency)
 
-The built-in tools return structured, auto-truncated output and cost far fewer
-tokens than piping raw shell output into context. Use them as the default:
+The built-in tools return structured, auto-truncated output and cost far fewer tokens than piping raw shell output into context. Use them as the default:
 
 - Read a file → **`view`** tool, not `cat`/`head`/`tail`/`sed -n` (use `view`'s line-range for large files instead of dumping the whole file).
 - Search file contents → **`grep`** tool, not `grep`/`rg` in `bash`.
 - Find files by name/pattern → the file-search tool, not `find`/`fd`/`ls`.
 
-Reach for `bash` only when a tool genuinely cannot do the job, or for batching
-related shell steps.
+Reach for `bash` only when a tool genuinely cannot do the job, or for batching related shell steps.
 
 ### Shell command execution
 
 Use `bash` for commands that actually *do* something (git, builds, tests, package managers), not for reading or searching files:
 
-- `rtk`: prefix real shell commands with `rtk` for token efficiency, unless full output is explicitly needed (e.g. `rtk git diff`)
 - `jq`: JSON processor
 - `yq`: YAML/TOML/XML/INI processor
 - `gh`: GitHub CLI to view issue details, PR information and more
@@ -104,5 +101,3 @@ Real-time status updates (✅ ✓ ⏳ ❌)
 
 List of all files that will be modified
 ```
-
-@RTK.md

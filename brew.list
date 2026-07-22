@@ -78,7 +78,6 @@ pcre2
 python@3.14
 readline
 ripgrep
-rtk
 ruff
 rust-analyzer
 sdl2-compat

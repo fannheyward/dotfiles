@@ -1,6 +1,7 @@
 {
   "prefer_split_fsevents_watcher": true,
   "ignore_dirs": [
+    ".agents",
     ".claude",
     ".codex",
     ".gemini",

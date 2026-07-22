@@ -4,7 +4,7 @@ if (( $+commands[eza] )); then
     alias tree='eza --tree'
     alias list='eza --absolute -l'
 else
-    export LS_OPTIONS="-hGF"
+    export LS_OPTIONS='-hGF'
     alias l="ls $LS_OPTIONS"
     alias ls="ls $LS_OPTIONS"
 fi
@@ -14,19 +14,17 @@ alias n='npm'
 alias ni='npm install'
 alias p='pnpm'
 alias brwe='brew'
-alias gitt='git'
 alias ql="qlmanage -p 2>/dev/null"
 alias -- ..="cd .."
-alias rm="rm -i"
-alias tmp="cd /tmp"
-alias dirs="dirs -v"
-alias tmux="tmux -2"
-alias openc="opencode"
-alias pjson="python -mjson.tool"
+alias rm='rm -i'
+alias tmp='cd /tmp'
+alias dirs='dirs -v'
+alias tmux='tmux -2'
+alias pjson='python3 -mjson.tool'
 alias last='fc -ln -1 | pbcopy'
 alias save='pbpaste | bat >'
 alias cat='bat'
 alias ag='rg --smart-case'
 alias v="nvim -u ${HOME}/src/init.vim/vimrc_for_server"
-alias vi="nvim"
+alias vi='nvim'
 alias yoink="open -a 'Yoink'"
