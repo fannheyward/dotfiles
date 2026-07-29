@@ -27,6 +27,9 @@ Plug 'https://github.com/neoclide/coc.nvim', {'branch': 'master', 'do': 'npm i'}
 
 Plug 'https://github.com/catppuccin/nvim', { 'as': 'catppuccin' }
 call plug#end()
+
+lua vim.loader.enable()
+lua require('catppuccin').setup({ auto_integrations = false })
 " }}}} plug.vim
 
 " basic {{{{
@@ -422,11 +425,11 @@ xmap <silent> <C-s> <Plug>(coc-range-select)
 
 " Lua {{{{
 lua <<EOF
-vim.loader.enable()
-require('vim.lsp.log').set_level(vim.log.levels.OFF)
-
-require("origami").setup()
-require('hlslens').setup({ calm_down = true })
+vim.schedule(function()
+  require('vim.lsp.log').set_level(vim.log.levels.OFF)
+  require("origami").setup()
+  require('hlslens').setup({ calm_down = true })
+end)
 
 require('mini.ai').setup()
 require('mini.misc').setup_restore_cursor()
