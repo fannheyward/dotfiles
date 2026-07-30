@@ -1,0 +1,144 @@
+" @fannheyward
+set nocompatible
+filetype plugin indent on
+
+set autocomplete
+set autoindent
+set backspace=indent,eol,start
+set complete-=i
+set complete+=o
+set completeopt=menu
+set cmdheight=2
+set expandtab
+set diffopt+=internal,algorithm:patience
+set fileencoding=utf-8
+set fileencodings=utf-8,gbk,chinese,cp936,gb18030,utf-16le,utf-16,big5,euc-jp,euc-kr,latin-1
+set foldmethod=indent
+set hidden
+set history=1000
+set hlsearch
+set incsearch
+set ignorecase smartcase
+set laststatus=2
+set list listchars=tab:\|\ ,trail:·,eol:¬
+set matchpairs+=<:>
+set matchtime=2
+set nofoldenable
+set nrformats-=octal
+set number
+set pumheight=20
+set pumborder=rounded
+set shiftwidth=4
+set showcmd
+set showmatch
+set smarttab
+set tabstop=4
+set termguicolors
+set title
+set ttimeout
+set ttimeoutlen=100
+set updatetime=100
+set wildmenu
+
+setlocal noswapfile
+highlight ExtraWhitespace ctermbg=red guibg=red
+match ExtraWhitespace /\s\+$/
+
+let g:loaded_node_provider = 0
+let g:loaded_ruby_provider = 0
+let g:loaded_perl_provider = 0
+let g:loaded_python_provider = 0
+let g:loaded_python3_provider = 0
+
+map <silent> <leader>n :nohlsearch<cr>
+nmap ? /\<\><Left><Left>
+
+nnoremap <leader>cp :set clipboard=unnamed<CR>
+
+nnoremap <silent> gb :bn<CR>
+nnoremap <silent> gB :bp<CR>
+
+nnoremap <silent><nowait> <space>s  :cgetexpr <SID>grep_to_qf(expand('<cword>'))<CR>
+nnoremap <silent><nowait> <space>S  :cgetexpr <SID>grep_to_qf(expand('<cword>'), expand('%'))<CR>
+
+inoremap <C-c> <ESC>
+inoremap <C-w> <C-[>diwa
+inoremap <C-h> <BS>
+inoremap <C-d> <Del>
+inoremap <C-u> <C-G>u<C-U>
+inoremap <C-b> <Left>
+inoremap <C-f> <Right>
+inoremap <C-a> <Home>
+inoremap <expr><C-e> pumvisible() ? "\<C-e>" : "\<End>"
+
+" command line mappings
+cnoremap <C-a> <Home>
+cnoremap <C-b> <S-Left>
+cnoremap <C-f> <S-Right>
+cnoremap <C-e> <End>
+cnoremap <C-d> <Del>
+cnoremap <C-h> <BS>
+cnoremap <C-t> <C-R>=expand("%:p:h") . "/" <CR>
+
+nmap t<Enter> :bo sp term://zsh\|resize 10<CR>i
+tnoremap <Esc> <C-\><C-n>
+
+command! -nargs=0 E     e
+command! -nargs=0 Q     q
+command! -nargs=0 Qa    qa
+command! -nargs=0 T     tabnew
+command! -nargs=0 W     w
+command! -nargs=0 Wa    wa
+command! -nargs=0 Wqa   wqa
+command! -nargs=0 WQa   wqa
+command! -nargs=0 JSONPretty    %!python3 -m json.tool
+command! -nargs=+ Find          cgetexpr <SID>grep_to_qf(<f-args>)
+
+set wildignore+=*.pyc,*.sqlite,*.sqlite3,cscope.out
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip     " MacOSX/Linux
+set wildignore+=*\\tmp\\*,*.swp,*.zip,*.exe  " Windows
+set wildignore+=*/bower_components/*,*/node_modules/*
+set wildignore+=*/nginx_runtime/*,*/build/*,*/logs/*
+
+inoremap <silent><expr> <cr> pumvisible()? "\<c-y>" : "\<cr>"
+inoremap <silent><expr> <S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
+inoremap <silent><expr> <TAB>
+      \ pumvisible() ? "\<C-n>" :
+      \ <SID>check_back_space() ? "\<TAB>" : "\<c-n>"
+
+function! s:check_back_space() abort
+  let col = col('.') - 1
+  return !col || getline('.')[col - 1]  =~# '\s'
+endfunction
+
+augroup common
+  autocmd!
+
+  autocmd FileType go setlocal expandtab
+  autocmd FileType lua setlocal includeexpr=substitute(v:fname,'\\.','/','g')
+  autocmd FileType lua setlocal include=require
+  autocmd FileType lua setlocal define=function
+  autocmd FileType markdown setlocal suffixesadd=.md
+  autocmd FileType make set noexpandtab shiftwidth=4 softtabstop=0
+  autocmd FileType crontab setlocal nobackup nowritebackup
+  autocmd FileType lua,ruby,html,javascript,typescript,css,json,vue,vim,yaml setlocal shiftwidth=2 tabstop=2
+
+  autocmd CompleteDone * if pumvisible() == 0 | pclose | endif
+  autocmd BufReadPost *.log normal! G
+  autocmd QuickFixCmdPost cgetexpr cwindow
+  autocmd QuickFixCmdPost lgetexpr lwindow
+
+  " set up default omnifunc
+  autocmd FileType *
+        \ if &omnifunc == "" |
+        \    setlocal omnifunc=syntaxcomplete#Complete |
+        \ endif
+augroup end
+
+if executable("rg")
+  set grepprg=rg\ --vimgrep\ --no-heading\ --smart-case\ --word-regexp
+endif
+
+function! s:grep_to_qf(...) abort
+  return system(join([&grepprg] + [a:1] + [expandcmd(join(a:000[1:-1], ' '))], ' '))
+endfunction

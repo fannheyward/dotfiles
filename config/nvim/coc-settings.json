@@ -1,0 +1,140 @@
+{
+  // "biome.trace.server": "verbose",
+  // "clangd.trace.server": "verbose",
+  // "deno.trace.server": "verbose",
+  // "eslint.trace.server": "verbose",
+  // "go.trace.server": "verbose",
+  // "html.trace.server": "verbose",
+  // "java.trace.server": "verbose",
+  // "json.trace.server": "verbose",
+  // "julia.trace.server": "verbose",
+  // "markdown.trace.server": "verbose",
+  // "Pylance.trace.server": "verbose",
+  // "pyright.trace.server": "verbose",
+  // "ruff.trace.server": "verbose",
+  // "rust-analyzer.trace.server": "verbose",
+  // "tsserver.trace.server": "verbose",
+  // "xml.trace.server": "verbose",
+  // "yaml.trace.server": "verbose",
+  "clangd.arguments": [
+    "--all-scopes-completion",
+    "--background-index",
+    "--clang-tidy",
+    "--completion-parse=auto",
+    "--completion-style=detailed",
+    "--function-arg-placeholders=true",
+    "--query-driver=/usr/bin/clang++",
+    "--header-insertion-decorators=false",
+    "--header-insertion=iwyu",
+    "-j=8"
+  ],
+  "coc.preferences.autoApplySingleQuickfix": false,
+  "coc.preferences.enableLinkedEditing": true,
+  "coc.preferences.formatOnSave": true,
+  "coc.preferences.formatOnType": true,
+  "coc.preferences.useQuickfixForLocations": true,
+  "coc.preferences.willSaveHandlerTimeout": 1000,
+  "coc.source.file.ignoreHidden": false,
+  "codeLens.enable": true,
+  "codeLens.position": "eol",
+  "colors.enable": true,
+  "diagnostic.checkCurrentLine": true,
+  "diagnostic.displayByVimDiagnostic": true,
+  "diagnostic.format": "%message [%source]",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "eslint.autoFixOnSave": true,
+  "eslint.format.enable": true,
+  "eslint.packageManager": "yarn",
+  "extensions.updateCheck": "daily",
+  "suggest.floatConfig": {
+    "border": true
+  },
+  "floatFactory.floatConfig": {
+    "border": true
+  },
+  "go.goplsOptions": {
+    "experimentalPostfixCompletions": true,
+    "hints": {
+      "assignVariableTypes": true,
+      "compositeLiteralFields": true,
+      "compositeLiteralTypes": true,
+      "constantValues": true,
+      "functionTypeParameters": true,
+      "parameterNames": true,
+      "rangeVariableTypes": true
+    },
+    "semanticTokens": true,
+    "staticcheck": true,
+    "usePlaceholders": true
+  },
+  "go.goplsPath": "gopls",
+  "inlayHint.display": false,
+  "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": true,
+  "languageserver": {},
+  "links.highlight": true,
+  "list.insertMappings": {
+    "<C-c>": "do:exit",
+    "<C-n>": "do:previewdown",
+    "<C-p>": "do:previewup"
+  },
+  "list.normalMappings": {
+    "<C-c>": "do:exit",
+    "<C-n>": "do:previewdown",
+    "<C-p>": "do:previewup"
+  },
+  "list.source.grep.defaultArgs": [
+    "--ignore-case"
+  ],
+  "list.source.grep.useLiteral": false,
+  "Lua.completion.callSnippet": "Both",
+  "Lua.completion.postfix": ".",
+  "Lua.diagnostics.globals": [
+    "vim",
+    "jit"
+  ],
+  "Lua.runtime.version": "LuaJIT",
+  "Lua.workspace.checkThirdParty": false,
+  "markdownlint.config": {
+    "default": true,
+    "line-length": false
+  },
+  "notification.statusLineProgress": true,
+  "pullDiagnostic.onChange": false,
+  "pullDiagnostic.onSave": true,
+  "pyright.organizeimports.provider": "pyright",
+  "python.analysis.diagnosticMode": "workspace",
+  "python.analysis.stubPath": "~/src/python-type-stubs",
+  "python.formatting.provider": "ruff",
+  "python.linting.enabled": true,
+  "python.linting.ruffEnabled": true,
+  "semanticTokens.enable": true,
+  "signature.target": "echo",
+  "snippets.extends": {
+    "javascriptreact": [
+      "javascript"
+    ]
+  },
+  "snippets.snipmate.enable": false,
+  "snippets.ultisnips.enable": false,
+  "suggest.acceptSuggestionOnCommitCharacter": true,
+  "suggest.defaultSortMethod": "none",
+  "suggest.detailField": "abbr",
+  "suggest.selection": "recentlyUsedByPrefix",
+  "sumneko-lua.enableNvimLuaDev": true,
+  "tsserver.experimental.enableProjectDiagnostics": true,
+  "tsserver.implicitProjectConfig.checkJs": true,
+  "tsserver.useLocalTsdk": true,
+  "typescript.autoClosingTags": true,
+  "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": true,
+  "typescript.format.semicolons": "ignore",
+  "typescript.inlayHints.enumMemberValues.enabled": true,
+  "typescript.inlayHints.functionLikeReturnTypes.enabled": true,
+  // "typescript.inlayHints.parameterNames.enabled": "literals",
+  "typescript.inlayHints.parameterTypes.enabled": true,
+  "typescript.inlayHints.propertyDeclarationTypes.enabled": true,
+  "typescript.inlayHints.variableTypes.enabled": true,
+  "typescript.preferences.useAliasesForRenames": false,
+  "typescript.referencesCodeLens.showOnAllFunctions": true
+}
