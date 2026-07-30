@@ -25,6 +25,6 @@ alias last='fc -ln -1 | pbcopy'
 alias save='pbpaste | bat >'
 alias cat='bat'
 alias ag='rg --smart-case'
-alias v="nvim -u ${HOME}/src/init.vim/vimrc_for_server"
+alias v="nvim -u ${HOME}/src/dotfiles/config/nvim/vimrc_for_server"
 alias vi='nvim'
 alias yoink="open -a 'Yoink'"
