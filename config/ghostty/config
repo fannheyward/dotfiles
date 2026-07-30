@@ -8,6 +8,8 @@ theme = Catppuccin Frappe
 copy-on-select = clipboard
 clipboard-paste-protection = true
 clipboard-paste-bracketed-safe = true
+clipboard-trim-trailing-spaces = true
+macos-titlebar-style = "tabs"
 window-inherit-working-directory = false
 window-new-tab-position = end
 

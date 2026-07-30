@@ -1,3 +1,6 @@
+# benchmark:
+# for i in $(seq 1 20); do /usr/bin/time zsh -i -c exit; done
+#
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 

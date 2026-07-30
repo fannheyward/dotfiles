@@ -6,27 +6,27 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/tw93/Waza.git",
       "skillPath": "skills/check/SKILL.md",
-      "skillFolderHash": "09ffc2bef7aec301da4e3a6b556e90fde4ef5340",
+      "skillFolderHash": "44ac0799d44edc302c2f974bc85e9450475265c5",
       "installedAt": "2026-07-14T09:01:03.267Z",
-      "updatedAt": "2026-07-20T01:38:42.818Z"
+      "updatedAt": "2026-07-26T02:20:36.753Z"
     },
     "hunt": {
       "source": "tw93/Waza",
       "sourceType": "github",
       "sourceUrl": "https://github.com/tw93/Waza.git",
       "skillPath": "skills/hunt/SKILL.md",
-      "skillFolderHash": "7282337b8e499898fcf6d949719b6de43af570b1",
+      "skillFolderHash": "29fd2a16e433f8dc49a979b49733c2ea4046f24c",
       "installedAt": "2026-04-13T07:06:47.459Z",
-      "updatedAt": "2026-07-20T01:38:44.355Z"
+      "updatedAt": "2026-07-26T02:20:40.925Z"
     },
     "write": {
       "source": "tw93/Waza",
       "sourceType": "github",
       "sourceUrl": "https://github.com/tw93/Waza.git",
       "skillPath": "skills/write/SKILL.md",
-      "skillFolderHash": "513f4f152ccecc742d81b9ea79820bc35213a396",
+      "skillFolderHash": "279d1fa60a3200bdbf348d0fe68621f7c0fa8eb1",
       "installedAt": "2026-04-13T07:06:49.570Z",
-      "updatedAt": "2026-07-20T01:38:45.898Z"
+      "updatedAt": "2026-07-26T02:20:42.814Z"
     },
     "frontend-design": {
       "source": "anthropics/skills",
@@ -78,9 +78,9 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/tw93/Waza.git",
       "skillPath": "skills/ui/SKILL.md",
-      "skillFolderHash": "d74ce8e0f60decfa8e8e9e71d60b80c656b4cc57",
+      "skillFolderHash": "2485ad0b2edc74fcd21d90b2bdf48d62d05c3710",
       "installedAt": "2026-06-29T02:24:53.690Z",
-      "updatedAt": "2026-07-20T01:38:47.488Z"
+      "updatedAt": "2026-07-26T02:20:44.715Z"
     },
     "grill-with-docs": {
       "source": "mattpocock/skills",
@@ -245,6 +245,15 @@
       "pluginName": "example-skills",
       "installedAt": "2026-07-16T03:00:38.624Z",
       "updatedAt": "2026-07-16T03:00:38.624Z"
+    },
+    "git-push-lease": {
+      "source": "fannheyward/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/fannheyward/skills.git",
+      "skillPath": "skills/git-push-lease/SKILL.md",
+      "skillFolderHash": "dfdf4a560b9f8581f6ad76cb8d212ceda99140c9",
+      "installedAt": "2026-07-28T12:45:23.019Z",
+      "updatedAt": "2026-07-28T12:45:23.019Z"
     }
   },
   "dismissed": {
