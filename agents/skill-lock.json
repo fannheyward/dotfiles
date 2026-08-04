@@ -6,27 +6,27 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/tw93/Waza.git",
       "skillPath": "skills/check/SKILL.md",
-      "skillFolderHash": "44ac0799d44edc302c2f974bc85e9450475265c5",
+      "skillFolderHash": "5e211edab6551ab0914c8ab34548656d333f6a33",
       "installedAt": "2026-07-14T09:01:03.267Z",
-      "updatedAt": "2026-07-26T02:20:36.753Z"
+      "updatedAt": "2026-08-03T01:49:44.680Z"
     },
     "hunt": {
       "source": "tw93/Waza",
       "sourceType": "github",
       "sourceUrl": "https://github.com/tw93/Waza.git",
       "skillPath": "skills/hunt/SKILL.md",
-      "skillFolderHash": "29fd2a16e433f8dc49a979b49733c2ea4046f24c",
+      "skillFolderHash": "e33a01af7a479bb6c3cb25e893e369db5d11299f",
       "installedAt": "2026-04-13T07:06:47.459Z",
-      "updatedAt": "2026-07-26T02:20:40.925Z"
+      "updatedAt": "2026-08-03T01:49:46.918Z"
     },
     "write": {
       "source": "tw93/Waza",
       "sourceType": "github",
       "sourceUrl": "https://github.com/tw93/Waza.git",
       "skillPath": "skills/write/SKILL.md",
-      "skillFolderHash": "279d1fa60a3200bdbf348d0fe68621f7c0fa8eb1",
+      "skillFolderHash": "b70897ecfc44dd52139d0d03b83112fdcbe33aa9",
       "installedAt": "2026-04-13T07:06:49.570Z",
-      "updatedAt": "2026-07-26T02:20:42.814Z"
+      "updatedAt": "2026-08-03T01:49:55.322Z"
     },
     "ponytail": {
       "source": "dietrichgebert/ponytail",
@@ -51,9 +51,9 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/tw93/Waza.git",
       "skillPath": "skills/ui/SKILL.md",
-      "skillFolderHash": "2485ad0b2edc74fcd21d90b2bdf48d62d05c3710",
+      "skillFolderHash": "41b9ee63d946971efef17af703f6c4d1ef99d620",
       "installedAt": "2026-06-29T02:24:53.690Z",
-      "updatedAt": "2026-07-26T02:20:44.715Z"
+      "updatedAt": "2026-08-03T01:50:00.158Z"
     },
     "grill-with-docs": {
       "source": "mattpocock/skills",
