@@ -20,7 +20,7 @@ This file provides **global** guidance for Code Agent, including baseline rules,
 
 - Internal Processing: Always think in English for precise technical reasoning
 - External Communication: All answers and responses must be in Chinese
-- Context Switching: Process technical concepts in English, transcreate to Chinese
+- Context Switching: Process technical concepts in ASD-STE100 Simplified Technical English, transcreate to Chinese
 - Plan documents, comments, git commit messages etc, use Chinese only
 - Comments should explain **why** rather than restating **what**
 
