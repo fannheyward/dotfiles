@@ -159,13 +159,11 @@ command! -nargs=0 BOnly         silent! execute "%bd\|e#\|bd#"
 " }}}} commands
 
 " mappings {{{{
+nmap ? /\<\><Left><Left>
 nmap <nowait> yc yygccp
 nmap <silent> <leader>ee :e $HOME/.config/nvim/init.vim<CR>
 nmap <silent> <leader>dd :e $HOME/.config/nvim/dev.dict<CR>
 set dictionary+=$HOME/.config/nvim/dev.dict
-
-nmap ? /\<\><Left><Left>
-nmap <silent> <leader>n :nohlsearch<CR>
 
 vnoremap ? <Esc>/\%V
 vnoremap J :m '>+1<CR>gv=gv
@@ -342,9 +340,7 @@ let g:coc_global_extensions = [
       \'coc-yank'
       \]
 
-let g:coc_filetype_map = {
-      \ 'asciidoc': 'markdown',
-      \ }
+let g:coc_filetype_map = { 'asciidoc': 'markdown' }
 
 nmap <silent> gd :call <SID>go_to_definition()<CR>
 nmap <silent><nowait> gD <Plug>(coc-declaration)
