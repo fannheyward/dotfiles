@@ -162,7 +162,6 @@ command! -nargs=0 BOnly         silent! execute "%bd\|e#\|bd#"
 nmap ? /\<\><Left><Left>
 nmap <nowait> yc yygccp
 nmap <silent> <leader>ee :e $HOME/.config/nvim/init.vim<CR>
-nmap <silent> <leader>dd :e $HOME/.config/nvim/dev.dict<CR>
 set dictionary+=$HOME/.config/nvim/dev.dict
 
 vnoremap ? <Esc>/\%V

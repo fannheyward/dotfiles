@@ -136,5 +136,9 @@
   "typescript.inlayHints.propertyDeclarationTypes.enabled": true,
   "typescript.inlayHints.variableTypes.enabled": true,
   "typescript.preferences.useAliasesForRenames": false,
-  "typescript.referencesCodeLens.showOnAllFunctions": true
+  "typescript.referencesCodeLens.showOnAllFunctions": true,
+  "json.schemaDownload.trustedDomains": {
+    "https://www.schemastore.org": true,
+    "https://json.schemastore.org": true
+  }
 }
