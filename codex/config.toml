@@ -37,7 +37,7 @@ ambient-suggestions-enabled = false
 git-branch-prefix = "fannheyward/"
 followUpQueueMode = "queue"
 dock-icon-preference = "codex-system"
-enabled-reasoning-efforts = ["low", "medium", "high", "xhigh", "ultra", "max"]
+enabled-reasoning-efforts = ["low", "medium", "high", "xhigh", "max", "ultra"]
 git-worktree-root = "/Users/fannheyward/worktrees"
 
 [desktop.open-in-target-preferences]

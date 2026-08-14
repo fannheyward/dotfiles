@@ -112,6 +112,7 @@ export GO111MODULE=on
 export GOPATH="$HOME"
 export GEM_HOME="$HOME/.gem"
 
+export PATH="$HOME/.local/bin:$PATH"
 # Use zsh arrays for PATH for speed and deduplication
 typeset -U path PATH
 path=(

@@ -100,6 +100,12 @@
       }
     }
   },
+  "worktree": {
+    "symlinkDirectories": [
+      "node_modules",
+      ".cache"
+    ]
+  },
   "disableDeepLinkRegistration": "disable",
   "alwaysThinkingEnabled": true,
   "showClearContextOnPlanAccept": true,
