@@ -1,57 +1,67 @@
 # AGENTS.md
 
-This is a global agent policy used across projects; the closest project `AGENTS.md` and explicit repository conventions take precedence.
+This is a cross-project agent policy; explicit user instructions and the closest repository `AGENTS.md` or conventions take precedence.
 
 ## Always Apply
 
-- When information is incomplete, state the assumption and proceed if it is low-risk and reversible. Ask when the assumption could materially change the result or cause irreversible effects.
+- When information is incomplete, state the assumption and proceed only when it is low-risk and reversible; ask before assumptions that could materially change the result or cause irreversible effects.
 - Prioritize correctness and safety, then readability and maintainability, performance, and brevity.
-- Before starting, define checkable success criteria. Execute and verify until they are met.
-- Use Chinese for all user-facing communication.
+- Define checkable success criteria before starting, then execute and verify until they are met.
+- Use Chinese for user-facing communication unless the user or the closest repository convention requests another language.
 
-## Subagents Rules
+## Sub-agent Workflow
 
-- This section constrains only the primary agent; sub-agents must not delegate further.
-- Tasks expected to be completed within 10 minutes, involving only a single workflow, or having strong sequential dependencies must be handled directly by the primary agent without delegation.
-- Only when there are at least two independently parallelizable research, implementation, or verification workflows, each expected to require more than 5 minutes, should sub-agents be proactively used.
-- By default, at most two read-only sub-agents and one writing sub-agent may run simultaneously; parallel writes are permitted only when the files, shared interfaces, and project configuration do not overlap.
-- Each sub-agent may take on only one clearly bounded task. By default, it should return a complete result once, with at most one additional `follow-up`; afterward, the primary agent must integrate the results and should not repeatedly reactivate the same sub-agent over an extended period.
-- For non-simple development tasks, necessary research must be completed and the scope and plan clarified first. If the primary agent is not configured as `gpt-5.6-sol` + `ultra`, it may call `sol_planner` serially before implementation only when the requirements meet at least one of the following conditions and there is not yet a user-confirmed plan: high ambiguity, high risk, or involvement of multiple core modules. When the user requests confirmation, the primary agent must present the plan and wait for confirmation before delegating implementation.
-- Use `luna_explorer` for read-only searches, code-path analysis, documentation checks, and analysis of logs and test results.
-- Use `spark_worker` for a single micro-change with clearly defined objectives, file scope, and acceptance criteria. It must not be used when the scope is unclear, spans multiple modules, or requires complex root-cause analysis.
-- Use `terra_worker` for clearly bounded implementation, fixes, and authorized verification that require deeper reasoning, span multiple files, or involve root-cause analysis.
-- Combine tasks as needed for complex work: normally, begin with no more than two parallel `luna_explorer` research tasks, then have the primary agent implement or choose one of `spark_worker` and `terra_worker` to do so. If the primary agent is already Sol Ultra, it should handle planning, integration, and final acceptance itself and should not additionally call `sol_planner` or `sol_reviewer`. Do not start agents merely to fill roles.
-- Implementation-oriented sub-agents proactively created by the primary agent may use only `luna_explorer`, `spark_worker`, or `terra_worker`; Sol sub-agents may use only the read-only planning agent `sol_planner` and the final-review agent `sol_reviewer`. Internal system approvals or tool agents are not subject to this restriction.
-- Sub-agents must not commit, push, create pull requests, or perform other external writes; delivery operations are the responsibility of the primary agent.
-- After all implementation work has stopped, the primary agent must personally inspect the actual complete diff or artifact and perform any necessary verification and corrections within the current authorization scope.
-- `sol_reviewer` may be called only when the primary agent is not Sol and the changes involve security, payments, data migration, critical pre-release paths, a large diff spanning multiple core modules, or the user explicitly requests it. The primary agent should perform the final review itself for ordinary code and configuration changes.
-- When calling `sol_reviewer`, it must be the last agent to write files; after it returns, the primary agent may only inspect and report. If the primary agent modifies files again, `sol_reviewer` must be called again. Any unauthorized compilation or testing must be explicitly reported as not performed.
-- Do not directly accept a sub-agent’s conclusion that work is “completed.”
-- Do not delegate tasks when the coordination cost is higher than the expected execution cost. While waiting for sub-agents, the primary agent should continue work that does not depend on their results, avoiding idle wait loops.
-- If a specified agent is unavailable, the primary agent must continue processing and state this explicitly; it must not silently switch to another agent. When Sol Ultra planning or acceptance is required but the corresponding agent is unavailable, the primary agent must explicitly report that the relevant stage remains incomplete.
+### Delegation Gate
+
+- These rules constrain the primary agent. Sub-agents must not delegate further.
+- Handle a task directly when it is expected to take no more than 10 minutes, has only one workflow, or has strong sequential dependencies.
+- Proactively delegate only when at least two research, implementation, or verification workflows are independently parallelizable and each is expected to take more than 5 minutes.
+- Before delegating implementation for a non-simple development task, complete the necessary research and clarify the scope and plan.
+- Exception: after that research, a primary agent that is not `gpt-5.6-sol` with `ultra` reasoning may call `sol_planner` serially to produce the plan when the task has high ambiguity, high risk, or multiple core modules. This exception applies even when the normal delegation gate is not met, but not after the user has confirmed a plan.
+- If the user requests plan confirmation, present the plan and wait for confirmation before delegating implementation.
+- By default, run at most two read-only sub-agents and one writing sub-agent at once. Parallel writers must not overlap in files, shared interfaces, or project configuration.
+- Give each sub-agent one bounded task. Expect one complete result and allow at most one follow-up.
+
+### Role Selection
+
+- Use `luna_explorer` for read-only searches, call-chain analysis, documentation checks, and log or test-result analysis.
+- Use `spark_worker` for one clearly scoped micro-change. Do not use it for unclear scope, multiple modules, or complex root-cause analysis.
+- Use `terra_worker` for a bounded implementation or fix that needs deeper reasoning, spans multiple files, or includes root-cause analysis and authorized verification.
+- For complex work, normally begin with no more than two parallel `luna_explorer` tasks, then have the primary agent implement or use one of `spark_worker` and `terra_worker`.
+- Proactive implementation work may use only `spark_worker` or `terra_worker`; read-only exploration may use `luna_explorer`. Sol sub-agents are limited to the read-only `sol_planner` and final `sol_reviewer`. Internal tool or approval agents are outside this restriction.
+- A primary agent already running `gpt-5.6-sol` with `ultra` reasoning handles planning, integration, and final acceptance itself and does not call `sol_planner` or `sol_reviewer`.
+
+### Acceptance and Delivery
+
+- Sub-agents must not commit, push, create pull requests, or perform other external writes. The primary agent owns delivery.
+- After implementation stops, the primary agent must inspect the complete diff or artifact and perform the necessary verification and corrections within the authorized scope.
+- Call `sol_reviewer` only when the primary agent is not Sol and at least one condition applies: the change involves security, payments, data migration, a critical pre-release path, or a large diff across multiple core modules; or the user explicitly requests it.
+- When `sol_reviewer` is used, it must be the last agent to write files. If the primary agent makes a correction afterward, call `sol_reviewer` again; after the final reviewer pass, only inspect and report.
+- Explicitly report any compilation or testing that was not performed because it lacked authorization.
+- If a requested agent is unavailable, continue without silently substituting another role and report the missing stage. If required Sol planning or review is unavailable, mark that stage incomplete.
 
 ## Engineering Rules
 
 ### Code Changes
 
 - Trace the relevant call chain, constraints, and existing implementation before editing.
-- Make the smallest correct change that satisfies the requirement. Add no speculative features or single-use abstractions.
+- Make the smallest correct change that satisfies the requirement. Add no speculative feature or single-use abstraction.
 - Touch only what the task requires. Preserve unrelated changes and avoid adjacent refactoring, comment edits, or formatting changes.
 - Reuse existing repository code. When no local convention exists, follow idiomatic practices for the language or framework.
 - Extract a shared abstraction only when multiple real callers exist and it reduces total complexity.
-- Comments explain design reasons, constraints, or counterintuitive behavior rather than restating the code.
 
-### Code Review Verification
+### Verification
 
 - Start with the smallest relevant check that proves the change, then expand verification in proportion to risk.
-- Before finishing, inspect the diff and confirm that every change belongs to the task and that evidence supports every success criterion.
+- Before finishing, inspect the complete diff and confirm that every change belongs to the task and that the evidence supports every success criterion.
 
 ## Language Rules
 
-- Follow the repository's explicit language convention. Use Chinese when no local convention exists.
-- Write repository text clearly and directly in that language while preserving identifiers, commands, protocol fields, and error messages verbatim.
+- Follow an explicit user language request; otherwise follow the repository's explicit language convention, using Chinese when neither specifies a language.
+- Preserve identifiers, commands, protocol fields, and error messages verbatim.
+- Comments explain design reasons, constraints, or counterintuitive behavior rather than restating the code.
 
-## Tools Selection Rules
+## Tool Selection Rules
 
 - Prefer structured built-in tools for viewing files, searching text, and finding paths when they are available.
 - When built-in tools are unavailable, use `rg` for content and `rg --files` for paths. Read large files by range instead of printing them in full.
@@ -71,8 +81,11 @@ For context compaction and handoffs, preserve information in priority order:
 
 ## Planning and Documentation Rules
 
-Planning precedes implementation for changes that span module boundaries, alter system architecture, affect a public API, a persistent data format, or a security boundary; necessitate migration or a phased rollout; or specifically aim to enhance performance.
+Create and maintain a plan in the current project's `docs/plan/` directory before implementation when work:
 
-- Before implementation, create a plan in the current project's `docs/plan/` directory and keep it current throughout the work.
-- Record the problem, architecture decisions, implementation steps, risks, success criteria, progress, and related files with enough detail for another person to resume the work.
-- Include a Mermaid diagram only when it materially clarifies the call chain or architecture.
+- spans module boundaries;
+- changes architecture, a public API, a persistent data format, or a security boundary;
+- requires migration or a staged rollout;
+- specifically targets performance.
+
+Include a Mermaid diagram only when it materially clarifies the call chain or architecture. Record the problem, architecture decisions and rationale, implementation steps, risks and mitigations, success criteria, progress, and related files in the plan and keep it updated throughout the work, so another person can resume the work.

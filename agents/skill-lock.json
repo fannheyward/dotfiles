@@ -234,6 +234,15 @@
       "skillFolderHash": "0bdb821a21e793a4f6f82a7078c052154447e5cc",
       "installedAt": "2026-08-13T05:57:17.112Z",
       "updatedAt": "2026-08-14T05:34:11.538Z"
+    },
+    "optimize-agents-md": {
+      "source": "fannheyward/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/fannheyward/skills.git",
+      "skillPath": "skills/optimize-agents-md/SKILL.md",
+      "skillFolderHash": "363e5e4363ace91fc5c13069c65d4fb8048e09ea",
+      "installedAt": "2026-08-19T06:07:17.718Z",
+      "updatedAt": "2026-08-19T06:07:17.718Z"
     }
   },
   "dismissed": {

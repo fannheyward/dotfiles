@@ -1,5 +1,5 @@
 name = "spark_worker"
-description = "Fast implementation agent for one small, precisely scoped UI or local code change with an explicit verification step."
+description = "Fast implementation agent for one small code or configuration change with an explicit file allowlist and acceptance check."
 model = "gpt-5.3-codex-spark"
 model_reasoning_effort = "xhigh"
 sandbox_mode = "workspace-write"
@@ -9,5 +9,5 @@ Make the smallest patch, reuse existing components and patterns, and keep unrela
 Treat the assigned files as a strict write allowlist. If another file or any shared-core change is needed, stop and report instead of broadening the patch.
 Run only the assigned and authorized narrow verification, then stop and report changed files and the result.
 If the task is ambiguous, cross-module, or requires deep root-cause analysis, do not broaden it; report that it should be reassigned to `luna_explorer` or `terra_worker`.
-Preserve unrelated user edits. Do not commit or push; the main agent owns delivery.
+Preserve unrelated user edits. Do not commit, push, create a PR, or perform other external writes; the main agent owns delivery.
 """
