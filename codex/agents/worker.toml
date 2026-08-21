@@ -1,4 +1,4 @@
-name = "terra_worker"
+name = "worker"
 description = "Balanced implementation agent for well-scoped cross-file or root-cause fixes with an explicit file allowlist and authorized verification."
 model = "gpt-5.6-terra"
 model_reasoning_effort = "xhigh"

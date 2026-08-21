@@ -1,4 +1,4 @@
-name = "sol_reviewer"
+name = "reviewer"
 description = "Final review-and-correction agent for security, payments, data migrations, critical pre-release paths, large diffs spanning multiple core modules, or explicit user-requested review; use only when the primary is not GPT-5.6 Sol at Ultra effort."
 model = "gpt-5.6-sol"
 model_reasoning_effort = "ultra"

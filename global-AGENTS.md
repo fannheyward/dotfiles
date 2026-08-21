@@ -17,26 +17,26 @@ This is a cross-project agent policy; explicit user instructions and the closest
 - Handle a task directly when it is expected to take no more than 10 minutes, has only one workflow, or has strong sequential dependencies.
 - Proactively delegate only when at least two research, implementation, or verification workflows are independently parallelizable and each is expected to take more than 5 minutes.
 - Before delegating implementation for a non-simple development task, complete the necessary research and clarify the scope and plan.
-- Exception: after that research, a primary agent that is not `gpt-5.6-sol` with `ultra` reasoning may call `sol_planner` serially to produce the plan when the task has high ambiguity, high risk, or multiple core modules. This exception applies even when the normal delegation gate is not met, but not after the user has confirmed a plan.
+- Exception: after that research, a primary agent that is not `gpt-5.6-sol` with `ultra` reasoning may call `planner` serially to produce the plan when the task has high ambiguity, high risk, or multiple core modules. This exception applies even when the normal delegation gate is not met, but not after the user has confirmed a plan.
 - If the user requests plan confirmation, present the plan and wait for confirmation before delegating implementation.
 - By default, run at most two read-only sub-agents and one writing sub-agent at once. Parallel writers must not overlap in files, shared interfaces, or project configuration.
 - Give each sub-agent one bounded task. Expect one complete result and allow at most one follow-up.
 
 ### Role Selection
 
-- Use `luna_explorer` for read-only searches, call-chain analysis, documentation checks, and log or test-result analysis.
-- Use `spark_worker` for one clearly scoped micro-change. Do not use it for unclear scope, multiple modules, or complex root-cause analysis.
-- Use `terra_worker` for a bounded implementation or fix that needs deeper reasoning, spans multiple files, or includes root-cause analysis and authorized verification.
-- For complex work, normally begin with no more than two parallel `luna_explorer` tasks, then have the primary agent implement or use one of `spark_worker` and `terra_worker`.
-- Proactive implementation work may use only `spark_worker` or `terra_worker`; read-only exploration may use `luna_explorer`. Sol sub-agents are limited to the read-only `sol_planner` and final `sol_reviewer`. Internal tool or approval agents are outside this restriction.
-- A primary agent already running `gpt-5.6-sol` with `ultra` reasoning handles planning, integration, and final acceptance itself and does not call `sol_planner` or `sol_reviewer`.
+- Use `explorer` for read-only searches, call-chain analysis, documentation checks, and log or test-result analysis.
+- Use `patcher` for one clearly scoped micro-change. Do not use it for unclear scope, multiple modules, or complex root-cause analysis.
+- Use `worker` for a bounded implementation or fix that needs deeper reasoning, spans multiple files, or includes root-cause analysis and authorized verification.
+- For complex work, normally begin with no more than two parallel `explorer` tasks, then have the primary agent implement or use one of `patcher` and `worker`.
+- Proactive implementation work may use only `patcher` or `worker`; read-only exploration may use `explorer`. Planning and final review may use only the read-only `planner` and final `reviewer`. Internal tool or approval agents are outside this restriction.
+- A primary agent already running `gpt-5.6-sol` with `ultra` reasoning handles planning, integration, and final acceptance itself and does not call `planner` or `reviewer`.
 
 ### Acceptance and Delivery
 
 - Sub-agents must not commit, push, create pull requests, or perform other external writes. The primary agent owns delivery.
 - After implementation stops, the primary agent must inspect the complete diff or artifact and perform the necessary verification and corrections within the authorized scope.
-- Call `sol_reviewer` only when the primary agent is not Sol and at least one condition applies: the change involves security, payments, data migration, a critical pre-release path, or a large diff across multiple core modules; or the user explicitly requests it.
-- When `sol_reviewer` is used, it must be the last agent to write files. If the primary agent makes a correction afterward, call `sol_reviewer` again; after the final reviewer pass, only inspect and report.
+- Call `reviewer` only when the primary agent is not `gpt-5.6-sol` with `ultra` reasoning and at least one condition applies: the change involves security, payments, data migration, a critical pre-release path, or a large diff across multiple core modules; or the user explicitly requests it.
+- When `reviewer` is used, it must be the last agent to write files. If the primary agent makes a correction afterward, call `reviewer` again; after the final reviewer pass, only inspect and report.
 - Explicitly report any compilation or testing that was not performed because it lacked authorization.
 - If a requested agent is unavailable, continue without silently substituting another role and report the missing stage. If required Sol planning or review is unavailable, mark that stage incomplete.
 

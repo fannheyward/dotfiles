@@ -1,4 +1,4 @@
-name = "sol_planner"
+name = "planner"
 description = "Read-only planner for implementation work with high ambiguity, high risk, or multiple core modules when the user has not confirmed a plan and the primary is not GPT-5.6 Sol at Ultra effort."
 model = "gpt-5.6-sol"
 model_reasoning_effort = "ultra"

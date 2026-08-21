@@ -243,6 +243,15 @@
       "skillFolderHash": "363e5e4363ace91fc5c13069c65d4fb8048e09ea",
       "installedAt": "2026-08-19T06:07:17.718Z",
       "updatedAt": "2026-08-19T06:07:17.718Z"
+    },
+    "unslop": {
+      "source": "cursor/plugins",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/cursor/plugins.git",
+      "skillPath": "pstack/skills/unslop/SKILL.md",
+      "skillFolderHash": "6161508c5c7959b156ff0e4e10b510863b51f9cc",
+      "installedAt": "2026-08-21T01:49:51.662Z",
+      "updatedAt": "2026-08-21T01:49:51.662Z"
     }
   },
   "dismissed": {

@@ -1,4 +1,4 @@
-name = "luna_explorer"
+name = "explorer"
 description = "Fast, read-only agent for bounded codebase searches, call-chain analysis, documentation checks, and log or test-result analysis."
 model = "gpt-5.6-luna"
 model_reasoning_effort = "medium"
