@@ -59,7 +59,8 @@ This is a cross-project agent policy; explicit user instructions and the closest
 
 - Follow an explicit user language request; otherwise follow the repository's explicit language convention, using Chinese when neither specifies a language.
 - Preserve identifiers, commands, protocol fields, and error messages verbatim.
-- Comments explain design reasons, constraints, or counterintuitive behavior rather than restating the code.
+- Place comments at the owning boundary. Use them only for non-obvious design rationale, maintenance-relevant constraints or invalidation conditions, and counterintuitive behavior.
+- Keep commit messages, code comments, and other change-related text scoped to the task and final implementation. Include only the final change, the rationale or constraints needed to understand it, and relevant verification.
 
 ## Tool Selection Rules
 
