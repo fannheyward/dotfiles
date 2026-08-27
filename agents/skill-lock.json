@@ -222,9 +222,9 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/pbakaus/impeccable.git",
       "skillPath": ".agents/skills/impeccable/SKILL.md",
-      "skillFolderHash": "97ed30b0b0681aeb8703e492c3c47b6098e070a4",
+      "skillFolderHash": "ae950604822a60a7e94b35dc0701eb96b094e4cf",
       "installedAt": "2026-08-11T01:02:25.267Z",
-      "updatedAt": "2026-08-24T03:22:21.596Z"
+      "updatedAt": "2026-08-27T01:40:26.642Z"
     },
     "show-me": {
       "source": "humanlayer/skills",
@@ -252,6 +252,15 @@
       "skillFolderHash": "6161508c5c7959b156ff0e4e10b510863b51f9cc",
       "installedAt": "2026-08-21T01:49:51.662Z",
       "updatedAt": "2026-08-21T01:49:51.662Z"
+    },
+    "eli5": {
+      "source": "anthropics/claude-plugins-community",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/anthropics/claude-plugins-community.git",
+      "skillPath": "eli5/skills/eli5/SKILL.md",
+      "skillFolderHash": "d16165120b7658216c79601b0ee568f42e540961",
+      "installedAt": "2026-08-25T02:21:38.315Z",
+      "updatedAt": "2026-08-25T02:21:38.315Z"
     }
   },
   "dismissed": {

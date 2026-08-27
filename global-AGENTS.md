@@ -65,6 +65,7 @@ This is a cross-project agent policy; explicit user instructions and the closest
 ## Tool Selection Rules
 
 - Prefer structured built-in tools for viewing files, searching text, and finding paths when they are available.
+- For browser access and automation, use the `ego-browser` skill to control the ego-lite browser. Do not use `agent-browser` or other browser-access skills.
 - When built-in tools are unavailable, use `rg` for content and `rg --files` for paths. Read large files by range instead of printing them in full.
 - Use the shell for Git, builds, tests, package managers, and batch operations that built-in tools cannot perform efficiently.
 - When a shell fallback is needed, use `jq` for JSON and `gh` for GitHub information.
