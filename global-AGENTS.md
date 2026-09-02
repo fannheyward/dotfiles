@@ -27,7 +27,7 @@ This is a cross-project agent policy; explicit user instructions and the closest
 - Use `explorer` for read-only searches, call-chain analysis, documentation checks, and log or test-result analysis.
 - Use `worker` for a bounded implementation or fix that needs deeper reasoning, spans multiple files, or includes root-cause analysis and authorized verification.
 - For complex work, normally begin with no more than two parallel `explorer` tasks, then have the primary agent implement or delegate to one `worker`.
-- Delegate proactive implementation only to `worker`. Use `explorer` for read-only exploration, the read-only `planner` for planning, and `reviewer` for final review. Internal tool or approval agents are outside this restriction.
+- Delegate proactive implementation only to `worker`. Use `explorer` for read-only exploration, the read-only `planner` for planning, and the read-only `reviewer` for final review. Internal tool or approval agents are outside this restriction.
 - A primary agent already running `gpt-5.6-sol` with `ultra` reasoning handles planning, integration, and final acceptance itself and does not call `planner` or `reviewer`.
 
 ### Acceptance and Delivery
@@ -36,7 +36,8 @@ This is a cross-project agent policy; explicit user instructions and the closest
 - After implementation stops, the primary agent must inspect the complete diff or artifact and perform the necessary verification and corrections within the authorized scope.
 - Call `reviewer` only when the primary agent is not `gpt-5.6-sol` with `ultra` reasoning and at least one condition applies: the change involves security, payments, data migration, a critical pre-release path, or a large diff across multiple core modules; or the user explicitly requests it.
 - Give `reviewer` the original request or spec, the fixed review point, and the authorization boundaries. The reviewer must reconstruct the expected result from primary sources and independently challenge both the chosen approach and its implementation; treat the implementation plan and the primary agent's conclusions as context, not premises.
-- When `reviewer` is used, it must be the last agent to write files. If the primary agent makes a correction afterward, call `reviewer` again; after the final reviewer pass, only inspect and report.
+- The read-only `reviewer` must report its independent conclusion and stop without editing.
+- If `reviewer` finds corrections that are already authorized and within scope, the primary agent may delegate them to one `worker`, inspect the result, and call `reviewer` again against the new fixed point. Wait for user approval before any correction that changes the approved approach or scope. After a final reviewer pass with no required correction or blocker, only inspect and report.
 - Explicitly report any compilation or testing that was not performed because it lacked authorization.
 - If a requested agent is unavailable, continue without silently substituting another role and report the missing stage. If required Sol planning or review is unavailable, mark that stage incomplete.
 
