@@ -381,12 +381,8 @@ omap if <Plug>(coc-funcobj-i)
 xmap af <Plug>(coc-funcobj-a)
 omap af <Plug>(coc-funcobj-a)
 
-inoremap <silent><nowait><expr> <C-l> coc#inline#visible() ? coc#inline#next() : "\<C-l>"
-inoremap <silent><nowait><expr> <C-h> coc#inline#visible() ? coc#inline#prev() : "\<C-h>"
 nnoremap <silent><nowait><expr> <C-f> coc#float#has_scroll() ? coc#float#scroll(1) : "\<C-f>"
 nnoremap <silent><nowait><expr> <C-b> coc#float#has_scroll() ? coc#float#scroll(0) : "\<C-b>"
-inoremap <silent><nowait><expr> <C-f> coc#float#has_scroll() ? "\<c-r>=coc#float#scroll(1)\<cr>" : "\<Right>"
-inoremap <silent><nowait><expr> <C-b> coc#float#has_scroll() ? "\<c-r>=coc#float#scroll(0)\<cr>" : "\<Left>"
 vnoremap <silent><nowait><expr> <C-f> coc#float#has_scroll() ? coc#float#scroll(1) : "\<C-f>"
 vnoremap <silent><nowait><expr> <C-b> coc#float#has_scroll() ? coc#float#scroll(0) : "\<C-b>"
 
@@ -395,7 +391,6 @@ inoremap <silent><expr> <backspace> coc#pum#visible() ? "\<bs>\<c-r>=coc#start()
 inoremap <silent><expr> <C-x><C-z> coc#pum#visible() ? coc#pum#stop() : "\<C-x>\<C-z>"
 inoremap <silent><expr> <c-space> coc#refresh()
 inoremap <silent><expr> <TAB>
-      \ coc#inline#visible() ? coc#inline#accept() :
       \ coc#pum#visible() ? coc#pum#next(1):
       \ <SID>check_back_space() ? "\<TAB>" :
       \ <SID>next_char_pair() ? "\<Right>" :
