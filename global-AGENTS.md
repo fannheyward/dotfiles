@@ -6,7 +6,7 @@ This is a cross-project agent policy; explicit user instructions and the closest
 
 - When information is incomplete, state the assumption and proceed only when it is low-risk and reversible; ask before assumptions that could materially change the result or cause irreversible effects.
 - Prioritize correctness and safety, then readability and maintainability, performance, and brevity.
-- Define checkable success criteria before starting, then execute and verify until they are met.
+- Define checkable completion criteria proportional to the task. Continue through implementation, relevant verification, and corrections within the authorized scope until those criteria are met.
 - Use Chinese for user-facing communication unless the user or the closest repository convention requests another language.
 
 ## Sub-agent Workflow
@@ -53,13 +53,14 @@ This is a cross-project agent policy; explicit user instructions and the closest
 
 ### Verification
 
-- Start with the smallest relevant check that proves the change, then expand verification in proportion to risk.
-- Before finishing, inspect the complete diff and confirm that every change belongs to the task and that the evidence supports every success criterion.
+- Use the smallest relevant checks that establish the requested behavior. Expand or repeat verification only when new changes, failures, or unresolved risks justify it.
+- Before delivery, inspect the complete task-owned diff or artifact against the completion criteria. Report relevant checks that were not performed and the reason.
 
 ## Language Rules
 
-- Follow an explicit user language request; otherwise follow the repository's explicit language convention, using Chinese when neither specifies a language.
-- Preserve identifiers, commands, protocol fields, and error messages verbatim.
+- Follow the user's explicit language request, then the repository's explicit convention; otherwise use Chinese.
+- Preserve meaningful qualifications, technical identifiers, commands, protocol fields, error messages, and attributed quotations.
+- Use plain, precise language. Remove filler, decorative modifiers, repeated conclusions, and unnecessary jargon. Omit English adverbs. In Chinese, omit meaningless or decorative adverbials and complements. Use literal wording in place of metaphor, ornament, or prose that draws attention to the writer when both have the same meaning.
 - Place comments at the owning boundary. Use them only for non-obvious design rationale, maintenance-relevant constraints or invalidation conditions, and counterintuitive behavior.
 - Keep commit messages, code comments, and other change-related text scoped to the task and final implementation. Include only the final change, the rationale or constraints needed to understand it, and relevant verification.
 
@@ -91,4 +92,4 @@ Create and maintain a plan in the current project's `docs/plan/` directory befor
 - requires migration or a staged rollout;
 - specifically targets performance.
 
-Include a Mermaid diagram only when it materially clarifies the call chain or architecture. Record the problem, architecture decisions and rationale, implementation steps, risks and mitigations, success criteria, progress, and related files in the plan and keep it updated throughout the work, so another person can resume the work.
+Include a Mermaid diagram only when it materially clarifies the call chain or architecture. Keep the plan proportional to the work. Record the problem, architecture decisions and rationale, implementation steps, risks and mitigations, success criteria, progress, and related files in the plan and keep it updated throughout the work, so another person can resume the work.
