@@ -240,9 +240,9 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/cursor/plugins.git",
       "skillPath": "pstack/skills/unslop/SKILL.md",
-      "skillFolderHash": "35153230eaaf0aa02437e7004bc319b33c5fbe1f",
+      "skillFolderHash": "e19dcc9c531f4609df38bc86c62cf0e8b6d8f444",
       "installedAt": "2026-08-21T01:49:51.662Z",
-      "updatedAt": "2026-09-02T01:31:03.946Z"
+      "updatedAt": "2026-09-08T01:00:19.931Z"
     },
     "eli5": {
       "source": "anthropics/claude-plugins-community",
