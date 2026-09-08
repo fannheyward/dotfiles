@@ -361,8 +361,6 @@ nmap <silent> [s <Plug>(coc-typos-prev)
 nmap <silent> z= <Plug>(coc-typos-fix)
 nmap <silent> <expr> [c &diff ? '[c' : '<Plug>(coc-git-prevchunk)'
 nmap <silent> <expr> ]c &diff ? ']c' : '<Plug>(coc-git-nextchunk)'
-nmap <silent> <C-d> <Plug>(coc-cursors-word)
-xmap <silent> <C-d> <Plug>(coc-cursors-range)
 
 nmap <leader>l  <Plug>(coc-openlink)
 nmap <leader>c  <Plug>(coc-codelens-action)

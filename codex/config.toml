@@ -1,3 +1,5 @@
+#:schema https://developers.openai.com/codex/config-schema.json
+
 model = "gpt-6-astra"
 model_provider = "openrouter"
 model_reasoning_effort = "high"
@@ -6,9 +8,7 @@ model_context_window = 1000000
 model_auto_compact_token_limit = 900000
 model_verbosity = "low"
 web_search = "live"
-network_access = true
 personality = "pragmatic"
-service_tier = "default"
 
 [features]
 context_management = true
