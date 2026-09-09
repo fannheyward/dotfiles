@@ -213,9 +213,9 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/pbakaus/impeccable.git",
       "skillPath": ".agents/skills/impeccable/SKILL.md",
-      "skillFolderHash": "7ebc2dc03f396b087273f59dc4a584fa32beb9ce",
+      "skillFolderHash": "3a7e23310ff454b68510bc7ee564c73b0d610c5f",
       "installedAt": "2026-08-11T01:02:25.267Z",
-      "updatedAt": "2026-09-07T07:01:40.282Z"
+      "updatedAt": "2026-09-09T01:09:07.957Z"
     },
     "show-me": {
       "source": "humanlayer/skills",
@@ -261,6 +261,15 @@
       "skillFolderHash": "18e4eb5e50ab845afda7d5ffafa23681ea34ab1b",
       "installedAt": "2026-09-02T07:30:52.068Z",
       "updatedAt": "2026-09-02T07:30:52.068Z"
+    },
+    "de-review": {
+      "source": "fannheyward/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/fannheyward/skills.git",
+      "skillPath": "skills/de-review/SKILL.md",
+      "skillFolderHash": "f27e420a54eb663f08c5629557cb8f11841e91b6",
+      "installedAt": "2026-09-09T02:45:12.494Z",
+      "updatedAt": "2026-09-09T02:45:12.494Z"
     }
   },
   "dismissed": {
@@ -268,14 +277,13 @@
   },
   "lastSelectedAgents": [
     "amp",
-    "antigravity",
-    "antigravity-cli",
     "cline",
     "codex",
     "cursor",
-    "deepagents",
+    "droid",
     "gemini-cli",
     "github-copilot",
+    "kilo",
     "kimi-code-cli",
     "opencode",
     "warp",
