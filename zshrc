@@ -176,14 +176,16 @@ function ff() {
   fi
 }
 
+function wk() {
+    if [[ $# == 1 && ${1-} == <-> ]]; then
+        local wk_dir
+        wk_dir=$(command wk "$@") && builtin pushd -- "$wk_dir"
+    else
+        command wk "$@"
+    fi
+}
+
 if [[ -r "${HOMEBREW_PREFIX}/share/zsh-autopair/autopair.zsh" ]]; then
     source "${HOMEBREW_PREFIX}/share/zsh-autopair/autopair.zsh"
 fi
 
-# >>> otty shell integration >>>
-# Added by Otty — toggle in Settings > Shell > Shell Integration.
-# Inert unless launched by Otty (it sets $OTTY_SHELL_INTEGRATION).
-if [ -n "$OTTY_SHELL_INTEGRATION" ] && [ -r "$OTTY_SHELL_INTEGRATION/otty-integration.zsh" ]; then
-  . "$OTTY_SHELL_INTEGRATION/otty-integration.zsh"
-fi
-# <<< otty shell integration <<<
