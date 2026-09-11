@@ -69,7 +69,7 @@ export ZSH=$HOME/.oh-my-zsh
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(macos)
+plugins=(macos zsh-autosuggestions zsh-syntax-highlighting)
 
 zstyle ':omz:update' mode disabled
 
@@ -178,12 +178,6 @@ function ff() {
 
 if [[ -r "${HOMEBREW_PREFIX}/share/zsh-autopair/autopair.zsh" ]]; then
     source "${HOMEBREW_PREFIX}/share/zsh-autopair/autopair.zsh"
-fi
-if [[ -r "${HOMEBREW_PREFIX}/share/zsh-autosuggestions/zsh-autosuggestions.zsh" ]]; then
-    source "${HOMEBREW_PREFIX}/share/zsh-autosuggestions/zsh-autosuggestions.zsh"
-fi
-if [[ -r "${HOMEBREW_PREFIX}/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" ]]; then
-    source "${HOMEBREW_PREFIX}/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
 fi
 
 # >>> otty shell integration >>>
