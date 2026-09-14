@@ -150,18 +150,18 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/fannheyward/skills.git",
       "skillPath": "skills/squash-commits/SKILL.md",
-      "skillFolderHash": "5330ae83b65cc60ef18cb5faedaefeaf69ac7803",
+      "skillFolderHash": "f9ade0ebc019176af6f2101dca6b6ff6e9d7b0a0",
       "installedAt": "2026-07-15T02:09:24.748Z",
-      "updatedAt": "2026-07-16T05:14:25.105Z"
+      "updatedAt": "2026-09-14T02:24:29.439Z"
     },
     "git-push-lease": {
       "source": "fannheyward/skills",
       "sourceType": "github",
       "sourceUrl": "https://github.com/fannheyward/skills.git",
       "skillPath": "skills/git-push-lease/SKILL.md",
-      "skillFolderHash": "dfdf4a560b9f8581f6ad76cb8d212ceda99140c9",
+      "skillFolderHash": "f6afd18374380aad6bcc806703aed94e3ec9e429",
       "installedAt": "2026-07-28T12:45:23.019Z",
-      "updatedAt": "2026-07-28T12:45:23.019Z"
+      "updatedAt": "2026-09-14T02:24:32.922Z"
     },
     "handoff": {
       "source": "mattpocock/skills",
@@ -222,9 +222,9 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/fannheyward/skills.git",
       "skillPath": "skills/optimize-agents-md/SKILL.md",
-      "skillFolderHash": "363e5e4363ace91fc5c13069c65d4fb8048e09ea",
+      "skillFolderHash": "88713f1c8f6542e88df025b3c92a7f82bc812981",
       "installedAt": "2026-08-19T06:07:17.718Z",
-      "updatedAt": "2026-08-19T06:07:17.718Z"
+      "updatedAt": "2026-09-14T02:24:34.198Z"
     },
     "unslop": {
       "source": "cursor/plugins",
@@ -249,27 +249,27 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/fannheyward/skills.git",
       "skillPath": "skills/ui-find-icon/SKILL.md",
-      "skillFolderHash": "18e4eb5e50ab845afda7d5ffafa23681ea34ab1b",
+      "skillFolderHash": "3b2e6ab0b8c5eb41e9c9f358e28c59bdcc8856cf",
       "installedAt": "2026-09-02T07:30:52.068Z",
-      "updatedAt": "2026-09-02T07:30:52.068Z"
+      "updatedAt": "2026-09-14T02:24:35.442Z"
     },
     "de-review": {
       "source": "fannheyward/skills",
       "sourceType": "github",
       "sourceUrl": "https://github.com/fannheyward/skills.git",
       "skillPath": "skills/de-review/SKILL.md",
-      "skillFolderHash": "f27e420a54eb663f08c5629557cb8f11841e91b6",
+      "skillFolderHash": "1621a7db0c46ae862cdf7a1b4ca9f3260a09f8ef",
       "installedAt": "2026-09-09T02:45:12.494Z",
-      "updatedAt": "2026-09-09T02:45:12.494Z"
+      "updatedAt": "2026-09-14T02:24:36.748Z"
     },
     "kami": {
       "source": "tw93/kami",
       "sourceType": "github",
       "sourceUrl": "https://github.com/tw93/kami.git",
       "skillPath": "skills/kami/SKILL.md",
-      "skillFolderHash": "0acca8d61909b0ca167a76391371aea05cc29e83",
+      "skillFolderHash": "cab1389ddd718059facae3bf6e892c01457abd93",
       "installedAt": "2026-09-10T01:28:04.658Z",
-      "updatedAt": "2026-09-10T01:28:04.658Z"
+      "updatedAt": "2026-09-14T01:39:30.333Z"
     }
   },
   "dismissed": {
