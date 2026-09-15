@@ -34,8 +34,8 @@ lua require('catppuccin').setup({ auto_integrations = false })
 
 " basic {{{{
 colorscheme catppuccin-frappe
-packadd nvim.difftool
-packadd nvim.undotree
+" packadd nvim.difftool
+" packadd nvim.undotree
 set fileencoding=utf-8
 set fileencodings=ucs-bom,utf-8,gb18030,cp936,utf-16le,utf-16,big5,euc-jp,euc-kr,latin-1
 
