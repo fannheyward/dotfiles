@@ -217,15 +217,6 @@
       "installedAt": "2026-08-19T06:07:17.718Z",
       "updatedAt": "2026-09-14T02:24:34.198Z"
     },
-    "unslop": {
-      "source": "cursor/plugins",
-      "sourceType": "github",
-      "sourceUrl": "https://github.com/cursor/plugins.git",
-      "skillPath": "pstack/skills/unslop/SKILL.md",
-      "skillFolderHash": "e19dcc9c531f4609df38bc86c62cf0e8b6d8f444",
-      "installedAt": "2026-08-21T01:49:51.662Z",
-      "updatedAt": "2026-09-08T01:00:19.931Z"
-    },
     "ui-find-icon": {
       "source": "fannheyward/skills",
       "sourceType": "github",
@@ -270,6 +261,15 @@
       "skillFolderHash": "516b88065743021cc50cc79ca1d881b923ba925e",
       "installedAt": "2026-09-16T05:50:16.186Z",
       "updatedAt": "2026-09-16T05:50:16.186Z"
+    },
+    "unslop": {
+      "source": "fannheyward/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/fannheyward/skills.git",
+      "skillPath": "skills/unslop/SKILL.md",
+      "skillFolderHash": "5b8e8df2bfc2d46669403059d16bdef3fdf7d219",
+      "installedAt": "2026-09-16T08:28:29.015Z",
+      "updatedAt": "2026-09-16T08:28:29.015Z"
     }
   },
   "dismissed": {
