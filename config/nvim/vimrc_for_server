@@ -27,7 +27,6 @@ set nofoldenable
 set nrformats-=octal
 set number
 set pumheight=20
-set pumborder=rounded
 set shiftwidth=4
 set showcmd
 set showmatch
@@ -79,9 +78,6 @@ cnoremap <C-e> <End>
 cnoremap <C-d> <Del>
 cnoremap <C-h> <BS>
 cnoremap <C-t> <C-R>=expand("%:p:h") . "/" <CR>
-
-nmap t<Enter> :bo sp term://zsh\|resize 10<CR>i
-tnoremap <Esc> <C-\><C-n>
 
 command! -nargs=0 E     e
 command! -nargs=0 Q     q

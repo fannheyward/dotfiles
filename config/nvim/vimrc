@@ -35,8 +35,9 @@ match ExtraWhitespace /\s\+$/
 packadd! comment
 
 set runtimepath^=~/.local/share/nvim/plugged/coc.nvim
+set runtimepath^=~/.local/share/nvim/plugged/vim-cycle
 set runtimepath^=~/.local/share/nvim/plugged/vim-sleuth
-set runtimepath^=~/.local/share/nvim/plugged/helpful.vim
+
 syntax on
 set termguicolors
 colorscheme catppuccin
@@ -58,8 +59,6 @@ inoremap <C-u> <C-G>u<C-U>
 inoremap <C-b> <Left>
 inoremap <C-f> <Right>
 inoremap <C-a> <Home>
-inoremap <C-n> <Down>
-inoremap <C-p> <Up>
 inoremap <silent><expr> <C-e> coc#pum#visible() ? coc#pum#cancel() : "\<End>"
 
 " command line mappings
@@ -86,17 +85,14 @@ command! -nargs=0 WQa   wqa
 command! -nargs=0 C             CocConfig
 command! -nargs=0 L             CocListResume
 command! -nargs=0 -range D      CocCommand
-command! -nargs=0 Prettier      CocCommand prettier.formatFile
 command! -nargs=0 CocDebug      CocCommand workspace.showOutput
 
 command! -nargs=0 JSONPretty    %!python -m json.tool
 command! -nargs=0 Todos         CocList -A --normal grep -e TODO|FIXME
-command! -nargs=0 Status        CocList -A --normal gstatus
 command! -nargs=+ Find          exe 'CocList -A --normal grep --smart-case '.<q-args>
 command! -nargs=0 Format        call CocAction('format')
 command! -nargs=0 Fold          call CocAction('fold')
 command! -nargs=0 GitChunkUndo  call CocAction('runCommand', 'git.chunkUndo')
-command! -nargs=0 OR            call CocAction('runCommand', 'editor.action.organizeImport')
 
 nmap <silent> gd :call <SID>go_to_definition()<CR>
 nmap <silent> gD <Plug>(coc-declaration)
@@ -108,25 +104,29 @@ nmap <silent> ge <Plug>(coc-diagnostic-next)
 nmap <silent> gA <Plug>(coc-codeaction)
 nmap <silent> gl <Plug>(coc-codeaction-line)
 nmap <silent> ga <Plug>(coc-codeaction-cursor)
-nmap <silent> gs <Plug>(coc-fix-current)
-nmap <silent> gk <Plug>(coc-git-chunkinfo)
+nmap <silent> gk <Plug>(coc-fix-current)
+nmap <silent> go <Plug>(coc-git-chunkinfo)
 nmap <silent> gm <Plug>(coc-git-commit)
 omap <silent> ig <Plug>(coc-git-chunk-inner)
 xmap <silent> ig <Plug>(coc-git-chunk-inner)
 
+nmap <silent> ]s <Plug>(coc-typos-next)
+nmap <silent> [s <Plug>(coc-typos-prev)
+nmap <silent> z= <Plug>(coc-typos-fix)
 nmap <silent> <expr> [c &diff ? '[c' : '<Plug>(coc-git-prevchunk)'
 nmap <silent> <expr> ]c &diff ? ']c' : '<Plug>(coc-git-nextchunk)'
-nmap <silent> <expr> <C-d> <SID>select_current_word()
-nmap <silent> <C-c> <Plug>(coc-cursors-position)
-xmap <silent> <C-d> <Plug>(coc-cursors-range)
 
-nmap <leader>l  <Plug>(coc-codelens-action)
-nmap <leader>x  <Plug>(coc-cursors-operator)
+nmap <leader>l  <Plug>(coc-openlink)
+nmap <leader>c  <Plug>(coc-codelens-action)
 nmap <leader>rf <Plug>(coc-refactor)
 xmap <leader>f  <Plug>(coc-format-selected)
 nmap <leader>f  <Plug>(coc-format-selected)
 xmap <leader>a  <Plug>(coc-codeaction-selected)
 nmap <leader>a  <Plug>(coc-codeaction-selected)
+
+nmap <silent> <leader>re <Plug>(coc-codeaction-refactor)
+xmap <silent> <leader>r  <Plug>(coc-codeaction-refactor-selected)
+nmap <silent> <leader>r  <Plug>(coc-codeaction-refactor-selected)
 
 xmap if <Plug>(coc-funcobj-i)
 omap if <Plug>(coc-funcobj-i)
@@ -135,20 +135,18 @@ omap af <Plug>(coc-funcobj-a)
 
 nnoremap <silent><nowait><expr> <C-f> coc#float#has_scroll() ? coc#float#scroll(1) : "\<C-f>"
 nnoremap <silent><nowait><expr> <C-b> coc#float#has_scroll() ? coc#float#scroll(0) : "\<C-b>"
-inoremap <silent><nowait><expr> <C-f> coc#float#has_scroll() ? "\<c-r>=coc#float#scroll(1)\<cr>" : "\<Right>"
-inoremap <silent><nowait><expr> <C-b> coc#float#has_scroll() ? "\<c-r>=coc#float#scroll(0)\<cr>" : "\<Left>"
 vnoremap <silent><nowait><expr> <C-f> coc#float#has_scroll() ? coc#float#scroll(1) : "\<C-f>"
 vnoremap <silent><nowait><expr> <C-b> coc#float#has_scroll() ? coc#float#scroll(0) : "\<C-b>"
 
 inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm() : "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
 inoremap <silent><expr> <backspace> coc#pum#visible() ? "\<bs>\<c-r>=coc#start()\<CR>" : "\<bs>"
 inoremap <silent><expr> <C-x><C-z> coc#pum#visible() ? coc#pum#stop() : "\<C-x>\<C-z>"
+inoremap <silent><expr> <c-space> coc#refresh()
 inoremap <silent><expr> <TAB>
             \ coc#pum#visible() ? coc#pum#next(1):
             \ <SID>check_back_space() ? "\<Tab>" :
             \ coc#refresh()
 inoremap <expr><S-TAB> coc#pum#visible() ? coc#pum#prev(1) : "\<C-h>"
-inoremap <silent><expr> <c-space> coc#refresh()
 
 nnoremap <silent> K :call <SID>show_documentation()<CR>
 nnoremap <silent><nowait> <space>f  :<C-u>CocList files<CR>
@@ -166,6 +164,7 @@ nnoremap <silent><nowait> <space>S  :exe 'CocList -I --normal --input='.expand('
 nnoremap <silent><nowait> <space>d  :call CocActionAsync('jumpDefinition', v:false)<CR>
 
 imap <C-k> <Plug>(coc-snippets-expand)
+vmap <C-k> <Plug>(coc-snippets-select)
 nmap <silent> <C-s> <Plug>(coc-range-select)
 xmap <silent> <C-s> <Plug>(coc-range-select)
 
@@ -181,7 +180,7 @@ function! s:show_documentation()
   elseif (coc#rpc#ready())
     call CocActionAsync('doHover')
   else
-    execute '!' . &keywordprg . " " . expand('<cword>')
+    normal! K
   endif
 endfunction
 
@@ -190,18 +189,12 @@ function! s:go_to_definition()
     return v:true
   endif
 
-  let ret = execute("silent! normal \<C-]>")
-  if ret =~ "Error" || ret =~ "错误"
+  try
+    execute "normal! \<C-]>"
+  catch /E426\|E433/
     call searchdecl(expand('<cword>'))
-  endif
+  endtry
 endfunction
-
-function! s:select_current_word()
-  if !get(g:, 'coc_cursors_activated', 0)
-    return "\<Plug>(coc-cursors-word)"
-  endif
-  return "*\<Plug>(coc-cursors-word):nohlsearch\<CR>"
-endfunc
 " }} functions
 
 augroup common
@@ -213,7 +206,6 @@ augroup common
   autocmd BufNewFile,BufReadPost *.re setfiletype rescript
 
   autocmd FileType go setlocal expandtab
-  autocmd FileType go command! -bang A call go#alternate#Switch(<bang>0, 'edit')
   autocmd FileType lua setlocal includeexpr=substitute(v:fname,'\\.','/','g')
   autocmd FileType lua setlocal include=require
   autocmd FileType lua setlocal define=function

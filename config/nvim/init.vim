@@ -14,7 +14,6 @@ Plug '~/src/coc-ts'
 
 Plug 'https://github.com/zef/vim-cycle'
 Plug 'https://github.com/tpope/vim-sleuth'
-" Plug 'https://github.com/github/copilot.vim'
 Plug 'https://github.com/nvim-mini/mini.nvim'
 Plug 'https://github.com/kevinhwang91/nvim-bqf'
 Plug 'https://github.com/azabiong/vim-highlighter'
@@ -316,7 +315,6 @@ let g:coc_global_extensions = [
       \'https://github.com/rafamadriz/friendly-snippets',
       \'coc-biome',
       \'coc-dictionary',
-      \'coc-ecdict',
       \'coc-eslint',
       \'coc-git',
       \'coc-go',
@@ -332,6 +330,7 @@ let g:coc_global_extensions = [
       \'coc-snippets',
       \'coc-sumneko-lua',
       \'coc-tag',
+      \'coc-toml',
       \'coc-tsserver',
       \'coc-typos',
       \'coc-xml',
