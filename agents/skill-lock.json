@@ -240,9 +240,9 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/tw93/kami.git",
       "skillPath": "skills/kami/SKILL.md",
-      "skillFolderHash": "61adadf722e9248f0a51e9013f7d5876a25be877",
+      "skillFolderHash": "66bb22391a01581d76de574adc06abf3cda772c2",
       "installedAt": "2026-09-10T01:28:04.658Z",
-      "updatedAt": "2026-09-15T07:17:15.584Z"
+      "updatedAt": "2026-09-17T03:26:12.849Z"
     },
     "eli5": {
       "source": "fannheyward/skills",
