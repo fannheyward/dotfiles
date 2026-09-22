@@ -1,3 +1,4 @@
+abseil
 ada-url
 ast-grep
 atuin
@@ -7,6 +8,7 @@ brotli
 c-ares
 ca-certificates
 certifi
+cffi
 cmake
 dav1d
 deno
@@ -27,6 +29,7 @@ fzf
 gettext
 gflags
 gh
+giflib
 git
 git-lfs
 glog
@@ -35,8 +38,10 @@ gofumpt
 gopls
 hdrhistogram_c
 herdr
+highway
 icu4c@78
 jansson
+jemalloc
 jpeg-turbo
 jq
 json-c
@@ -47,6 +52,7 @@ libgit2
 libnghttp2
 libnghttp3
 libngtcp2
+libpng
 libsodium
 libssh2
 libtiff
@@ -63,10 +69,9 @@ luv
 lz4
 merve
 miniserve
-mise
 mole
 mpdecimal
-multica
+mpg123
 nbytes
 ncurses
 neovim
@@ -74,7 +79,9 @@ node
 oniguruma
 openssl@3
 opus
+p7zip
 pcre2
+pycparser
 python@3.14
 readline
 ripgrep
@@ -94,16 +101,17 @@ tree-sitter
 typos-cli
 unibilium
 universal-ctags
-usage
 utf8proc
 uv
 uvwasi
 vim
 wangle
 watchman
+webp
 witr
 x264
 x265
+xcodegen
 xh
 xxhash
 xz
@@ -111,7 +119,5 @@ yq
 yt-dlp
 zoxide
 zsh-autopair
-zsh-autosuggestions
-zsh-completions
-zsh-syntax-highlighting
 zstd
+font-maple-mono-nf-cn

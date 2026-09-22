@@ -217,15 +217,6 @@
       "installedAt": "2026-08-19T06:07:17.718Z",
       "updatedAt": "2026-09-14T02:24:34.198Z"
     },
-    "ui-find-icon": {
-      "source": "fannheyward/skills",
-      "sourceType": "github",
-      "sourceUrl": "https://github.com/fannheyward/skills.git",
-      "skillPath": "skills/ui-find-icon/SKILL.md",
-      "skillFolderHash": "3b2e6ab0b8c5eb41e9c9f358e28c59bdcc8856cf",
-      "installedAt": "2026-09-02T07:30:52.068Z",
-      "updatedAt": "2026-09-14T02:24:35.442Z"
-    },
     "de-review": {
       "source": "fannheyward/skills",
       "sourceType": "github",
@@ -240,9 +231,9 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/tw93/kami.git",
       "skillPath": "skills/kami/SKILL.md",
-      "skillFolderHash": "66bb22391a01581d76de574adc06abf3cda772c2",
+      "skillFolderHash": "5f922d31ca8aae525b06a57e548b32afc485e580",
       "installedAt": "2026-09-10T01:28:04.658Z",
-      "updatedAt": "2026-09-17T03:26:12.849Z"
+      "updatedAt": "2026-09-21T01:00:31.130Z"
     },
     "eli5": {
       "source": "fannheyward/skills",
