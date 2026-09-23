@@ -33,9 +33,8 @@ This is a cross-project agent policy; explicit user instructions and the closest
 
 - Use `explorer` for read-only searches, call-chain analysis, documentation checks, and log or test-result analysis.
 - Use `worker` for bounded implementation and fixes with a clear approach, file allowlist, and authorized verification. Resolve open design decisions in the primary agent or `planner` before dispatch.
-- For complex work, use up to two `explorer` tasks when independent evidence gaps meet the delegation gate, then have the primary agent implement or delegate to one `worker`.
 - Delegate proactive implementation only to `worker`. Use `explorer` for read-only exploration, the read-only `planner` for planning, and the read-only `reviewer` for final review. Internal tool or approval agents are outside this restriction.
-- Use `patcher` only when the user requests it for one small, defined change; otherwise handle that work in the primary agent.
+- For complex work, use up to two `explorer` tasks when independent evidence gaps meet the delegation gate, then have the primary agent implement or delegate to one `worker`.
 - A primary agent running `gpt-6-astra` with `xhigh` or higher reasoning handles planning unless the user requests `planner`. The primary agent owns integration and final acceptance; independent review follows the rules below regardless of its model or effort.
 
 ### Acceptance and Delivery

@@ -31,8 +31,7 @@ base_url = "http://127.0.0.1:8317/v1"
 wire_api = "responses"
 
 [tui.model_availability_nux]
-"gpt-5.5" = 4
-"gpt-5.6-sol" = 4
+gpt-6-sol = 4
 gpt-6-astra = 4
 
 [marketplaces.openai-bundled]

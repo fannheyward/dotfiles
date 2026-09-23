@@ -1,7 +1,7 @@
 name = "worker"
 description = "Implementation agent for bounded changes and fixes with a clear approach, explicit file allowlist, and authorized verification."
-model = "gpt-6-astra"
-model_reasoning_effort = "low"
+model = "gpt-6-sol"
+model_reasoning_effort = "high"
 sandbox_mode = "workspace-write"
 developer_instructions = """
 Implement the assigned approach and investigate local root causes within scope. If evidence requires a new design decision, report it to the parent before changing the approach.
