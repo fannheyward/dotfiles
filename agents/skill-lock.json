@@ -199,15 +199,6 @@
       "installedAt": "2026-08-05T08:12:20.112Z",
       "updatedAt": "2026-08-20T01:51:30.459Z"
     },
-    "impeccable": {
-      "source": "pbakaus/impeccable",
-      "sourceType": "github",
-      "sourceUrl": "https://github.com/pbakaus/impeccable.git",
-      "skillPath": ".agents/skills/impeccable/SKILL.md",
-      "skillFolderHash": "de1582a945304f9d2823f08986a01dd0cc2d2042",
-      "installedAt": "2026-08-11T01:02:25.267Z",
-      "updatedAt": "2026-09-15T01:47:43.936Z"
-    },
     "optimize-agents-md": {
       "source": "fannheyward/skills",
       "sourceType": "github",
