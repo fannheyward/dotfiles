@@ -217,15 +217,6 @@
       "installedAt": "2026-09-09T02:45:12.494Z",
       "updatedAt": "2026-09-16T03:43:47.891Z"
     },
-    "kami": {
-      "source": "tw93/kami",
-      "sourceType": "github",
-      "sourceUrl": "https://github.com/tw93/kami.git",
-      "skillPath": "skills/kami/SKILL.md",
-      "skillFolderHash": "5f922d31ca8aae525b06a57e548b32afc485e580",
-      "installedAt": "2026-09-10T01:28:04.658Z",
-      "updatedAt": "2026-09-21T01:00:31.130Z"
-    },
     "eli5": {
       "source": "fannheyward/skills",
       "sourceType": "github",
@@ -252,6 +243,15 @@
       "skillFolderHash": "48398b0910e77d78a26631ceb05242ac11d04f9c",
       "installedAt": "2026-09-16T08:28:29.015Z",
       "updatedAt": "2026-09-16T12:32:56.978Z"
+    },
+    "kami": {
+      "source": "tw93/kami",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/tw93/kami.git",
+      "skillPath": "skills/kami/SKILL.md",
+      "skillFolderHash": "b41ad4910a3368ad1c1b77b55cd67dc97edb0474",
+      "installedAt": "2026-09-28T05:22:17.369Z",
+      "updatedAt": "2026-09-28T05:22:17.369Z"
     }
   },
   "dismissed": {

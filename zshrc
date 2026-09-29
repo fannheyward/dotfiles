@@ -75,7 +75,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(macos zsh-autosuggestions zsh-syntax-highlighting)
+plugins=(zsh-autosuggestions zsh-syntax-highlighting)
 
 zstyle ':omz:update' mode disabled
 
@@ -196,6 +196,11 @@ generate_password() {
     local random_str
     random_str=$(LC_ALL=C tr -dc "A-Za-z0-9" < /dev/urandom | head -c 12)
     echo "${random_str:0:6}-${random_str:6:6}" | pbcopy
+}
+
+cdf ()
+{
+    open -R "$(ls | head -n 1)"
 }
 
 if [[ -r "${HOMEBREW_PREFIX}/share/zsh-autopair/autopair.zsh" ]]; then

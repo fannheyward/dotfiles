@@ -159,7 +159,7 @@ command! -nargs=0 BOnly         silent! execute "%bd\|e#\|bd#"
 
 " mappings {{{{
 nmap ? /\<\><Left><Left>
-nmap <nowait> yc yygccp
+nmap yc yygccp
 nmap <silent> <leader>ee :e $HOME/.config/nvim/init.vim<CR>
 set dictionary+=$HOME/.config/nvim/dev.dict
 
@@ -175,13 +175,13 @@ nnoremap <leader>sr :%s/<<C-R><C-W>>//g<Left><Left>
 
 nnoremap <silent> gb :bn<CR>
 nnoremap <silent> gB :bp<CR>
-nnoremap <silent><nowait> <C-c> ciw
-nnoremap <silent><nowait> <tab><tab> :Pick buffers<CR>
-nnoremap <silent><nowait> <space>f  :Pick files tool=rg<CR>
-nnoremap <silent><nowait> <space>g  :Pick grep_live tool=rg<CR>
-nnoremap <silent><nowait> <space>s  :cgetexpr <SID>grep_to_qf(expand('<cword>'))<CR>
-nnoremap <silent><nowait> <space>S  :cgetexpr <SID>grep_to_qf(expand('<cword>'), expand('%'))<CR>
-nnoremap <silent><nowait> <space>r  :if &modifiable \| setl noma \| echo 'non-modifiable' \| else \| setl ma \| echo 'modifiable' \| endif<CR>
+nnoremap <silent> <C-c> ciw
+nnoremap <silent> <tab><tab> :Pick buffers<CR>
+nnoremap <silent> <space>f  :Pick files tool=rg<CR>
+nnoremap <silent> <space>g  :Pick grep_live tool=rg<CR>
+nnoremap <silent> <space>s  :cgetexpr <SID>grep_to_qf(expand('<cword>'))<CR>
+nnoremap <silent> <space>S  :cgetexpr <SID>grep_to_qf(expand('<cword>'), expand('%'))<CR>
+nnoremap <silent> <space>r  :if &modifiable \| setl noma \| echo 'non-modifiable' \| else \| setl ma \| echo 'modifiable' \| endif<CR>
 " use `` or '' to jump back, `:h m'`
 nnoremap <expr> k (v:count > 1 ? "m'" . v:count : '') . 'gk'
 nnoremap <expr> j (v:count > 1 ? "m'" . v:count : '') . 'gj'
@@ -242,6 +242,14 @@ function! s:go_to_definition() abort
   catch /E426\|E433/
     call searchdecl(expand('<cword>'))
   endtry
+endfunction
+
+function! s:show_outline() abort
+  if CocHasProvider('documentSymbol')
+    call CocAction('showOutline')
+  else
+    normal! gO
+  endif
 endfunction
 
 if executable("rg")
@@ -341,9 +349,10 @@ let g:coc_global_extensions = [
 let g:coc_filetype_map = { 'asciidoc': 'markdown' }
 
 nmap <silent> gd :call <SID>go_to_definition()<CR>
-nmap <silent><nowait> gD <Plug>(coc-declaration)
-nmap <silent><nowait> gy <Plug>(coc-type-definition)
-nmap <silent><nowait> gi <Plug>(coc-implementation)
+nmap <silent> gO :call <SID>show_outline()<CR>
+nmap <silent> gD <Plug>(coc-declaration)
+nmap <silent> gy <Plug>(coc-type-definition)
+nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gn <Plug>(coc-rename)
 nmap <silent> gA <Plug>(coc-codeaction)
 nmap <silent> gl <Plug>(coc-codeaction-line)
@@ -368,10 +377,9 @@ xmap <leader>f  <Plug>(coc-format-selected)
 nmap <leader>f  <Plug>(coc-format-selected)
 xmap <leader>a  <Plug>(coc-codeaction-selected)
 nmap <leader>a  <Plug>(coc-codeaction-selected)
-
-nmap <silent> <leader>re <Plug>(coc-codeaction-refactor)
-xmap <silent> <leader>r  <Plug>(coc-codeaction-refactor-selected)
-nmap <silent> <leader>r  <Plug>(coc-codeaction-refactor-selected)
+nmap <leader>re <Plug>(coc-codeaction-refactor)
+xmap <leader>r  <Plug>(coc-codeaction-refactor-selected)
+nmap <leader>r  <Plug>(coc-codeaction-refactor-selected)
 
 xmap if <Plug>(coc-funcobj-i)
 omap if <Plug>(coc-funcobj-i)
@@ -395,11 +403,11 @@ inoremap <silent><expr> <TAB>
 inoremap <expr><S-TAB> coc#pum#visible() ? coc#pum#prev(1) : "\<C-h>"
 
 nnoremap <silent> K :call <SID>show_documentation()<CR>
-nnoremap <silent><nowait> <space>a  :call <SID>coc_qf_diagnostic()<CR>
-nnoremap <silent><nowait> <space>o  :<C-u>CocList -A outline -kind<CR>
-nnoremap <silent><nowait> <space>m  :<C-u>CocList -A -N mru<CR>
-nnoremap <silent><nowait> <space>w  :<C-u>CocList -I -N symbols<CR>
-nnoremap <silent><nowait> <space>y  :<C-u>CocList -A --normal yank<CR>
+nnoremap <silent> <space>a  :call <SID>coc_qf_diagnostic()<CR>
+nnoremap <silent> <space>o  :<C-u>CocList -A outline -kind<CR>
+nnoremap <silent> <space>m  :<C-u>CocList -A -N mru<CR>
+nnoremap <silent> <space>w  :<C-u>CocList -I -N symbols<CR>
+nnoremap <silent> <space>y  :<C-u>CocList -A --normal yank<CR>
 
 " override nvim default LSP key-mappings `:h gr-default`
 nnoremap <silent><nowait> gr <Plug>(coc-references-used)
