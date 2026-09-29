@@ -169,7 +169,7 @@ vnoremap K :m '<-2<CR>gv=gv
 vnoremap // y/\V<C-R>=escape(@",'/\')<CR><CR>
 vnoremap <c-]> g<c-]>
 nnoremap <c-]> g<c-]>
-nnoremap J mzJ`z:delmarks z<CR>
+nnoremap <expr> J 'mz' . v:count1 . "J`z:delmarks z\<CR>"
 nnoremap <leader>cp :set clipboard=unnamedplus<CR>
 nnoremap <leader>sr :%s/<<C-R><C-W>>//g<Left><Left>
 
@@ -233,13 +233,13 @@ function! s:show_documentation() abort
 endfunction
 
 function! s:go_to_definition() abort
-  if CocAction('jumpDefinition')
+  if CocHasProvider('definition') && CocAction('jumpDefinition')
     return v:true
   endif
 
   try
-    execute "normal! \<C-]>"
-  catch /E426\|E433/
+    execute 'tag ' . fnameescape(expand('<cword>'))
+  catch /E426\|E429\|E433/
     call searchdecl(expand('<cword>'))
   endtry
 endfunction
