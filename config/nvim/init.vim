@@ -346,8 +346,6 @@ let g:coc_global_extensions = [
       \'coc-yank'
       \]
 
-let g:coc_filetype_map = { 'asciidoc': 'markdown' }
-
 nmap <silent> gd :call <SID>go_to_definition()<CR>
 nmap <silent> gO :call <SID>show_outline()<CR>
 nmap <silent> gD <Plug>(coc-declaration)
@@ -358,6 +356,7 @@ nmap <silent> gA <Plug>(coc-codeaction)
 nmap <silent> gl <Plug>(coc-codeaction-line)
 nmap <silent> gs <Plug>(coc-codeaction-source)
 nmap <silent> ga <Plug>(coc-codeaction-cursor)
+xmap <silent> ga <Plug>(coc-codeaction-selected)
 nmap <silent> gk <Plug>(coc-fix-current)
 nmap <silent> go <Plug>(coc-git-chunkinfo)
 nmap <silent> gm <Plug>(coc-git-commit)
@@ -371,15 +370,7 @@ nmap <silent> <expr> [c &diff ? '[c' : '<Plug>(coc-git-prevchunk)'
 nmap <silent> <expr> ]c &diff ? ']c' : '<Plug>(coc-git-nextchunk)'
 
 nmap <leader>l  <Plug>(coc-openlink)
-nmap <leader>c  <Plug>(coc-codelens-action)
-nmap <leader>rf <Plug>(coc-refactor)
-xmap <leader>f  <Plug>(coc-format-selected)
-nmap <leader>f  <Plug>(coc-format-selected)
-xmap <leader>a  <Plug>(coc-codeaction-selected)
-nmap <leader>a  <Plug>(coc-codeaction-selected)
-nmap <leader>re <Plug>(coc-codeaction-refactor)
-xmap <leader>r  <Plug>(coc-codeaction-refactor-selected)
-nmap <leader>r  <Plug>(coc-codeaction-refactor-selected)
+nmap <leader>cl <Plug>(coc-codelens-action)
 
 xmap if <Plug>(coc-funcobj-i)
 omap if <Plug>(coc-funcobj-i)
