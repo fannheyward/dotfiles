@@ -13,8 +13,8 @@ cmake
 dav1d
 deno
 diff-so-fancy
-difftastic
 double-conversion
+drift
 dua-cli
 edencommon
 eza
@@ -50,8 +50,6 @@ libevent
 libffi
 libgit2
 libnghttp2
-libnghttp3
-libngtcp2
 libpng
 libsodium
 libssh2
