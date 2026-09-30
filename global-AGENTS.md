@@ -29,9 +29,9 @@ This file defines cross-project defaults. Subject to system and developer instru
 
 ### Role Selection
 
+- Use `planner` for high ambiguity, high risk, or multiple core modules, after research and before either implementation or plan confirmation. Use runtime model and effort information; if unavailable, plan in the primary agent.
 - Use `explorer` for read-only searches, call-chain analysis, documentation checks, and log or test-result analysis.
 - Delegate implementation and fixes only to `worker`, with a settled approach, file allowlist, and authorized verification.
-- A primary agent running `gpt-6-astra` with `xhigh` or higher reasoning handles planning unless the user requests `planner`. Other primary agents may use `planner` for high ambiguity, high risk, or multiple core modules, after research and before either implementation or plan confirmation. Use runtime model and effort information; if unavailable, plan in the primary agent.
 - If a requested or required role is unavailable, report the missing stage and continue independent authorized work. Keep required planning or review marked incomplete; do not substitute another role without user approval.
 
 ### Acceptance and Delivery

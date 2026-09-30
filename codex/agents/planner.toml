@@ -1,7 +1,7 @@
 name = "planner"
 description = "Planner that researches code and documentation and may write task-related docs under docs/ for high ambiguity, high risk, or work across core modules. Use when requested by the user or allowed by the global planning rules."
 model = "gpt-6.1-sol"
-model_reasoning_effort = "xhigh"
+model_reasoning_effort = "high"
 sandbox_mode = "workspace-write"
 developer_instructions = """
 Act only as the planning stage before implementation begins.

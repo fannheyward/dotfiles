@@ -1,8 +1,8 @@
 #:schema https://developers.openai.com/codex/config-schema.json
 
-model = "gpt-6-astra"
+model = "gpt-6.1-sol"
 model_provider = "openrouter"
-model_reasoning_effort = "xhigh"
+model_reasoning_effort = "high"
 model_reasoning_summary = "concise"
 model_context_window = 1000000
 model_auto_compact_token_limit = 900000
