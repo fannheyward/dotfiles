@@ -12,7 +12,6 @@ cffi
 cmake
 dav1d
 deno
-diff-so-fancy
 double-conversion
 drift
 dua-cli
