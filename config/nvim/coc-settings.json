@@ -47,9 +47,6 @@
   "eslint.format.enable": true,
   "eslint.packageManager": "yarn",
   "extensions.updateCheck": "daily",
-  "suggest.floatConfig": {
-    "border": true
-  },
   "floatFactory.floatConfig": {
     "border": true
   },
@@ -71,6 +68,10 @@
   "go.goplsPath": "gopls",
   "inlayHint.display": false,
   "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": true,
+  "json.schemaDownload.trustedDomains": {
+    "https://json.schemastore.org": true,
+    "https://www.schemastore.org": true
+  },
   "languageserver": {},
   "links.highlight": true,
   "list.insertMappings": {
@@ -95,6 +96,7 @@
   ],
   "Lua.runtime.version": "LuaJIT",
   "Lua.workspace.checkThirdParty": false,
+  "luals.nvimLua.enable": true,
   "markdownlint.config": {
     "default": true,
     "line-length": false
@@ -120,8 +122,10 @@
   "suggest.acceptSuggestionOnCommitCharacter": true,
   "suggest.defaultSortMethod": "none",
   "suggest.detailField": "abbr",
+  "suggest.floatConfig": {
+    "border": true
+  },
   "suggest.selection": "recentlyUsedByPrefix",
-  "sumneko-lua.enableNvimLuaDev": true,
   "tsserver.experimental.enableProjectDiagnostics": true,
   "tsserver.implicitProjectConfig.checkJs": true,
   "tsserver.useLocalTsdk": true,
@@ -135,9 +139,5 @@
   "typescript.inlayHints.propertyDeclarationTypes.enabled": true,
   "typescript.inlayHints.variableTypes.enabled": true,
   "typescript.preferences.useAliasesForRenames": false,
-  "typescript.referencesCodeLens.showOnAllFunctions": true,
-  "json.schemaDownload.trustedDomains": {
-    "https://www.schemastore.org": true,
-    "https://json.schemastore.org": true
-  }
+  "typescript.referencesCodeLens.showOnAllFunctions": true
 }

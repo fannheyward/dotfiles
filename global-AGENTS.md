@@ -22,7 +22,8 @@ This file defines cross-project defaults. Subject to system and developer instru
 - Proactively delegate only when at least two research, implementation, or verification workflows are independently parallelizable and each is expected to take more than 5 minutes.
 - Before delegating implementation, complete the necessary research and settle the scope and approach.
 - By default, run at most two read-only sub-agents and one writing sub-agent at once. Parallel writers must not overlap in files, shared interfaces, or project configuration.
-- Give each sub-agent one bounded task with the goal, relevant evidence, dependencies, file ownership, authorized checks, and completion criteria. Allow at most one corrective follow-up per exploration, planning, or implementation assignment; then take over or report the exact blocker. Final reviews follow the correction cycle below.
+- When spawning a sub-agent, default `fork_turns` to `"none"`; use a small positive integer string such as `"3"` when recent discussion helps with the task. In the current spawn tool, omitting `fork_turns` or setting it to `"all"` inherits the parent's model and reasoning effort and disallows overrides. Use no or partial history when role-specific model settings are required.
+- Give each sub-agent one bounded, self-contained task with the working directory, goal, latest relevant user constraints and approvals, settled decisions, evidence references, dependencies, file ownership, authorized checks, expected output, and completion criteria. Include required context from omitted turns rather than assuming the sub-agent has it. Allow at most one corrective follow-up per exploration, planning, or implementation assignment; then take over or report the exact blocker. Final reviews follow the correction cycle below.
 - While sub-agents run, advance independent work without duplicating their assignments or editing files owned by a writer. Collect required results before dependent work or final delivery; relay user changes and stop obsolete work.
 - Write legible agent messages with spaces between words and numbers.
 
@@ -30,13 +31,13 @@ This file defines cross-project defaults. Subject to system and developer instru
 
 - Use `explorer` for read-only searches, call-chain analysis, documentation checks, and log or test-result analysis.
 - Delegate implementation and fixes only to `worker`, with a settled approach, file allowlist, and authorized verification.
-- A primary agent running `gpt-6-astra` with `xhigh` or higher reasoning handles planning unless the user requests `planner`. Other primary agents may use the read-only `planner` for high ambiguity, high risk, or multiple core modules, after research and before either implementation or plan confirmation. Use runtime model and effort information; if unavailable, plan in the primary agent.
+- A primary agent running `gpt-6-astra` with `xhigh` or higher reasoning handles planning unless the user requests `planner`. Other primary agents may use `planner` for high ambiguity, high risk, or multiple core modules, after research and before either implementation or plan confirmation. Use runtime model and effort information; if unavailable, plan in the primary agent.
 - If a requested or required role is unavailable, report the missing stage and continue independent authorized work. Keep required planning or review marked incomplete; do not substitute another role without user approval.
 
 ### Acceptance and Delivery
 
 - The primary agent owns integration, final acceptance, and authorized delivery. Sub-agents must not commit, push, create pull requests, or perform other external writes.
-- After implementation and the primary agent's verification stop, call the read-only `reviewer` for security, payments, data migration, a critical pre-release path, a large diff across multiple core modules, or an explicit request for independent review. This requirement applies regardless of the primary model or effort. Use primary-agent review for other work.
+- Call the read-only `reviewer` only before delivering a major change, after implementation and the primary agent's verification are complete. Major changes span core modules or carry material security, payment, data-migration, or release risk. Use primary-agent review for routine changes.
 - Give `reviewer` the original request or spec, the fixed review point, and the authorization boundaries. The reviewer must reconstruct the expected result from primary sources and independently challenge both the chosen approach and its implementation; treat the implementation plan and the primary agent's conclusions as context, not premises.
 - The reviewer reports its independent conclusion and stops without editing. The primary agent or one `worker` may make corrections within the approved approach and scope, then the primary agent verifies the result and requests review against the new fixed point. Changes to the approved approach or scope require user approval.
 - After a final reviewer pass with no required correction or blocker, perform only read-only inspection and authorized delivery. Further content changes require another review.
