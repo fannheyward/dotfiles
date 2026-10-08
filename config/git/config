@@ -19,7 +19,6 @@
 [pull]
 	rebase = true
 [core]
-	pager = drift
 	excludesfile = ~/.config/git/ignore
 [filter "lfs"]
 	required = true
