@@ -6,18 +6,18 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/dietrichgebert/ponytail.git",
       "skillPath": "skills/ponytail/SKILL.md",
-      "skillFolderHash": "cb6e53477eaf04e6daeca22feacb85f9ce20d40c",
+      "skillFolderHash": "815ad2601cd0b371cc22ee265d5a4296df48ec93",
       "installedAt": "2026-06-25T03:30:51.040Z",
-      "updatedAt": "2026-07-13T00:48:36.587Z"
+      "updatedAt": "2026-10-08T06:20:19.041Z"
     },
     "ponytail-review": {
       "source": "dietrichgebert/ponytail",
       "sourceType": "github",
       "sourceUrl": "https://github.com/dietrichgebert/ponytail.git",
       "skillPath": "skills/ponytail-review/SKILL.md",
-      "skillFolderHash": "6edfcf161c997fdd3089bce4e5682a921fb59b46",
+      "skillFolderHash": "819cb875ad003ad5af5b2dd88beeac499c876e1b",
       "installedAt": "2026-06-25T03:31:12.523Z",
-      "updatedAt": "2026-10-08T01:56:10.873Z"
+      "updatedAt": "2026-10-08T06:24:06.863Z"
     },
     "grill-with-docs": {
       "source": "mattpocock/skills",
@@ -278,6 +278,7 @@
     "kilo",
     "kimi-code-cli",
     "opencode",
+    "pi",
     "warp",
     "zed"
   ]
