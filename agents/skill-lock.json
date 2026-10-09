@@ -6,18 +6,18 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/dietrichgebert/ponytail.git",
       "skillPath": "skills/ponytail/SKILL.md",
-      "skillFolderHash": "815ad2601cd0b371cc22ee265d5a4296df48ec93",
+      "skillFolderHash": "db8acd3ce9e04ef4a5d42bbd90924b6d0a488318",
       "installedAt": "2026-06-25T03:30:51.040Z",
-      "updatedAt": "2026-10-08T06:20:19.041Z"
+      "updatedAt": "2026-10-09T01:17:17.578Z"
     },
     "ponytail-review": {
       "source": "dietrichgebert/ponytail",
       "sourceType": "github",
       "sourceUrl": "https://github.com/dietrichgebert/ponytail.git",
       "skillPath": "skills/ponytail-review/SKILL.md",
-      "skillFolderHash": "819cb875ad003ad5af5b2dd88beeac499c876e1b",
+      "skillFolderHash": "8ad8430c42a6f8cd18758dddb70cfee399725de6",
       "installedAt": "2026-06-25T03:31:12.523Z",
-      "updatedAt": "2026-10-08T06:24:06.863Z"
+      "updatedAt": "2026-10-09T01:17:20.154Z"
     },
     "grill-with-docs": {
       "source": "mattpocock/skills",
