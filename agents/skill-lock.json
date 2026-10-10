@@ -213,9 +213,9 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/fannheyward/skills.git",
       "skillPath": "skills/de-review/SKILL.md",
-      "skillFolderHash": "12f48001dc4f0154ac04d273bb70414742b7e6db",
+      "skillFolderHash": "8948d11012f1de0455f4eee9544a5aec8881e997",
       "installedAt": "2026-09-09T02:45:12.494Z",
-      "updatedAt": "2026-09-16T03:43:47.891Z"
+      "updatedAt": "2026-10-10T07:01:00.354Z"
     },
     "eli5": {
       "source": "fannheyward/skills",
@@ -249,9 +249,9 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/tw93/kami.git",
       "skillPath": "skills/kami/SKILL.md",
-      "skillFolderHash": "b41ad4910a3368ad1c1b77b55cd67dc97edb0474",
+      "skillFolderHash": "2572f2bf711de1ae9e21e9e4928fc52aa0a1f89a",
       "installedAt": "2026-09-28T05:22:17.369Z",
-      "updatedAt": "2026-09-28T05:22:17.369Z"
+      "updatedAt": "2026-10-10T01:03:28.757Z"
     },
     "pr": {
       "source": "mattpocock/skills",

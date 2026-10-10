@@ -75,6 +75,7 @@ neovim
 node
 oniguruma
 openssl@3
+openssl@4
 opus
 p7zip
 pcre2
