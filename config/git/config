@@ -40,3 +40,4 @@
 [pager]
 	diff = drift
 	show = drift
+	branch = false
