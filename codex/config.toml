@@ -14,6 +14,7 @@ personality = "pragmatic"
 context_management = true
 collaboration_modes = true
 default_mode_request_user_input = true
+local_thread_store_compression = true
 shell_snapshot = true
 js_repl = false
 hooks = true
@@ -36,7 +37,7 @@ screen_reader_detection_done = true
 [tui.model_availability_nux]
 gpt-6-astra = 4
 gpt-6-sol = 4
-"gpt-6.1-sol" = 1
+"gpt-6.1-sol" = 4
 
 [marketplaces.openai-bundled]
 source_type = "local"
@@ -90,6 +91,7 @@ git-worktree-root = "/Users/fannheyward/worktrees"
 localeOverride = "en-US"
 computerUseAlwaysHidePictureInPicture = true
 show-context-window-usage = true
+git-pr-instructions = "Write PR body with $PR skill."
 
 [desktop.open-in-target-preferences]
 global = "ghostty"

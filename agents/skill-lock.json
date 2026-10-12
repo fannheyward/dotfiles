@@ -249,9 +249,9 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/tw93/kami.git",
       "skillPath": "skills/kami/SKILL.md",
-      "skillFolderHash": "2572f2bf711de1ae9e21e9e4928fc52aa0a1f89a",
+      "skillFolderHash": "05cb71ae8aa3ad6d30d5ea04b6439b1b7a6d4154",
       "installedAt": "2026-09-28T05:22:17.369Z",
-      "updatedAt": "2026-10-10T01:03:28.757Z"
+      "updatedAt": "2026-10-12T01:41:15.889Z"
     },
     "pr": {
       "source": "mattpocock/skills",
