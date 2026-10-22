@@ -9,6 +9,7 @@ model_auto_compact_token_limit = 900000
 model_verbosity = "low"
 web_search = "live"
 personality = "pragmatic"
+service_tier = "priority"
 
 [features]
 context_management = true
@@ -19,6 +20,13 @@ shell_snapshot = true
 js_repl = false
 hooks = true
 memories = true
+
+[model_providers.magpie]
+name = "magpie"
+base_url = "http://127.0.0.1:3425/v1"
+wire_api = "responses"
+experimental_bearer_token = "magpie"
+http_headers = { "x-openai-actor-authorization" = "magpie" }
 
 [model_providers.openrouter]
 name = "openrouter"
@@ -86,12 +94,14 @@ ambient-suggestions-enabled = false
 git-branch-prefix = "fannheyward/"
 followUpQueueMode = "queue"
 dock-icon-preference = "codex-system"
-enabled-reasoning-efforts = ["low", "medium", "high", "xhigh", "max", "ultra"]
+enabled-reasoning-efforts = ["low", "medium", "high", "xhigh", "max", "ultra", "none", "minimal"]
 git-worktree-root = "/Users/fannheyward/worktrees"
 localeOverride = "en-US"
 computerUseAlwaysHidePictureInPicture = true
 show-context-window-usage = true
 git-pr-instructions = "Write PR body with $PR skill."
+git-commit-instructions = ""
+preventSleepWhileRunning = false
 
 [desktop.open-in-target-preferences]
 global = "ghostty"

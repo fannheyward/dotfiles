@@ -29,3 +29,4 @@ alias v="nvim -u ${HOME}/src/dotfiles/config/nvim/vimrc_for_server"
 alias vi='nvim'
 alias yoink="open -a 'Yoink'"
 alias md="open -a 'MarkEdit'"
+alias u="n -g --ignore-scripts up && n -g ls && skills update -g && codex --version && codex update && pi --version && pi update"

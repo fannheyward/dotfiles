@@ -6,9 +6,9 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/dietrichgebert/ponytail.git",
       "skillPath": "skills/ponytail/SKILL.md",
-      "skillFolderHash": "db8acd3ce9e04ef4a5d42bbd90924b6d0a488318",
+      "skillFolderHash": "e8d3fa76e7ff9223a784dbd4bcfc9ff46b3fa55d",
       "installedAt": "2026-06-25T03:30:51.040Z",
-      "updatedAt": "2026-10-09T01:17:17.578Z"
+      "updatedAt": "2026-10-16T09:08:23.212Z"
     },
     "ponytail-review": {
       "source": "dietrichgebert/ponytail",
@@ -244,15 +244,6 @@
       "installedAt": "2026-09-16T08:28:29.015Z",
       "updatedAt": "2026-09-16T12:32:56.978Z"
     },
-    "kami": {
-      "source": "tw93/kami",
-      "sourceType": "github",
-      "sourceUrl": "https://github.com/tw93/kami.git",
-      "skillPath": "skills/kami/SKILL.md",
-      "skillFolderHash": "05cb71ae8aa3ad6d30d5ea04b6439b1b7a6d4154",
-      "installedAt": "2026-09-28T05:22:17.369Z",
-      "updatedAt": "2026-10-12T01:41:15.889Z"
-    },
     "pr": {
       "source": "mattpocock/skills",
       "sourceType": "github",
@@ -262,6 +253,15 @@
       "pluginName": "mattpocock-skills",
       "installedAt": "2026-09-30T01:00:48.232Z",
       "updatedAt": "2026-09-30T01:00:48.232Z"
+    },
+    "kami": {
+      "source": "tw93/kami",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/tw93/kami.git",
+      "skillPath": "skills/kami/SKILL.md",
+      "skillFolderHash": "de95bdfa577bad58f44579a0d095fe28678e9b67",
+      "installedAt": "2026-10-19T01:49:58.877Z",
+      "updatedAt": "2026-10-20T05:58:10.714Z"
     }
   },
   "dismissed": {

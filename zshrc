@@ -80,7 +80,7 @@ plugins=(zsh-autosuggestions zsh-syntax-highlighting)
 zstyle ':omz:update' mode disabled
 
 # Customize to your needs...
-ulimit -n 8192
+ulimit -n 40960
 
 KEYTIMEOUT=1
 CDPATH=.:$HOME/src
