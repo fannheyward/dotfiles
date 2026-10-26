@@ -32,7 +32,7 @@ lua require('catppuccin').setup({ auto_integrations = false })
 " }}}} plug.vim
 
 " basic {{{{
-colorscheme catppuccin-frappe
+colorscheme catppuccin-macchiato
 " packadd nvim.difftool
 " packadd nvim.undotree
 set fileencoding=utf-8
