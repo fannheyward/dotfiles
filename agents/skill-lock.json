@@ -154,24 +154,6 @@
       "installedAt": "2026-07-15T02:09:24.748Z",
       "updatedAt": "2026-09-14T02:24:29.439Z"
     },
-    "git-push-lease": {
-      "source": "fannheyward/skills",
-      "sourceType": "github",
-      "sourceUrl": "https://github.com/fannheyward/skills.git",
-      "skillPath": "skills/git-push-lease/SKILL.md",
-      "skillFolderHash": "f6afd18374380aad6bcc806703aed94e3ec9e429",
-      "installedAt": "2026-07-28T12:45:23.019Z",
-      "updatedAt": "2026-09-14T02:24:32.922Z"
-    },
-    "handoff": {
-      "source": "mattpocock/skills",
-      "sourceType": "github",
-      "sourceUrl": "https://github.com/mattpocock/skills.git",
-      "skillPath": "skills/productivity/handoff/SKILL.md",
-      "skillFolderHash": "ce24892bd2d4b9e7fd5ac9b95c03175e18bef388",
-      "installedAt": "2026-07-30T12:17:18.023Z",
-      "updatedAt": "2026-10-08T01:57:20.511Z"
-    },
     "prototype": {
       "source": "mattpocock/skills",
       "sourceType": "github",
@@ -199,15 +181,6 @@
       "installedAt": "2026-08-05T08:12:20.112Z",
       "updatedAt": "2026-08-20T01:51:30.459Z"
     },
-    "optimize-agents-md": {
-      "source": "fannheyward/skills",
-      "sourceType": "github",
-      "sourceUrl": "https://github.com/fannheyward/skills.git",
-      "skillPath": "skills/optimize-agents-md/SKILL.md",
-      "skillFolderHash": "88713f1c8f6542e88df025b3c92a7f82bc812981",
-      "installedAt": "2026-08-19T06:07:17.718Z",
-      "updatedAt": "2026-09-14T02:24:34.198Z"
-    },
     "de-review": {
       "source": "fannheyward/skills",
       "sourceType": "github",
@@ -216,15 +189,6 @@
       "skillFolderHash": "8948d11012f1de0455f4eee9544a5aec8881e997",
       "installedAt": "2026-09-09T02:45:12.494Z",
       "updatedAt": "2026-10-10T07:01:00.354Z"
-    },
-    "eli5": {
-      "source": "fannheyward/skills",
-      "sourceType": "github",
-      "sourceUrl": "https://github.com/fannheyward/skills.git",
-      "skillPath": "skills/eli5/SKILL.md",
-      "skillFolderHash": "fbd55e97db4140eae5f11dc18b35840b24e80a61",
-      "installedAt": "2026-09-16T05:34:28.080Z",
-      "updatedAt": "2026-09-16T05:34:28.080Z"
     },
     "show-me": {
       "source": "fannheyward/skills",

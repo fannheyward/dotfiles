@@ -11,6 +11,8 @@ web_search = "live"
 personality = "pragmatic"
 service_tier = "priority"
 
+notify = ["/Users/fannheyward/.codex/computer-use/Codex Computer Use.app/Contents/SharedSupport/SkyComputerUseClient.app/Contents/MacOS/SkyComputerUseClient", "turn-ended"]
+
 [features]
 context_management = true
 collaboration_modes = true
@@ -83,9 +85,6 @@ enabled = true
 enabled = true
 
 [plugins."unified-computer-use@openai-bundled"]
-enabled = true
-
-[plugins."code-review@openai-bundled"]
 enabled = true
 
 [desktop]

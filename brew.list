@@ -36,9 +36,9 @@ go
 gofumpt
 gopls
 hdrhistogram_c
-herdr
 highway
 icu4c@78
+icu4c@79
 jansson
 jemalloc
 jpeg-turbo
@@ -80,7 +80,7 @@ opus
 p7zip
 pcre2
 pycparser
-python@3.14
+python@3.15
 readline
 ripgrep
 ruff
