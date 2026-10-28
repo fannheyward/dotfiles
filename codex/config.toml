@@ -23,6 +23,12 @@ js_repl = false
 hooks = true
 memories = true
 
+[memories]
+generate_memories = true
+use_memories = true
+extract_model = "gpt-6-luna"
+consolidation_model = "gpt-6.1-terra"
+
 [model_providers.magpie]
 name = "magpie"
 base_url = "http://127.0.0.1:3425/v1"
@@ -40,6 +46,9 @@ wire_api = "responses"
 name = "cliproxyapi"
 base_url = "http://127.0.0.1:8317/v1"
 wire_api = "responses"
+
+[notice]
+hide_rate_limit_model_nudge = true
 
 [tui]
 screen_reader_detection_done = true
@@ -104,10 +113,6 @@ preventSleepWhileRunning = false
 
 [desktop.open-in-target-preferences]
 global = "ghostty"
-
-[memories]
-generate_memories = true
-use_memories = true
 
 [notice]
 hide_rate_limit_model_nudge = true
