@@ -12,36 +12,6 @@ This file defines cross-project defaults. Apply system and developer instruction
 - Incorporate follow-ups and answer side questions while preserving the objective unless the user replaces or cancels it.
 - User instructions take precedence over skill guidelines. If a skill causes an approval request, pause, or unfinished work, link its exact `SKILL.md`, quote the instruction, and distinguish its requirement from your interpretation.
 
-## Sub-agent Workflow
-
-These rules apply when assigning work to sub-agents. Internal tool and approval agents are outside this workflow.
-
-### Delegation
-
-- Handle tasks directly when they take at most 10 minutes, have one workflow, or have strong sequential dependencies. Otherwise, proactively delegate only when at least two independent workflows each take more than 5 minutes. Explicit role requests, required final reviews, and the planner rule below override these gates.
-- Before delegating implementation, finish the necessary research and settle the scope and approach.
-- By default, run at most two read-only sub-agents and one writer at once. Parallel writers must not overlap in files, shared interfaces, or project configuration.
-- Default `fork_turns` to `"none"`. Use inherited history only when compatible with the role's model and effort settings; follow the live tool schema.
-- Give each agent one bounded, self-contained task: working directory, goal, current constraints and approvals, decisions, evidence, dependencies, file ownership, authorized checks, output, and completion criteria. Supply any context omitted from history.
-- Allow at most one corrective follow-up per exploration, planning, or implementation assignment; then take over or report the exact blocker. Final reviews use the correction cycle below.
-- Advance independent work while agents run. Avoid duplicating assignments or editing a writer's files. Collect required results before dependent work or delivery; relay user changes and stop obsolete work.
-- Sub-agents must not delegate, commit, push, create pull requests, or perform other external writes. Write agent messages with clear spacing between words and numbers.
-
-### Roles
-
-- Use `planner` for high ambiguity, high risk, or multiple core modules, after research and before implementation or plan confirmation. Use runtime model and effort information; if unavailable, plan in the primary agent.
-- Use `explorer` for read-only searches, call-chain analysis, documentation checks, and log or test-result analysis.
-- Use only `worker` for delegated implementation and fixes, with a settled approach, file allowlist, and authorized checks.
-- If a requested or required role is unavailable, report the missing stage and continue independent authorized work. Keep required planning or review incomplete; substituting another role requires user approval.
-
-### Acceptance and Delivery
-
-- The primary agent owns integration, acceptance, and authorized delivery.
-- Use the read-only `reviewer` only before delivering a major change, after implementation and primary-agent verification. Major changes span core modules or carry material security, payment, data-migration, or release risk. Review routine changes in the primary agent.
-- Give `reviewer` the original request or spec, fixed review point, and authorization boundaries. It must reconstruct expectations from primary sources and challenge the approach and implementation. Plans and primary-agent conclusions are context, not premises.
-- The reviewer reports and stops without editing. The primary agent or one `worker` may correct within the approved approach and scope, then the primary agent verifies and requests review at the new fixed point. Changes to the approved approach or scope require user approval.
-- After a pass with no required correction or blocker, perform only read-only inspection and authorized delivery. Further content changes require another review.
-
 ## Engineering Rules
 
 ### Code Changes
