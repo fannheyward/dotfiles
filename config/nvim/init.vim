@@ -101,6 +101,7 @@ augroup common
   autocmd BufNewFile,BufRead *.min.js set filetype=none
   autocmd BufNewFile,BufRead *.mdc setlocal filetype=markdown
   autocmd BufNewFile,BufRead *.json setlocal filetype=jsonc
+  autocmd BufNewFile,BufRead project.xcproj setlocal filetype=jsonc
   autocmd BufNewFile,BufRead LICENSE* setlocal filetype=license
 
   autocmd FileType go setlocal expandtab
