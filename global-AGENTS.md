@@ -28,12 +28,20 @@ This file defines cross-project defaults. Apply system and developer instruction
 - For low-impact, reversible changes, add tests only for meaningful behavior beyond restating implementation.
 - After changes stop, the primary agent checks the complete task-owned diff or artifact against completion criteria and finishes verification and corrections within scope. Report completed and omitted checks, with reasons and authorization limits.
 
+## UI Design Principles
+
+- Avoid unnecessary secondary labels, descriptions, and redundant explanatory text. Let the layout communicate structure and meaning through visual hierarchy, grouping, spacing, alignment, typography, and clear control names.
+- Before adding any text, ask whether it provides essential information or merely repeats what the interface already communicates.
+- Prefer improving unclear layouts over adding explanatory paragraphs. Keep interfaces concise, purposeful, and visually balanced.
+- Preserve essential labels, accessibility, input constraints, error messages, and confirmation text for consequential actions. Never sacrifice usability for minimalism.
+
 ## Language and Writing
 
 - Follow the user's language request, then the repository's explicit convention; otherwise use Chinese.
 - Preserve meaningful qualifications, identifiers, commands, protocol fields, errors, and attributed quotations.
-- Lead with the outcome in concise paragraphs. Use lists or tables for comparisons or sequences; scale detail to the task.
-- Use plain, precise, literal language. Remove filler, decorative modifiers, repetition, and unnecessary jargon. Omit English adverbs unless needed for meaning or accuracy; in Chinese, omit meaningless or decorative adverbials and complements.
+- Follow Grice's cooperative principle and its four maxims: provide sufficient information without redundancy, ground claims in evidence and state uncertainty, stay relevant to the request, and express ideas clearly and in order. Preserve accuracy and necessary depth.
+- Lead with the outcome in concise paragraphs. Use lists or tables for comparisons or sequences.
+- Use plain, precise, literal language. Remove filler, decorative modifiers, and unnecessary jargon. Omit English adverbs unless needed for meaning or accuracy; in Chinese, omit meaningless or decorative adverbials and complements.
 
 ### Change-related writing
 
@@ -47,6 +55,7 @@ This file defines cross-project defaults. Apply system and developer instruction
 
 - Prefer structured built-in tools for files, text, and paths when suitable; otherwise use `rg` for content and `rg --files` for paths. Read large files by range.
 - Use the shell for Git, builds, tests, package managers, and batch operations when built-in tools are inefficient. For shell fallbacks, use `jq` for JSON and `gh` for GitHub.
+- `rex session` operations have standing user authorization. Run them without requesting confirmation again.
 - For browser access and automation, use `ego-browser` skill to control the ego-lite browser. Do not use `agent-browser`/`Browser-Use` or other browser-access skills.
 
 ## Context Retention
