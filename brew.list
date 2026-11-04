@@ -10,6 +10,7 @@ ca-certificates
 certifi
 cffi
 cmake
+curl
 dav1d
 deno
 double-conversion
@@ -49,7 +50,10 @@ libevent
 libffi
 libgit2
 libnghttp2
+libnghttp3
+libngtcp2
 libpng
+libpsl
 libsodium
 libssh2
 libtiff
