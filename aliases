@@ -1,11 +1,10 @@
 if (( $+commands[eza] )); then
-    alias l='eza'
-    alias ls='eza'
     alias tree='eza --tree'
-    alias list='eza --absolute -l'
+    alias l='eza --icons --git --group-directories-first'
+    alias ls='eza --icons --git --group-directories-first'
+    alias list='eza --absolute -l --icons --group-directories-first'
 else
     export LS_OPTIONS='-hGF'
-    alias l="ls $LS_OPTIONS"
     alias ls="ls $LS_OPTIONS"
 fi
 

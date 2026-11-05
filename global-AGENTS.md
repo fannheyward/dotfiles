@@ -55,7 +55,7 @@ This file defines cross-project defaults. Apply system and developer instruction
 
 - Prefer structured built-in tools for files, text, and paths when suitable; otherwise use `rg` for content and `rg --files` for paths. Read large files by range.
 - Use the shell for Git, builds, tests, package managers, and batch operations when built-in tools are inefficient. For shell fallbacks, use `jq` for JSON and `gh` for GitHub.
-- `rex session` operations have standing user authorization. Run them without requesting confirmation again.
+- `rex session` operations have standing user authorization. Invoke them without requesting confirmation, as standalone commands using literal session IDs from context, so approval rules can match the command prefix.
 - For browser access and automation, use `ego-browser` skill to control the ego-lite browser. Do not use `agent-browser`/`Browser-Use` or other browser-access skills.
 
 ## Context Retention
