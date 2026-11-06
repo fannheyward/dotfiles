@@ -10,6 +10,7 @@ fi
 
 alias b='brew'
 alias n='npm'
+alias y='yazi'
 alias ni='npm install'
 alias p='pnpm'
 alias brwe='brew'

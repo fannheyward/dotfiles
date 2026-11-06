@@ -7,9 +7,9 @@ endif
 call plug#begin()
 " Plug '~/src/coc-pylance'
 " Plug '~/src/coc-delance'
+" Plug '~/src/coc-clangd'
 Plug '~/src/coc-rust-analyzer'
 Plug '~/src/coc-pyright'
-Plug '~/src/coc-clangd'
 Plug '~/src/coc-ts'
 
 Plug 'https://github.com/zef/vim-cycle'
