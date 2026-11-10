@@ -200,6 +200,22 @@ generate_password() {
     echo "${random_str:0:6}-${random_str:6:6}" | pbcopy
 }
 
+pfd() {
+  osascript 2>/dev/null <<'EOF'
+    tell application "Finder"
+      return POSIX path of (insertion location as alias)
+    end tell
+EOF
+}
+
+cdf() {
+  cd "$(pfd)"
+}
+
+opd () {
+    open -R "$(ls | head -n 1)"
+}
+
 if [[ -r "${HOMEBREW_PREFIX}/share/zsh-autopair/autopair.zsh" ]]; then
     source "${HOMEBREW_PREFIX}/share/zsh-autopair/autopair.zsh"
 fi
