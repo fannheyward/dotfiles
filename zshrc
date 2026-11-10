@@ -200,11 +200,6 @@ generate_password() {
     echo "${random_str:0:6}-${random_str:6:6}" | pbcopy
 }
 
-cdf ()
-{
-    open -R "$(ls | head -n 1)"
-}
-
 if [[ -r "${HOMEBREW_PREFIX}/share/zsh-autopair/autopair.zsh" ]]; then
     source "${HOMEBREW_PREFIX}/share/zsh-autopair/autopair.zsh"
 fi

@@ -418,6 +418,7 @@ vim.schedule(function()
   require('hlslens').setup({ calm_down = true })
 end)
 
+require('bqf').setup({ preview = { winblend = 0 }})
 require('mini.ai').setup()
 require('mini.misc').setup_restore_cursor()
 require('mini.pick').setup()
