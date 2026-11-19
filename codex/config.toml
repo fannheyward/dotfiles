@@ -1,6 +1,6 @@
 #:schema https://developers.openai.com/codex/config-schema.json
 
-model = "gpt-6.1-sol"
+model = "gpt-6.2-sol"
 model_provider = "openrouter"
 model_reasoning_effort = "high"
 model_reasoning_summary = "concise"
@@ -98,9 +98,9 @@ enabled = true
 enabled = true
 
 [desktop]
-conversationDetailMode = "STEPS_PROSE"
+conversationDetailMode = "STEPS_COMMANDS"
 ambient-suggestions-enabled = false
-git-branch-prefix = "fannheyward/"
+git-branch-prefix = "codex/"
 dock-icon-preference = "codex-system"
 enabled-reasoning-efforts = ["low", "medium", "high", "xhigh", "max", "ultra", "none", "minimal"]
 git-worktree-root = "/Users/fannheyward/worktrees"
