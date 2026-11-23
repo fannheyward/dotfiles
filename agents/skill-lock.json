@@ -1,42 +1,6 @@
 {
   "version": 3,
   "skills": {
-    "squash-commits": {
-      "source": "fannheyward/skills",
-      "sourceType": "github",
-      "sourceUrl": "https://github.com/fannheyward/skills.git",
-      "skillPath": "skills/squash-commits/SKILL.md",
-      "skillFolderHash": "f9ade0ebc019176af6f2101dca6b6ff6e9d7b0a0",
-      "installedAt": "2026-07-15T02:09:24.748Z",
-      "updatedAt": "2026-09-14T02:24:29.439Z"
-    },
-    "de-review": {
-      "source": "fannheyward/skills",
-      "sourceType": "github",
-      "sourceUrl": "https://github.com/fannheyward/skills.git",
-      "skillPath": "skills/de-review/SKILL.md",
-      "skillFolderHash": "9b8038ad7a60ccd92d27399490ffea0f3c989072",
-      "installedAt": "2026-09-09T02:45:12.494Z",
-      "updatedAt": "2026-10-27T03:35:29.458Z"
-    },
-    "show-me": {
-      "source": "fannheyward/skills",
-      "sourceType": "github",
-      "sourceUrl": "https://github.com/fannheyward/skills.git",
-      "skillPath": "skills/show-me/SKILL.md",
-      "skillFolderHash": "516b88065743021cc50cc79ca1d881b923ba925e",
-      "installedAt": "2026-09-16T05:50:16.186Z",
-      "updatedAt": "2026-09-16T05:50:16.186Z"
-    },
-    "unslop": {
-      "source": "fannheyward/skills",
-      "sourceType": "github",
-      "sourceUrl": "https://github.com/fannheyward/skills.git",
-      "skillPath": "skills/unslop/SKILL.md",
-      "skillFolderHash": "48398b0910e77d78a26631ceb05242ac11d04f9c",
-      "installedAt": "2026-09-16T08:28:29.015Z",
-      "updatedAt": "2026-09-16T12:32:56.978Z"
-    },
     "pr": {
       "source": "mattpocock/skills",
       "sourceType": "github",
@@ -52,9 +16,10 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/tw93/kami.git",
       "skillPath": "skills/kami/SKILL.md",
-      "skillFolderHash": "5386d93edfe5d95f64a18a05b66c7dfb072e3d62",
+      "skillFolderHash": "3db720f90563d5e2d5c1047f38bfde24da2a5863",
       "installedAt": "2026-10-19T01:49:58.877Z",
-      "updatedAt": "2026-11-06T04:11:32.482Z"
+      "updatedAt": "2026-11-23T01:42:43.251Z",
+      "commit": "27177605ad0007bc29fa3f9c203c347aa91074e2"
     },
     "retro": {
       "source": "mattpocock/skills",
@@ -273,6 +238,50 @@
       "skillFolderHash": "8ad8430c42a6f8cd18758dddb70cfee399725de6",
       "installedAt": "2026-11-04T01:23:54.048Z",
       "updatedAt": "2026-11-04T01:23:54.048Z"
+    },
+    "de-review": {
+      "source": "fannheyward/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/fannheyward/skills.git",
+      "commit": "969e71e841a42734430eb78e714df7743cc76b9b",
+      "skillPath": "skills/de-review/SKILL.md",
+      "skillFolderHash": "4423531fbcaa2790a9b292fd4b39be3c68087f51",
+      "pluginName": "fannheyward-skills",
+      "installedAt": "2026-11-23T03:43:39.045Z",
+      "updatedAt": "2026-11-23T03:43:39.045Z"
+    },
+    "delete-comment": {
+      "source": "fannheyward/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/fannheyward/skills.git",
+      "commit": "969e71e841a42734430eb78e714df7743cc76b9b",
+      "skillPath": "skills/delete-comment/SKILL.md",
+      "skillFolderHash": "621ec699e454aa214eac81039decaf9e95e4f021",
+      "pluginName": "fannheyward-skills",
+      "installedAt": "2026-11-23T03:43:45.782Z",
+      "updatedAt": "2026-11-23T03:43:45.782Z"
+    },
+    "squash-commits": {
+      "source": "fannheyward/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/fannheyward/skills.git",
+      "commit": "969e71e841a42734430eb78e714df7743cc76b9b",
+      "skillPath": "skills/squash-commits/SKILL.md",
+      "skillFolderHash": "c7acf51acf6090965e909322d94d4f5e355758a4",
+      "pluginName": "fannheyward-skills",
+      "installedAt": "2026-11-23T03:44:08.315Z",
+      "updatedAt": "2026-11-23T03:44:08.315Z"
+    },
+    "unslop": {
+      "source": "fannheyward/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/fannheyward/skills.git",
+      "commit": "969e71e841a42734430eb78e714df7743cc76b9b",
+      "skillPath": "skills/unslop/SKILL.md",
+      "skillFolderHash": "48398b0910e77d78a26631ceb05242ac11d04f9c",
+      "pluginName": "fannheyward-skills",
+      "installedAt": "2026-11-23T03:44:14.796Z",
+      "updatedAt": "2026-11-23T03:44:14.796Z"
     }
   },
   "dismissed": {
