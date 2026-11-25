@@ -100,11 +100,14 @@ export FLUTTER_STORAGE_BASE_URL=https://storage.flutter-io.cn
 export PUB_HOSTED_URL=https://pub.flutter-io.cn
 
 export ADBLOCK=1
-export EDITOR=nvim
+export DO_NOT_TRACK=1
 export DISABLE_TELEMETRY=1
 export GIT_MERGE_AUTOEDIT=no
 export DISABLE_OPENCOLLECTIVE=1
 export COREPACK_ENABLE_AUTO_PIN=0
+export T3CODE_TELEMETRY_ENABLED=false
+export T3CODE_OTEL_SDK_DISABLED=true
+export OTEL_SDK_DISABLED=true
 
 export BUN_INSTALL="$HOME/.bun"
 export MOCWORD_DATA=$HOME/mocword.sqlite
@@ -121,6 +124,7 @@ export GEM_HOME="$HOME/.gem"
 export PATH="$HOME/.local/bin:$PATH"
 export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
+export EDITOR=nvim
 # Use zsh arrays for PATH for speed and deduplication
 typeset -U path PATH
 path=(
