@@ -71,7 +71,8 @@
   "json.schemaDownload.trustedDomains": {
     "https://json.schemastore.org": true,
     "https://www.schemastore.org": true,
-    "https://biomejs.dev": true
+    "https://biomejs.dev": true,
+    "https://paseo.sh": true
   },
   "languageserver": {},
   "links.highlight": true,

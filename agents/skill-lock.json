@@ -284,6 +284,39 @@
       "pluginName": "fannheyward-skills",
       "installedAt": "2026-11-24T02:20:03.935Z",
       "updatedAt": "2026-11-24T02:36:44.202Z"
+    },
+    "f-sharpen": {
+      "source": "fannheyward/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/fannheyward/skills.git",
+      "commit": "9b9fccbe140b9375bf48a1df5a6b66d5b3a93197",
+      "skillPath": "skills/f-sharpen/SKILL.md",
+      "skillFolderHash": "382fef92aceafb13737f56915a8e162eca4f895a",
+      "pluginName": "fannheyward-skills",
+      "installedAt": "2026-11-26T12:33:53.335Z",
+      "updatedAt": "2026-11-26T12:33:53.335Z"
+    },
+    "f-reframe": {
+      "source": "fannheyward/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/fannheyward/skills.git",
+      "commit": "9b9fccbe140b9375bf48a1df5a6b66d5b3a93197",
+      "skillPath": "skills/f-reframe/SKILL.md",
+      "skillFolderHash": "35883ce93940d7a21c0328997466ad42cfdd45e6",
+      "pluginName": "fannheyward-skills",
+      "installedAt": "2026-11-26T12:34:02.446Z",
+      "updatedAt": "2026-11-26T12:34:02.446Z"
+    },
+    "f-deslop": {
+      "source": "fannheyward/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/fannheyward/skills.git",
+      "commit": "9b9fccbe140b9375bf48a1df5a6b66d5b3a93197",
+      "skillPath": "skills/f-deslop/SKILL.md",
+      "skillFolderHash": "d3f7a4f6d6758fe103761def8d96105f9bc8fe19",
+      "pluginName": "fannheyward-skills",
+      "installedAt": "2026-11-26T12:34:11.685Z",
+      "updatedAt": "2026-11-26T12:34:11.685Z"
     }
   },
   "dismissed": {
