@@ -14,7 +14,6 @@ cscope.out
 *.perspectivev3
 .netrwhist
 xcuserdata
-xcshareddata
 build/
 .idea/
 node_modules

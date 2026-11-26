@@ -3,7 +3,7 @@ rex.bind("cmd+left", "client.tab.previous")
 
 -- >>> leaf >>>
 -- Managed by `leaf rex install`; `leaf rex uninstall` removes it.
--- plugin: 70060ac7ed187446
+-- plugin: 4ba1d6441a3165f9
 dofile("/Users/fannheyward/.config/rex/plugins/leaf/init.lua").setup({ bin = { "/opt/homebrew/bin/leaf" } })
 -- open: idle
 -- <<< leaf <<<
